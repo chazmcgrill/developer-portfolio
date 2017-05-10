@@ -1,3 +1,96 @@
+/*----------------------------------*/
+/* BASIC SETUP */
+/*----------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: coral;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/*----------------------------------*/
+/* REUSABLE COMPONENTS */
+/*----------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 250%;
+  font-weight: 300;
+  margin: 0;
+}
+
+hr {
+  width: 300px;
+  margin: 10px auto 15px auto;
+  border-top: 2px solid white;
+}
+
+h2 {
+ font-family: 'Slabo 27px', serif;
+ font-weight: 400;
+ font-size: 140%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/*----------------------------------*/
+/* HEADER */
+/*----------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(img/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  background-attachment: fixed;
+}
+
+.nav-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container img {
+  height: 70px;
+}
+
+.hero-text-box {
+  text-align: center;
+  width: 400px;
+  margin: 15% auto;
+}
+
+.main-nav li {
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+  font-size: 90%;
+  margin-left: 15px;
 }
