@@ -23,6 +23,23 @@ body {
   margin: 0 auto;
 }
 
+section {
+  padding: 50px 0;
+}
+
+section p {
+  font-family: 'Slabo 27px', serif;
+}
+
+.long-copy {
+  width: 40%;
+  margin: 0 auto;
+  font-family: 'Slabo 27px', serif;
+  font-size: 130%;
+  color: #2980b9;
+  text-align: center;
+}
+
 /* Headings */
 
 h1, h2, h3 {
@@ -31,9 +48,19 @@ h1, h2, h3 {
 
 h1 {
   text-transform: uppercase;
-  font-size: 250%;
-  font-weight: 300;
+  font-size: 280%;
+  font-weight: 400;
   margin: 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 220%;
+  font-weight: 300;
+  padding: 30px 0;
+  text-align: center;
 }
 
 hr {
@@ -42,11 +69,23 @@ hr {
   border-top: 2px solid white;
 }
 
-h2 {
+h3 {
  font-family: 'Slabo 27px', serif;
  font-weight: 400;
  font-size: 140%;
 }
+
+h2:after {
+  display: block;
+  height: 3px;
+  background-color: #2980b9;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* Buttons */
 
 a {
   text-decoration: none;
@@ -78,12 +117,12 @@ header {
 }
 
 .nav-container img {
-  height: 70px;
+  height: 50px;
 }
 
 .hero-text-box {
   text-align: center;
-  width: 400px;
+  /*width: 400px;*/
   margin: 15% auto;
 }
 
@@ -93,4 +132,121 @@ header {
   display: inline-block;
   font-size: 90%;
   margin-left: 15px;
+}
+
+/*----------------------------------*/
+/* BIO */
+/*----------------------------------*/
+
+.section-bio img {
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  /*border: 3px solid #2980b9;*/
+}
+
+/*----------------------------------*/
+/* SKILLS */
+/*----------------------------------*/
+
+.section-skills {
+  background: #ececec;
+}
+
+/*----------------------------------*/
+/* PORTFOLIO */
+/*----------------------------------*/
+
+/*----------------------------------*/
+/* CONTACT */
+/*----------------------------------*/
+
+form input {
+  display: block;
+  padding: 15px;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid #c4c4c4;
+  border-radius: 10px;
+  background: none;
+  text-align: left;
+  font-size: 100%;
+  /*color: #c4c4c4;*/
+  font-family: 'Slabo 27px', serif;
+}
+
+form input:nth-child(3n) {
+  padding-bottom: 50px;
+}
+
+form input[type=submit]{
+  border: none;
+  text-align: center;
+}
+
+form input[type=submit]:hover {
+  color: #2980b9;
+}
+
+.section-contact {
+  background: #ececec;
+}
+
+.form-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-container p {
+  padding: 0 15%;
+}
+
+/*----------------------------------*/
+/* FOOTER */
+/*----------------------------------*/
+
+footer {
+  background: #04081A;
+  font-size: 70%;
+  height: 150px;
+}
+
+footer p,
+footer i,
+footer a {
+  color: #665f66;
+}
+
+footer i:hover {
+  color: #2980b9;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer-icons {
+  width: 150px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 130%;
 }
