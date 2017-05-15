@@ -164,7 +164,8 @@ header {
 /* CONTACT */
 /*----------------------------------*/
 
-form input {
+form input,
+textarea {
   display: block;
   padding: 15px;
   width: 80%;
@@ -176,10 +177,8 @@ form input {
   font-size: 100%;
   /*color: #c4c4c4;*/
   font-family: 'Slabo 27px', serif;
-}
-
-form input:nth-child(3n) {
-  padding-bottom: 50px;
+  resize: none;
+  outline: none;
 }
 
 form input[type=submit]{
