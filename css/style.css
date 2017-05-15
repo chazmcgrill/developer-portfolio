@@ -159,7 +159,29 @@ header {
 /*----------------------------------*/
 /* PORTFOLIO */
 /*----------------------------------*/
+.portfolio-img-box {
+  background: black;
+  padding: 5px;
+  overflow: hidden;
+}
 
+.portfolio-img-box img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  transform: scale(1.20);
+  opacity: 1;
+}
+
+.portfolio-img-box img:hover {
+  transform: scale(1.10);
+  opacity: 0.7;
+}
+
+
+/*.section-portfolio .col {
+  margin: 0;
+}*/
 /*----------------------------------*/
 /* CONTACT */
 /*----------------------------------*/
