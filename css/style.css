@@ -156,6 +156,20 @@ header {
   background: #ececec;
 }
 
+.skills-box {
+  padding: 5px 40px;
+}
+
+.skill-titles {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.skill-titles i {
+  font-size: 300%;
+  padding-bottom: 15px;
+}
+
 /*----------------------------------*/
 /* PORTFOLIO */
 /*----------------------------------*/
