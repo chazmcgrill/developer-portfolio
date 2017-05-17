@@ -8,11 +8,6 @@
   box-sizing: border-box;
 }
 
-/*supposed to stop background fixed lag*/
-/*html{
-  -webkit-transform: translate3d(0,0,0);
-}*/
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -106,7 +101,7 @@ a:hover {
 /*----------------------------------*/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(img/hero-image1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(img/hero-image.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -161,6 +156,10 @@ header {
   background: #ececec;
 }
 
+.skills-container {
+  margin-bottom: 35px;
+}
+
 .skills-box {
   padding: 40px;
   background-color: white;
@@ -181,6 +180,7 @@ header {
 /*----------------------------------*/
 /* PORTFOLIO */
 /*----------------------------------*/
+
 .portfolio-img-box {
   background: black;
   padding: 5px;
@@ -200,10 +200,6 @@ header {
   opacity: 0.7;
 }
 
-
-/*.section-portfolio .col {
-  margin: 0;
-}*/
 /*----------------------------------*/
 /* CONTACT */
 /*----------------------------------*/
