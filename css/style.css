@@ -210,7 +210,7 @@ textarea {
   padding: 15px;
   width: 80%;
   margin: 20px auto;
-  border: 2px solid #c4c4c4;
+  border: 2px solid #2980b9;
   border-radius: 10px;
   background: none;
   text-align: left;
@@ -223,16 +223,17 @@ textarea {
 
 form input[type=submit]{
   border: 2px solid #2980b9;
-  background-color: #2980b9;
+  background-color: #ececec;
   text-align: center;
-  color: #ececec;
+
+  color: #2980b9;
   width: 100px;
   border-radius: 20px;
 }
 
 form input[type=submit]:hover {
-  color: #2980b9;
-  background-color: #ececec;
+  color: #ececec;
+  background-color: #2980b9;
 }
 
 .section-contact {
