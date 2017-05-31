@@ -210,9 +210,10 @@ textarea {
   padding: 15px;
   width: 80%;
   margin: 20px auto;
-  border: 2px solid #2980b9;
+  /*border: 2px solid #2980b9;*/
+  border: none;
   border-radius: 10px;
-  background: none;
+  background: white;
   text-align: left;
   font-size: 100%;
   /*color: #c4c4c4;*/
@@ -221,19 +222,24 @@ textarea {
   outline: none;
 }
 
-form input[type=submit]{
-  border: 2px solid #2980b9;
-  background-color: #ececec;
-  text-align: center;
+form input:focus,
+textarea:focus {
+  border: 1px solid #2980b9;
+}
 
-  color: #2980b9;
-  width: 100px;
+form input[type=submit]{
+  color: #ececec;
+  background-color: #2980b9;
+  /*border: 2px solid #2980b9;*/
+  text-align: center;
+  width: 40%;
   border-radius: 20px;
 }
 
 form input[type=submit]:hover {
-  color: #ececec;
-  background-color: #2980b9;
+  /*color: #2980b9;*/
+  background-color: #1c6391;
+  cursor: pointer;
 }
 
 .section-contact {
