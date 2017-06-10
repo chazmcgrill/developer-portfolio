@@ -1,7 +1,6 @@
-/*----------------------------------*/
+/*---------------------------------- */
 /* BASIC SETUP */
-/*----------------------------------*/
-
+/*---------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +8,14 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* REUSABLE COMPONENTS */
-/*----------------------------------*/
-
+/*---------------------------------- */
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -26,22 +24,20 @@ body {
 section {
   padding: 50px 0;
 }
-
 section p {
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
 }
 
 .long-copy {
   width: 40%;
   margin: 0 auto;
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
   font-size: 130%;
   color: #2980b9;
   text-align: center;
 }
 
 /* Headings */
-
 h1, h2, h3 {
   letter-spacing: 2px;
 }
@@ -70,9 +66,9 @@ hr {
 }
 
 h3 {
- font-family: 'Slabo 27px', serif;
- font-weight: 400;
- font-size: 140%;
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-size: 140%;
 }
 
 h2:after {
@@ -86,20 +82,17 @@ h2:after {
 }
 
 /* Buttons */
-
 a {
   text-decoration: none;
   color: white;
 }
-
 a:hover {
   color: #2980b9;
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* HEADER */
-/*----------------------------------*/
-
+/*---------------------------------- */
 header {
   background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(img/hero-image.jpg);
   background-size: cover;
@@ -117,14 +110,13 @@ header {
   max-width: 1140px;
   margin: 0 auto;
 }
-
 .nav-container img {
   height: 50px;
 }
 
 .hero-text-box {
   text-align: center;
-  /*width: 400px;*/
+  /*width: 400px; */
   margin: 15% auto;
 }
 
@@ -136,22 +128,20 @@ header {
   margin-left: 15px;
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* BIO */
-/*----------------------------------*/
-
+/*---------------------------------- */
 .section-bio img {
   display: block;
   width: 150px;
   border-radius: 50%;
   margin: 0 auto 20px auto;
-  /*border: 3px solid #2980b9;*/
+  /*border: 3px solid #2980b9; */
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* SKILLS */
-/*----------------------------------*/
-
+/*---------------------------------- */
 .section-skills {
   background: #ececec;
 }
@@ -171,73 +161,65 @@ header {
   text-align: center;
   padding: 15px 0;
 }
-
 .skill-titles i {
   font-size: 300%;
   padding-bottom: 15px;
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* PORTFOLIO */
-/*----------------------------------*/
-
+/*---------------------------------- */
 .portfolio-img-box {
   background: black;
   padding: 5px;
   overflow: hidden;
 }
-
 .portfolio-img-box img {
   width: 100%;
   height: auto;
   padding: 0;
-  transform: scale(1.20);
+  transform: scale(1.2);
   opacity: 1;
 }
-
 .portfolio-img-box img:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
   opacity: 0.7;
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* CONTACT */
-/*----------------------------------*/
-
-form input,
-textarea {
+/*---------------------------------- */
+form input, textarea {
   display: block;
   padding: 15px;
   width: 80%;
   margin: 20px auto;
-  /*border: 2px solid #2980b9;*/
+  /*border: 2px solid #2980b9; */
   border: none;
   border-radius: 10px;
   background: white;
   text-align: left;
   font-size: 100%;
-  /*color: #c4c4c4;*/
-  font-family: 'Slabo 27px', serif;
+  /*color: #c4c4c4; */
+  font-family: "Slabo 27px", serif;
   resize: none;
   outline: none;
 }
 
-form input:focus,
-textarea:focus {
+form input:focus, textarea:focus {
   border: 1px solid #2980b9;
 }
 
-form input[type=submit]{
+form input[type=submit] {
   color: #ececec;
   background-color: #2980b9;
-  /*border: 2px solid #2980b9;*/
+  /*border: 2px solid #2980b9; */
   text-align: center;
   width: 40%;
   border-radius: 20px;
 }
-
 form input[type=submit]:hover {
-  /*color: #2980b9;*/
+  /*color: #2980b9; */
   background-color: #1c6391;
   cursor: pointer;
 }
@@ -250,31 +232,24 @@ form input[type=submit]:hover {
   width: 500px;
   margin: 0 auto;
 }
-
 .form-container p {
   padding: 0 15%;
 }
 
-/*----------------------------------*/
+/*---------------------------------- */
 /* FOOTER */
-/*----------------------------------*/
-
+/*---------------------------------- */
 footer {
   background: #04081A;
   font-size: 70%;
   height: 150px;
 }
-
-footer p,
-footer i,
-footer a {
+footer p, footer i, footer a {
   color: #665f66;
 }
-
 footer i:hover {
   color: #2980b9;
 }
-
 footer p {
   text-align: center;
 }
@@ -289,11 +264,10 @@ footer p {
   text-transform: uppercase;
   padding: 30px 0;
 }
-
 .footer-nav li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 20px;
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
 }
 
 .footer-icons {
