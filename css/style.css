@@ -1,6 +1,7 @@
 /*---------------------------------- */
 /* BASIC SETUP */
 /*---------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ body {
 section {
   padding: 50px 0;
 }
+
 section p {
   font-family: "Slabo 27px", serif;
 }
@@ -82,10 +84,12 @@ h2:after {
 }
 
 /* Buttons */
+
 a {
   text-decoration: none;
   color: white;
 }
+
 a:hover {
   color: #2980b9;
 }
@@ -93,6 +97,7 @@ a:hover {
 /*---------------------------------- */
 /* HEADER */
 /*---------------------------------- */
+
 header {
   background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(img/hero-image.jpg);
   background-size: cover;
@@ -110,13 +115,13 @@ header {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 .nav-container img {
   height: 50px;
 }
 
 .hero-text-box {
   text-align: center;
-  /*width: 400px; */
   margin: 15% auto;
 }
 
@@ -131,12 +136,12 @@ header {
 /*---------------------------------- */
 /* BIO */
 /*---------------------------------- */
+
 .section-bio img {
   display: block;
   width: 150px;
   border-radius: 50%;
   margin: 0 auto 20px auto;
-  /*border: 3px solid #2980b9; */
 }
 
 /*---------------------------------- */
@@ -161,6 +166,7 @@ header {
   text-align: center;
   padding: 15px 0;
 }
+
 .skill-titles i {
   font-size: 300%;
   padding-bottom: 15px;
@@ -169,11 +175,15 @@ header {
 /*---------------------------------- */
 /* PORTFOLIO */
 /*---------------------------------- */
+
 .portfolio-img-box {
   background: black;
   padding: 5px;
   overflow: hidden;
+  position: relative;
+  text-align: center;
 }
+
 .portfolio-img-box img {
   width: 100%;
   height: auto;
@@ -181,26 +191,39 @@ header {
   transform: scale(1.2);
   opacity: 1;
 }
+
 .portfolio-img-box img:hover {
   transform: scale(1.1);
-  opacity: 0.7;
+  opacity: 0.2;
 }
 
+.portfolio-img-box h3 {
+  position: absolute;
+  color: white;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.portfolio-img-box:hover h3 {
+  visibility: visible;
+}
 /*---------------------------------- */
 /* CONTACT */
 /*---------------------------------- */
+
 form input, textarea {
   display: block;
   padding: 15px;
   width: 80%;
   margin: 20px auto;
-  /*border: 2px solid #2980b9; */
   border: none;
   border-radius: 10px;
   background: white;
   text-align: left;
   font-size: 100%;
-  /*color: #c4c4c4; */
   font-family: "Slabo 27px", serif;
   resize: none;
   outline: none;
@@ -213,13 +236,12 @@ form input:focus, textarea:focus {
 form input[type=submit] {
   color: #ececec;
   background-color: #2980b9;
-  /*border: 2px solid #2980b9; */
   text-align: center;
   width: 40%;
   border-radius: 20px;
 }
+
 form input[type=submit]:hover {
-  /*color: #2980b9; */
   background-color: #1c6391;
   cursor: pointer;
 }
@@ -232,6 +254,7 @@ form input[type=submit]:hover {
   width: 500px;
   margin: 0 auto;
 }
+
 .form-container p {
   padding: 0 15%;
 }
@@ -239,17 +262,21 @@ form input[type=submit]:hover {
 /*---------------------------------- */
 /* FOOTER */
 /*---------------------------------- */
+
 footer {
   background: #04081A;
   font-size: 70%;
   height: 150px;
 }
+
 footer p, footer i, footer a {
   color: #665f66;
 }
+
 footer i:hover {
   color: #2980b9;
 }
+
 footer p {
   text-align: center;
 }
@@ -264,6 +291,7 @@ footer p {
   text-transform: uppercase;
   padding: 30px 0;
 }
+
 .footer-nav li {
   display: inline-block;
   list-style: none;
