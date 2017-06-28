@@ -91,6 +91,7 @@ h3 {
 a {
   text-decoration: none;
   color: white;
+  transition: .3s all ease-out;
 }
 
 a:hover {
@@ -125,7 +126,11 @@ header {
 
 .hero-text-box {
   text-align: center;
-  margin: 15% auto;
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-nav li {
@@ -244,7 +249,7 @@ header {
 form input, textarea {
   display: block;
   padding: 15px;
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   border: none;
   border-radius: 10px;
@@ -278,7 +283,7 @@ form input[type=submit]:hover {
 }
 
 .form-container {
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
 }
 
