@@ -9,10 +9,14 @@
   /*border: 1px solid red !important*/
 }
 
-body {
+html {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+.long-copy, section p, h3, form input, textarea {
+  font-family: "Slabo 27px", serif;
 }
 
 /*---------------------------------- */
@@ -28,14 +32,9 @@ section {
   padding: 50px 0;
 }
 
-section p {
-  font-family: "Slabo 27px", serif;
-}
-
 .long-copy {
   width: 33%;
   margin: 0 auto;
-  font-family: "Slabo 27px", serif;
   font-size: 130%;
   color: #2980b9;
   text-align: center;
@@ -82,7 +81,6 @@ h2:after {
 }
 
 h3 {
-  font-family: "Slabo 27px", serif;
   font-weight: 400;
   font-size: 140%;
 }
@@ -260,7 +258,6 @@ form input, textarea {
   background: white;
   text-align: left;
   font-size: 100%;
-  font-family: "Slabo 27px", serif;
   resize: none;
   outline: none;
 }
