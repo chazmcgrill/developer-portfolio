@@ -16,5 +16,21 @@ $('document').ready(function(){
     }
   });
 
+  // Arrow animation timer
+  var val = 'animated flash',
+      arrow = $('.arrow'),
+      count = 0;
+
+  setInterval(function animTimer() {
+
+    if (arrow.hasClass(val)) { 
+      arrow.removeClass(val);
+    } else {
+      arrow.addClass(val);
+    }
+
+    count++;
+  }, 3000);
+
 
 });
