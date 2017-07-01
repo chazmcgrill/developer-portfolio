@@ -6,22 +6,19 @@
 
 }
 
-
 /* --- LANDSCAPE PHONES --- */
 @media only screen and (max-width: 767px) and (orientation : landscape) {
 
   html { font-size: 14px; }
-  h1 { font-size: 2.2em; }
-  /* grid */
+
   .span-1-of-2, .span-1-of-3 { width: 100%; }
   .col { margin: 5px 0; }
-  /* header */
+
   .nav-container img { height: 60px; }
   .nav-container { justify-content: center; }
   .main-nav { display: none; }
 
 }
-
 
 /* --- SMALL TABLETS --- */
 @media only screen and (max-width: 767px) {
@@ -42,11 +39,10 @@
 
 }
 
-
  /* --- 100% GRID BREAKPOINT --- */
 @media only screen and (max-width: 630px) and (orientation : portrait) {
 
-  /* grid */
+   /*grid */
   .span-1-of-2, .span-1-of-3 { width: 100%; }
   .col { margin: 5px 0; }
   /* header */
@@ -58,15 +54,13 @@
 
 }
 
-
 /* --- PHONES --- */
 @media only screen and (max-width: 480px) {
 
   /* header */
-  h1 {
-    letter-spacing: 1px;
-    font-size: 2.2em;
-  }
+  h1 { font-size: 2em; }
+  .hero-text-box h3 { font-size: 1.2em }
+  hr { width: 14em; }
   /* bio */
   .long-copy { width: 80%; }
   /* skills */
@@ -76,6 +70,6 @@
     width: 100%;
     margin: 0 auto;
   }
-  form input[type=submit] { width: 60%; }
+  form input[type=submit] { width: 50%; }
 
 }
