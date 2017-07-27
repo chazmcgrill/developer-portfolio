@@ -1,0 +1,36 @@
+.section-contact
+  background: $greybg
+
+  .form-container
+    width: 400px
+    margin: 0 auto
+
+    p
+      padding: 0 15%
+
+    form input, textarea
+      display: block
+      padding: 15px
+      width: 100%
+      margin: 20px auto
+      border: none
+      border-radius: 10px
+      background: $white
+      text-align: left
+      font-size: 100%
+      resize: none
+      outline: none
+
+      &:focus
+        border: 1px solid $main
+
+    form input[type=submit]
+      color: $greybg
+      background-color: $main
+      text-align: center
+      width: 40%
+      border-radius: 20px
+
+      &:hover
+        background-color: $bluehover
+        cursor: pointer
