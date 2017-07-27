@@ -39,197 +39,325 @@
 		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
 		"oF": 0
 		},
-	"\/css\/img\/hero-image.jpg": {
-		"ft": 16384,
-		"iS": 596927,
-		"oA": 0,
-		"oAP": "\/css\/img\/hero-image.jpg",
+	"\/assets\/css\/1-tools\/animate.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/1-tools\/animate.css",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oS": 0,
+		"uL": 1
 		},
-	"\/css\/main.css": {
+	"\/assets\/css\/1-tools\/fonts.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/1-tools\/fonts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/1-tools\/normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/1-tools\/normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/1-tools\/variables.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/1-tools\/variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/2-basics\/grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/2-basics\/grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/2-basics\/main-setup.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/2-basics\/main-setup.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/2-basics\/reusables.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/2-basics\/reusables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/bio.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/bio.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/contact.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/footer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/header.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/portfolio.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/portfolio.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/queries.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/queries.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/skills.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/skills.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main-min.css",
+		"oAP": "\/assets\/css\/main-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/sass\/animate.scss": {
+	"\/assets\/css\/main.sass": {
 		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/animate.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/sass\/grid.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/grid.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/sass\/main.sass": {
-		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/main.css",
-		"oF": 2,
-		"oS": 2,
-		"uL": 1
-		},
-	"\/css\/sass\/normalize.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/normalize.css",
+		"oAP": "\/assets\/css\/main.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/sass\/queries.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/queries.css",
+	"\/assets\/img\/hero-image.jpg": {
+		"ft": 16384,
+		"iS": 596927,
+		"oA": 0,
+		"oAP": "\/assets\/img\/hero-image.jpg",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
-	"\/css\/sass\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/sass\/variables.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/img\/logo.png": {
+	"\/assets\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 15401,
 		"oA": 0,
-		"oAP": "\/img\/logo.png",
+		"oAP": "\/assets\/img\/logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/portfolio-calc.jpg": {
+	"\/assets\/img\/portfolio-calc.jpg": {
 		"ft": 16384,
 		"iS": 41648,
 		"oA": 0,
-		"oAP": "\/img\/portfolio-calc.jpg",
+		"oAP": "\/assets\/img\/portfolio-calc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio-hurricanecharlie.jpg": {
+	"\/assets\/img\/portfolio-hurricanecharlie.jpg": {
 		"ft": 16384,
 		"iS": 850590,
 		"oA": 0,
-		"oAP": "\/img\/portfolio-hurricanecharlie.jpg",
+		"oAP": "\/assets\/img\/portfolio-hurricanecharlie.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio-pomodoro.jpg": {
+	"\/assets\/img\/portfolio-pomodoro.jpg": {
 		"ft": 16384,
 		"iS": 46078,
 		"oA": 0,
-		"oAP": "\/img\/portfolio-pomodoro.jpg",
+		"oAP": "\/assets\/img\/portfolio-pomodoro.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio-quote.jpg": {
+	"\/assets\/img\/portfolio-quote.jpg": {
 		"ft": 16384,
 		"iS": 50680,
 		"oA": 0,
-		"oAP": "\/img\/portfolio-quote.jpg",
+		"oAP": "\/assets\/img\/portfolio-quote.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio-twitch.jpg": {
+	"\/assets\/img\/portfolio-twitch.jpg": {
 		"ft": 16384,
 		"iS": 56475,
 		"oA": 0,
-		"oAP": "\/img\/portfolio-twitch.jpg",
+		"oAP": "\/assets\/img\/portfolio-twitch.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/portfolio-weather.jpg": {
+	"\/assets\/img\/portfolio-weather.jpg": {
 		"ft": 16384,
 		"iS": 33906,
 		"oA": 0,
-		"oAP": "\/img\/portfolio-weather.jpg",
+		"oAP": "\/assets\/img\/portfolio-weather.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/profile-pic.jpg": {
+	"\/assets\/img\/profile-pic.jpg": {
 		"ft": 16384,
 		"iS": 595736,
 		"oA": 0,
-		"oAP": "\/img\/profile-pic.jpg",
+		"oAP": "\/assets\/img\/profile-pic.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/assets\/js\/functions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/functions-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery-3.2.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jquery-3.2.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/mailer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/js\/mailer.php",
+		"oF": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -254,30 +382,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/scripts\/app.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/scripts\/app-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/scripts\/jquery-3.2.1.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/scripts\/jquery-3.2.1.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/scripts\/mailer.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/scripts\/mailer.php",
-		"oF": 0
 		}
 	},
 "hooks": [
