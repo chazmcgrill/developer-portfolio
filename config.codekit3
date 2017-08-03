@@ -65,6 +65,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/css\/1-tools\/mixins.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/1-tools\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/css\/1-tools\/normalize.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -202,7 +215,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/css\/3-sections\/queries.css",
 		"oF": 0,
 		"oS": 0,
@@ -359,11 +372,67 @@
 		"oAP": "\/assets\/js\/mailer.php",
 		"oF": 0
 		},
+	"\/includes\/bio.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/bio.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/contact.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/contact.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/footer.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/header.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/portfolio.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/portfolio.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/skills.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/skills.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/index.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/index.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/README.md": {
 		"cS": 0,

@@ -12,5 +12,12 @@ html
   font-size: 18px
   letter-spacing: 0.056em
 
+  @include landscape
+    font-size: 14px
+
 .long-copy, section p, h3, form input, textarea
   font-family: "Slabo 27px", serif
+
+@include desktop
+  .row
+    padding: 0 2%
