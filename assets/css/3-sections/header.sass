@@ -4,11 +4,22 @@ header
     size: cover
     position: center
     attachment: fixed
-  // height: 100vh
+  // height: 100vh js fallback?
   color: $white
   display: flex
   flex-direction: column
   justify-content: space-between
+
+  h1
+    @media (max-width: 480px)
+      font-size: 2.2rem
+      
+    @media (max-width: 380px)
+      font-size: 2rem
+
+  h3
+    @media (max-width: 380px)
+      font-size: 1.2rem
 
   i
     border: solid $arrow
@@ -17,19 +28,25 @@ header
     padding: 12px
 
   .nav-container
-    padding-top: 40px
+    padding: 40px 20px 0
     display: flex
     justify-content: space-between
     align-items: center
-    max-width: 1140px
+    max-width: 1160px
     margin: 0 auto
 
     @media (max-width: 768px)
-      flex-direction: column
+      justify-content: center
 
     img
       height: 50px
       margin-bottom: 20px
+
+      @media (max-width: 768px)
+        height: 58px
+
+      @media (max-width: 480px)
+        height: 65px
 
   .hero-text-box
     width: 100%
