@@ -208,29 +208,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/css\/3-sections\/queries.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/3-sections\/queries-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/css\/3-sections\/queries.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/3-sections\/queries.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/assets\/css\/3-sections\/skills.sass": {
 		"aP": 0,
 		"bl": 0,

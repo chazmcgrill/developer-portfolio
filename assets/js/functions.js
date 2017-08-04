@@ -1,5 +1,10 @@
 $('document').ready(function(){
 
+  // Set viewport height to actual height.
+  // Issue with android browser vh measurement.
+  var h = $(window).height();
+  $('header').css('height', h + 'px');
+
   // navigation smooth scroll
   $(function() {
     smoothScroll(1500);

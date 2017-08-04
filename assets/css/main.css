@@ -1352,14 +1352,6 @@ html {
 section {
   padding: 50px 0; }
 
-.long-copy {
-  width: 14em;
-  margin: 0 auto;
-  font-size: 1.3rem;
-  color: #2980b9;
-  text-align: center;
-  line-height: 35px; }
-
 hr {
   width: 16em;
   margin: 10px auto 15px auto;
@@ -1436,7 +1428,6 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -1490,6 +1481,12 @@ header {
     transition: opacity 0.2s; }
     .section-bio .bio-wrap img:hover {
       opacity: 0.8; }
+  .section-bio .bio-wrap .bio-text {
+    margin: 0 auto;
+    font-size: 1.3rem;
+    color: #2980b9;
+    text-align: center;
+    line-height: 35px; }
   .section-bio .bio-wrap .bio-icons {
     width: 180px;
     margin: 45px auto 70px auto;
