@@ -33,5 +33,4 @@ $('document').ready(function(){
     count++;
   }, 3000);
 
-
 });

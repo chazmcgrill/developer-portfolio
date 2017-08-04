@@ -24,8 +24,12 @@ header
     max-width: 1140px
     margin: 0 auto
 
+    @media (max-width: 768px)
+      flex-direction: column
+
     img
       height: 50px
+      margin-bottom: 20px
 
   .hero-text-box
     width: 100%
@@ -37,8 +41,11 @@ header
       text-transform: uppercase
       list-style: none
       display: inline-block
-      font-size: .9rem
+      font-size: 0.9rem
       margin-left: 15px
+
+      @media (max-width: 768px)
+        display: none
 
   .arrow
     transform: rotate(45deg)

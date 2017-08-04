@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en"> 
+  <head>   
     <meta charset="utf-8">
     <title>Charlie Taylor - Web Development &amp; Graphic Arts</title>
     <meta name="description" content="Modern web development and graphic arts, the official website of Charlie Taylor.">
@@ -15,10 +15,10 @@
         <div class="row">
           <div class="nav-container"><img class="animated fadeInDown" src="assets/img/logo.png" alt="Charlie Taylor Logo">
             <ul class="main-nav">
-              <li href="#bio">Bio</li>
-              <li href="#skills">Skills</li>
-              <li href="#portfolio">Portfolio</li>
-              <li href="#contact">Contact</li>
+              <li><a href="#bio">Bio</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -34,16 +34,18 @@
     </header>
     <section class="section-bio" id="bio">
       <div class="row">
-        <h2>Bio</h2><img src="assets/img/profile-pic.jpg" alt="Charlie Taylor">
-        <p class="long-copy"><strong>Hello,</strong> my name is Charlie. I'm A front-end web developer and graphic artist from Leeds. I love making well designed responsive websites and interactive applications.</p>
-        <div class="bio-icons"><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true"><i class="fa fa-free-code-camp"></i></a><a href="https://twitter.com/charlietdev" aria-hidden="true"><i class="fa fa-twitter"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true"><i class="fa fa-linkedin"></i></a><a href="https://codepen.io/chazmcgrill/" aria-hidden="true"><i class="fa fa-codepen"></i></a></div>
+        <h2>Bio</h2>
+        <div class="bio-wrap"><img src="assets/img/profile-pic.jpg" alt="Charlie Taylor">
+          <p class="long-copy"><strong>Hello,</strong> my name is Charlie. I'm A front-end web developer and graphic artist from Leeds. I love making well designed responsive websites and interactive applications.</p>
+          <div class="bio-icons"><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true"><i class="fa fa-free-code-camp"></i></a><a href="https://twitter.com/charlietdev" aria-hidden="true"><i class="fa fa-twitter"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true"><i class="fa fa-linkedin"></i></a><a href="https://codepen.io/chazmcgrill/" aria-hidden="true"><i class="fa fa-codepen"></i></a></div>
+        </div>
       </div>
     </section>
     <section class="section-skills" id="skills">
       <div class="row">
         <h2>Skills</h2>
       </div>
-      <div class="row skills-container">
+      <div class="row-grid skills-container">
         <div class="col span-1-of-3 skills-box">
           <div class="skill-titles"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             <h3>Design</h3>
@@ -68,7 +70,7 @@
       <div class="row">
         <h2>Portfolio</h2>
       </div>
-      <div class="row">   
+      <div class="row-grid">  
         <div class="col span-1-of-2"><a href="https://codepen.io/chazmcgrill/full/BRKaPB/"> 
             <div class="portfolio-img-box"><img src="assets/img/portfolio-weather.jpg" alt="Portfolio Local Weather">
               <h3>Local Weather App</h3>
@@ -78,7 +80,7 @@
               <h3>Javascript Calculator</h3>
             </div></a></div>
       </div>
-      <div class="row">
+      <div class="row-grid">
         <div class="col span-1-of-2"><a href="http://www.hurricanecharlie.co.uk">
             <div class="portfolio-img-box"><img src="assets/img/portfolio-hurricanecharlie.jpg" alt="Portfolio Hurricane Charlie Website">
               <h3>Hurricane Charlie Website</h3>
@@ -88,10 +90,10 @@
               <h3>Quote Machine</h3>
             </div></a></div>
       </div>
-      <div class="row">       
+      <div class="row-grid">     
         <div class="col span-1-of-2"><a href="https://codepen.io/chazmcgrill/full/rwGbVR/">
             <div class="portfolio-img-box"><img src="assets/img/portfolio-pomodoro.jpg" alt="Portfolio Pomodoro Timer">
-              <h3>Pomodoro Timer    </h3>
+              <h3>Pomodoro Timer</h3>
             </div></a></div>
         <div class="col span-1-of-2"><a href="https://codepen.io/chazmcgrill/full/oWpVOG/">
             <div class="portfolio-img-box"><img src="assets/img/portfolio-twitch.jpg" alt="Portfolio Twitch TV Application">
@@ -108,7 +110,7 @@
             <input type="text" placeholder="name" id="name" required>
             <input type="email" placeholder="email" id="email" required>
             <textarea name="comments" placeholder="your message" data-new-placeholder="your message" rows="5"></textarea>
-            <input type="submit" value="send the message.">
+            <input type="submit" value="send">
           </form>
         </div>
       </div>

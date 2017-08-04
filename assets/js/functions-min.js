@@ -1,0 +1,1 @@
+$("document").ready(function(){function t(t){$('a[href^="#"]').on("click",function(a){var n=$($(this).attr("href"));n.length&&(a.preventDefault(),$("html, body").animate({scrollTop:n.offset().top},t))})}$(function(){t(1500)});var a="animated flash",n=$(".arrow"),e=0;setInterval(function t(){n.hasClass(a)?n.removeClass(a):n.addClass(a),e++},3e3)});

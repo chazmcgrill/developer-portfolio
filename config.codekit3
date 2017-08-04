@@ -104,12 +104,12 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/css\/2-basics\/grid.scss": {
+	"\/assets\/css\/2-basics\/grid.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
-		"ft": 4,
+		"ft": 2,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/2-basics\/grid.css",
@@ -207,6 +207,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/assets\/css\/3-sections\/queries.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/3-sections\/queries-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/assets\/css\/3-sections\/queries.scss": {
 		"aP": 0,
@@ -347,6 +357,15 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/assets\/js\/functions-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/functions-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/assets\/js\/functions.js": {
 		"ft": 64,
