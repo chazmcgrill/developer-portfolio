@@ -1536,7 +1536,7 @@ header {
   position: relative;
   text-align: center; }
   .portfolio-img-box:hover h3 {
-    visibility: visible; }
+    opacity: 1; }
   .portfolio-img-box img {
     width: 100%;
     height: auto;
@@ -1554,8 +1554,9 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    visibility: hidden;
-    pointer-events: none; }
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s linear; }
 
 .section-contact {
   background: #ececec; }
@@ -1566,6 +1567,7 @@ header {
       .section-contact .form-container {
         width: 90%; } }
     .section-contact .form-container p {
+      text-align: center;
       padding: 0 15%; }
     .section-contact .form-container form input, .section-contact .form-container textarea {
       display: block;
