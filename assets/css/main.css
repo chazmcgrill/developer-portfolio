@@ -1528,6 +1528,12 @@ header {
     .section-skills .skill-titles i {
       font-size: 300%;
       padding-bottom: 15px; }
+  .section-skills p {
+    text-align: center; }
+    @media (max-width: 480px) {
+      .section-skills p {
+        font-size: .9rem;
+        letter-spacing: 1; } }
 
 .portfolio-img-box {
   background: #131313;
