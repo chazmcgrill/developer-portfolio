@@ -39,7 +39,7 @@
 		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
 		"oF": 0
 		},
-	"\/assets\/css\/1-tools\/animate.scss": {
+	"\/assets\/css\/1-tools\/animate-condensed.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -47,6 +47,19 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
+		"oAP": "\/build\/assets\/css\/1-tools\/animate-condensed.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/css\/1-tools\/animate.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
 		"oAP": "\/build\/assets\/css\/1-tools\/animate.css",
 		"oF": 0,
 		"oS": 0,
@@ -85,7 +98,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/assets\/css\/1-tools\/normalize.css",
 		"oF": 0,
 		"oS": 0,

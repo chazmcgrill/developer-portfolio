@@ -3,20 +3,21 @@
  * Version - 3.5.2
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2017 Daniel Eden */
+ * Copyright (c) 2017 Daniel Eden
+*/
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
-.animated.infinite {
-  animation-iteration-count: infinite;
-}
-.animated.hinge {
-  animation-duration: 2s;
-}
-.animated.flipOutX, .animated.flipOutY, .animated.bounceIn, .animated.bounceOut {
-  animation-duration: 0.75s;
-}
+// .animated.infinite {
+//   animation-iteration-count: infinite;
+// }
+// .animated.hinge {
+//   animation-duration: 2s;
+// }
+// .animated.flipOutX, .animated.flipOutY, .animated.bounceIn, .animated.bounceOut {
+//   animation-duration: 0.75s;
+// }
 
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
