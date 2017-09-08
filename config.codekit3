@@ -59,9 +59,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/assets\/css\/1-tools\/animate.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -98,9 +98,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/assets\/css\/1-tools\/normalize.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -234,26 +234,16 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/css\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/assets\/css\/main-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/assets\/css\/main.sass": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/css\/main.css",
-		"oF": 0,
+		"oAP": "\/assets\/css\/main.css",
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
@@ -361,28 +351,22 @@
 	"\/assets\/js\/functions.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/js\/functions-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 1,
 		"tS": 0
 		},
 	"\/assets\/js\/jquery-3.2.1.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/js\/jquery-3.2.1.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
-		},
-	"\/assets\/js\/mailer.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/assets\/js\/mailer.php",
-		"oF": 0
 		},
 	"\/build": {
 		"ft": 65536,
@@ -452,6 +436,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/mailer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/mailer.php",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -480,7 +470,7 @@
 	"displayValue": "developer-portfolio",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-fry",
-	"lastBuiltDate": 526419902
+	"lastBuiltDate": 526563152
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
