@@ -9,9 +9,6 @@ footer
   p, i, a
     color: $foottext
 
-  i:hover
-    color: $main
-
   p
     text-align: center
 
@@ -42,7 +39,16 @@ footer
       margin-left: 10px
       display: flex
       justify-content: space-between
-      font-size: 16px
 
       @media (max-width: 768px)
+        width: 200px
         padding: 20px 0
+
+      i
+        font-size: 16px
+
+        &:hover
+          color: $main
+
+        @media (max-width: 768px)
+          font-size: 21px

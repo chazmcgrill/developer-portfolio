@@ -12,31 +12,31 @@
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/.gitignore",
+		"oAP": "\/.gitignore",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
+		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
+		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
+		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
+		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
 		"oF": 0
 		},
 	"\/assets\/css\/1-tools\/animate-condensed.scss": {
@@ -47,7 +47,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-tools\/animate-condensed.css",
+		"oAP": "\/assets\/css\/1-tools\/animate-condensed.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -60,7 +60,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-tools\/animate.css",
+		"oAP": "\/assets\/css\/1-tools\/animate.css",
 		"oF": 1,
 		"oS": 0,
 		"uL": 1
@@ -73,7 +73,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-tools\/fonts.css",
+		"oAP": "\/assets\/css\/1-tools\/fonts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -86,7 +86,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-tools\/mixins.css",
+		"oAP": "\/assets\/css\/1-tools\/mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -99,7 +99,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-tools\/normalize.css",
+		"oAP": "\/assets\/css\/1-tools\/normalize.css",
 		"oF": 1,
 		"oS": 0,
 		"uL": 1
@@ -112,7 +112,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/1-tools\/variables.css",
+		"oAP": "\/assets\/css\/1-tools\/variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -125,7 +125,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/2-basics\/grid.css",
+		"oAP": "\/assets\/css\/2-basics\/grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -138,7 +138,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/2-basics\/main-setup.css",
+		"oAP": "\/assets\/css\/2-basics\/main-setup.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -151,7 +151,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/2-basics\/reusables.css",
+		"oAP": "\/assets\/css\/2-basics\/reusables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -164,7 +164,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/bio.css",
+		"oAP": "\/assets\/css\/3-sections\/bio.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -177,7 +177,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/contact.css",
+		"oAP": "\/assets\/css\/3-sections\/contact.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -190,7 +190,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/footer.css",
+		"oAP": "\/assets\/css\/3-sections\/footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -203,7 +203,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/header.css",
+		"oAP": "\/assets\/css\/3-sections\/header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -216,7 +216,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/portfolio.css",
+		"oAP": "\/assets\/css\/3-sections\/portfolio.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -229,10 +229,20 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/skills.css",
+		"oAP": "\/assets\/css\/3-sections\/skills.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/assets\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/assets\/css\/main.sass": {
 		"aP": 1,
@@ -251,7 +261,7 @@
 		"ft": 16384,
 		"iS": 596927,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/hero-image.jpg",
+		"oAP": "\/assets\/img\/hero-image.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -261,7 +271,7 @@
 		"ft": 32768,
 		"iS": 15401,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/logo.png",
+		"oAP": "\/assets\/img\/logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -272,7 +282,7 @@
 		"ft": 16384,
 		"iS": 41648,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-calc.jpg",
+		"oAP": "\/assets\/img\/portfolio-calc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -282,7 +292,7 @@
 		"ft": 16384,
 		"iS": 850590,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-hurricanecharlie.jpg",
+		"oAP": "\/assets\/img\/portfolio-hurricanecharlie.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -292,7 +302,7 @@
 		"ft": 16384,
 		"iS": 46078,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-pomodoro.jpg",
+		"oAP": "\/assets\/img\/portfolio-pomodoro.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -302,7 +312,7 @@
 		"ft": 16384,
 		"iS": 50680,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-quote.jpg",
+		"oAP": "\/assets\/img\/portfolio-quote.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -312,7 +322,7 @@
 		"ft": 16384,
 		"iS": 56475,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-twitch.jpg",
+		"oAP": "\/assets\/img\/portfolio-twitch.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -322,7 +332,7 @@
 		"ft": 16384,
 		"iS": 33906,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-weather.jpg",
+		"oAP": "\/assets\/img\/portfolio-weather.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -332,28 +342,18 @@
 		"ft": 16384,
 		"iS": 595736,
 		"oA": 0,
-		"oAP": "\/build\/assets\/img\/profile-pic.jpg",
+		"oAP": "\/assets\/img\/profile-pic.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
-		},
-	"\/assets\/js\/functions-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/assets\/js\/functions-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/assets\/js\/functions.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/js\/functions-min.js",
+		"oAP": "\/assets\/js\/functions-min.js",
 		"oF": 1,
 		"sC": 1,
 		"tS": 0
@@ -363,7 +363,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/js\/jquery-3.2.1.min-min.js",
+		"oAP": "\/assets\/js\/jquery-3.2.1.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -378,7 +378,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/bio.html",
+		"oAP": "\/includes\/bio.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -386,7 +386,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/contact.html",
+		"oAP": "\/includes\/contact.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -394,7 +394,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/footer.html",
+		"oAP": "\/includes\/footer.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -402,7 +402,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/header.html",
+		"oAP": "\/includes\/header.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -410,7 +410,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/portfolio.html",
+		"oAP": "\/includes\/portfolio.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -418,28 +418,28 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/skills.html",
+		"oAP": "\/includes\/skills.html",
 		"oF": 0,
 		"oS": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/index.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
 	"\/mailer.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/build\/mailer.php",
+		"oAP": "\/mailer.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -451,7 +451,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/build\/README.html",
+		"oAP": "\/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -725,7 +725,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 1,
+	"buildFolderActive": 0,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
@@ -2611,7 +2611,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": "\/build"
+	"websiteRelativeRoot": ""
 	},
 "settingsFileVersion": "3"
 }
