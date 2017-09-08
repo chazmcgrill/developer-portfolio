@@ -257,6 +257,28 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/img\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 815,
+		"oA": 0,
+		"oAP": "\/assets\/img\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1238,
+		"oA": 0,
+		"oAP": "\/assets\/img\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/hero-image.jpg": {
 		"ft": 16384,
 		"iS": 596927,
@@ -368,10 +390,193 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
+	"\/build\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
+	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
+		"oF": 0
+		},
+	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
+		"oF": 0
+		},
+	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
+		"oF": 0
+		},
+	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
+		"oF": 0
+		},
+	"\/build\/assets\/css\/1-tools\/animate.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/css\/1-tools\/animate-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/assets\/css\/1-tools\/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/css\/1-tools\/normalize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/assets\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/assets\/img\/hero-image.jpg": {
+		"ft": 16384,
+		"iS": 593858,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/hero-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/logo.png": {
+		"ft": 32768,
+		"iS": 9191,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/assets\/img\/portfolio-calc.jpg": {
+		"ft": 16384,
+		"iS": 33557,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/portfolio-calc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/portfolio-hurricanecharlie.jpg": {
+		"ft": 16384,
+		"iS": 760133,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/portfolio-hurricanecharlie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/portfolio-pomodoro.jpg": {
+		"ft": 16384,
+		"iS": 41332,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/portfolio-pomodoro.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/portfolio-quote.jpg": {
+		"ft": 16384,
+		"iS": 42967,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/portfolio-quote.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/portfolio-twitch.jpg": {
+		"ft": 16384,
+		"iS": 47300,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/portfolio-twitch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/portfolio-weather.jpg": {
+		"ft": 16384,
+		"iS": 27632,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/portfolio-weather.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/img\/profile-pic.jpg": {
+		"ft": 16384,
+		"iS": 558023,
+		"oA": 0,
+		"oAP": "\/build\/assets\/img\/profile-pic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/assets\/js\/functions-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/js\/functions-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/build\/assets\/js\/jquery-3.2.1.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/assets\/js\/jquery-3.2.1.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/build\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/index.html",
+		"oF": 0
+		},
+	"\/build\/mailer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/mailer.php",
+		"oF": 0
+		},
+	"\/build\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/README.html",
 		"oF": 0
 		},
 	"\/includes\/bio.pug": {
