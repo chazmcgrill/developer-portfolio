@@ -1,6 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
-
+/* Fonts */
+/* San-serif */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/* Serif */
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+/* Animation */
 .animated {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -83,6 +86,7 @@
   -webkit-animation-name: flash;
           animation-name: flash; }
 
+/* Main Setup */
 * {
   margin: 0;
   padding: 0;
@@ -99,6 +103,7 @@ html {
 .long-copy, section p, h3, form input, textarea {
   font-family: "Slabo 27px", serif; }
 
+/* Reusables */
 .row {
   max-width: 1200px;
   margin: 0 auto; }
@@ -151,8 +156,11 @@ a:hover {
   color: #2980b9; }
 
 button {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
+/* Grid */
 .row-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +194,7 @@ button {
     .span-1-of-3 {
       width: 97%; } }
 
+/* Header Section */
 header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 15, 0.8)), to(rgba(0, 0, 15, 0.8))), url(/assets/img/hero-image.jpg);
   background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(/assets/img/hero-image.jpg);
@@ -265,6 +274,7 @@ header {
     text-align: center;
     padding-bottom: 40px; }
 
+/* Bio Section */
 .section-bio .bio-wrap {
   max-width: 300px;
   margin: 0 auto; }
@@ -298,6 +308,7 @@ header {
       .section-bio .bio-wrap .bio-icons i:hover {
         color: #131313; }
 
+/* Skills Section */
 .section-skills {
   background: #ececec; }
   .section-skills .skills-container {
@@ -321,6 +332,7 @@ header {
         font-size: .85rem;
         letter-spacing: 1; } }
 
+/* Portfolio Section */
 .portfolio-img-box {
   background: #131313;
   padding: 5px;
@@ -357,6 +369,7 @@ header {
     -webkit-transition: opacity 0.3s linear;
     transition: opacity 0.3s linear; }
 
+/* Contact Section */
 .section-contact {
   background: #ececec; }
   .section-contact .form-container {
@@ -399,6 +412,7 @@ header {
         background-color: #1c6391;
         cursor: pointer; }
 
+/* Footer Section */
 footer {
   background: #04081A;
   font-size: 0.7rem;
