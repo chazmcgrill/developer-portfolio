@@ -375,6 +375,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/js\/functions-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/functions-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/functions.js": {
 		"ft": 64,
 		"ma": 0,

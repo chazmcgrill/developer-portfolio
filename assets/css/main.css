@@ -103,6 +103,11 @@ html {
 .long-copy, section p, h3, form input, textarea {
   font-family: "Slabo 27px", serif; }
 
+li, i {
+  cursor: pointer; }
+  li:hover, i:hover {
+    color: #2980b9; }
+
 /* Reusables */
 .row {
   max-width: 1200px;
@@ -263,6 +268,8 @@ header {
     display: inline-block;
     font-size: 0.9rem;
     margin-left: 15px; }
+    header .main-nav li:hover {
+      color: #2980b9; }
     @media (max-width: 768px) {
       header .main-nav li {
         display: none; } }
@@ -419,7 +426,7 @@ footer {
   height: 150px; }
   footer .row {
     padding: 0 20px; }
-  footer p, footer i, footer a {
+  footer p, footer i, footer li {
     color: #665f66; }
   footer p {
     text-align: center; }
@@ -465,8 +472,6 @@ footer {
           padding: 20px 0; } }
       footer .footer-container .footer-icons i {
         font-size: 16px; }
-        footer .footer-container .footer-icons i:hover {
-          color: #2980b9; }
         @media (max-width: 768px) {
           footer .footer-container .footer-icons i {
             font-size: 21px; } }
