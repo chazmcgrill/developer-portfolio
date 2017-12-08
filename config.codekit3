@@ -44,29 +44,16 @@
 		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
 		"oF": 0
 		},
-	"\/assets\/css\/1-tools\/animate-condensed.scss": {
+	"\/assets\/css\/1-tools\/animation.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
-		"ft": 4,
+		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/animate-condensed.css",
+		"oAP": "\/assets\/css\/1-tools\/animation.css",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/css\/1-tools\/animate.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/animate.css",
-		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -305,64 +292,124 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/portfolio-analogclock.jpg": {
+		"ft": 16384,
+		"iS": 85172,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-analogclock.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/portfolio-calc.jpg": {
 		"ft": 16384,
-		"iS": 41648,
+		"iS": 123696,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-calc.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-hurricanecharlie.jpg": {
 		"ft": 16384,
-		"iS": 850590,
+		"iS": 541802,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-hurricanecharlie.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/portfolio-leaderboard.jpg": {
+		"ft": 16384,
+		"iS": 147769,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-leaderboard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/portfolio-life.jpg": {
+		"ft": 16384,
+		"iS": 342181,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-life.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/portfolio-pizzabox.jpg": {
+		"ft": 16384,
+		"iS": 106329,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-pizzabox.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-pomodoro.jpg": {
 		"ft": 16384,
-		"iS": 46078,
+		"iS": 153073,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-pomodoro.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-quote.jpg": {
 		"ft": 16384,
-		"iS": 50680,
+		"iS": 137697,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-quote.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/portfolio-simon.jpg": {
+		"ft": 16384,
+		"iS": 154628,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-simon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/portfolio-tictactoe.jpg": {
+		"ft": 16384,
+		"iS": 102841,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-tictactoe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-twitch.jpg": {
 		"ft": 16384,
-		"iS": 56475,
+		"iS": 135235,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-twitch.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-weather.jpg": {
 		"ft": 16384,
-		"iS": 33906,
+		"iS": 113242,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-weather.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/profile-pic.jpg": {
