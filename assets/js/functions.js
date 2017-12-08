@@ -1,4 +1,3 @@
-
 // HEADER HEIGHT SETUP
 
 var body = document.getElementsByTagName('body')[0];
@@ -25,12 +24,12 @@ function scrollTo(element, to, duration) {
   if (duration <= 0) {
     return;
   }
-  var difference = to - element.scrollTop;
+  var difference = to - window.scrollY;
   var perTick = difference / duration * 10;
 
   setTimeout(function() {
-    element.scrollTop = element.scrollTop + perTick;
-    if (element.scrollTop === to) {
+    window.scroll(0, window.scrollY + perTick);
+    if (window.scrollY === to) {
       return;
     }
     scrollTo(element, to, duration - 10);
@@ -40,36 +39,23 @@ function scrollTo(element, to, duration) {
 // Function that calls scroll to function with the corresponding id;
 function navClick(event) {
   var id = event.target.innerText ? event.target.innerText.toLowerCase() : 'bio';
-  var elmnt = document.getElementById(id);
-  scrollTo(document.documentElement, elmnt.offsetTop, 500);
+  var section = document.getElementById(id);
+  scrollTo(document.body, section.offsetTop, 500);
 }
 
 // Click events for navigation
-let elements = document.querySelectorAll('.main-nav li, .footer-nav li');
-for (let element of elements) {
-  element.addEventListener('click', navClick, false);
+var elements = document.querySelectorAll('.main-nav li, .footer-nav li');
+for (var i = 0; i < elements.length; i++) {
+  elements[i].addEventListener('click', navClick, false);
 }
 
 // Click event for down arrow
-let arrow = document.querySelector('.arrow');
+var arrow = document.querySelector('.arrow');
 arrow.addEventListener('click', navClick, false);
 
 
+// FLASHING ARROW
 
-// Flashing header direction arrow
-
-//   // arrow animation timer
-//   var val = 'animated flash',
-//       arrow = $('.arrow'),
-//       count = 0;
-//
-//   setInterval(function animTimer() {
-//
-//     if (arrow.hasClass(val)) {
-//       arrow.removeClass(val);
-//     } else {
-//       arrow.addClass(val);
-//     }
-//
-//     count++;
-//   }, 3000);
+setInterval(function() {
+  arrow.classList.toggle('flash');
+}, 3000);

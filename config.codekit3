@@ -389,20 +389,10 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/assets\/js\/functions-min.js",
 		"oF": 1,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/assets\/js\/jquery-3.2.1.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/assets\/js\/jquery-3.2.1.min-min.js",
-		"oF": 0,
-		"sC": 1,
+		"sC": 3,
 		"tS": 0
 		},
 	"\/build\/.gitignore": {
