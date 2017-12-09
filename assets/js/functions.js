@@ -10,9 +10,9 @@ function setHeaderHeight() {
 }
 
 // on window resize height function is called.
-window.addEventListener('resize', function() {
-  setHeaderHeight();
-});
+// window.addEventListener('resize', function() {
+//   setHeaderHeight();
+// });
 
 setHeaderHeight();
 
@@ -37,8 +37,8 @@ function scrollTo(element, to, duration) {
 }
 
 // Function that calls scroll to function with the corresponding id;
-function navClick(event) {
-  var id = event.target.innerText ? event.target.innerText.toLowerCase() : 'bio';
+function navClick(id) {
+  var id = id ? id.toLowerCase() : 'bio';
   var section = document.getElementById(id);
   scrollTo(document.body, section.offsetTop, 500);
 }
@@ -46,12 +46,16 @@ function navClick(event) {
 // Click events for navigation
 var elements = document.querySelectorAll('.main-nav li, .footer-nav li');
 for (var i = 0; i < elements.length; i++) {
-  elements[i].addEventListener('click', navClick, false);
+  elements[i].addEventListener('click', function(event) {
+    navClick(event.target.innerText);
+  }, false);
 }
 
 // Click event for down arrow
 var arrow = document.querySelector('.arrow');
-arrow.addEventListener('click', navClick, false);
+arrow.addEventListener('click', function(event) {
+  navClick(event.target.id);
+}, false);
 
 
 // FLASHING ARROW
