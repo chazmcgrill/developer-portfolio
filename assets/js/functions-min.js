@@ -64,4 +64,33 @@ setInterval(function() {
   arrow.classList.toggle('flash');
 }, 3000);
 
+// MODAL CONTROLS
+
+// show modal
+var portfolio = document.querySelectorAll('.portfolio-item-box');
+var modal = document.querySelector('.modal-bg');
+
+for (var i = 0; i < portfolio.length; i++) {
+  portfolio[i].addEventListener('click', function() {
+    modal.classList.remove('hidden');
+    body.classList.add('modal-open');
+  });
+}
+
+// close modal via button
+var modalClose = document.getElementsByClassName('close-button')[0];
+
+modalClose.addEventListener('click', function() {
+  modal.classList.add('hidden');
+  body.classList.remove('modal-open');
+});
+
+// close modal by clicking outside modal
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.classList.add('hidden');
+    body.classList.remove('modal-open');
+  }
+});
+
 

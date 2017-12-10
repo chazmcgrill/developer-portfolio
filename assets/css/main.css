@@ -387,6 +387,52 @@ header {
     -webkit-transition: opacity 0.3s linear;
     transition: opacity 0.3s linear; }
 
+.modal-bg {
+  height: 100%;
+  width: 100%;
+  background: rgba(19, 19, 19, 0.8);
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .modal-bg .modal-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .modal-bg h4 {
+    color: #2980b9;
+    font-size: 25px; }
+  .modal-bg .close-button {
+    color: #bdbdbd;
+    font-size: 40px; }
+  .modal-bg .modal-content {
+    padding: 10px 50px 40px;
+    margin: 5% auto;
+    width: 80%;
+    background: #ffffff;
+    border-radius: 3px; }
+    .modal-bg .modal-content img {
+      max-width: 100%; }
+    .modal-bg .modal-content p {
+      margin: 10px 0; }
+    .modal-bg .modal-content a {
+      color: #2980b9;
+      display: block; }
+
+.hidden {
+  display: none; }
+
+.modal-open {
+  overflow: hidden;
+  position: fixed; }
+
 /* Contact Section */
 .section-contact {
   background: #ececec; }
