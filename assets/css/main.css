@@ -398,29 +398,18 @@ header {
   top: 0;
   left: 0;
   z-index: 1; }
-  .modal-bg .modal-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .modal-bg h4 {
-    color: #2980b9;
-    font-size: 25px; }
-  .modal-bg .close-button {
-    color: #bdbdbd;
-    font-size: 40px;
-    cursor: pointer; }
   .modal-bg .modal-content {
+    position: relative;
     padding: 10px 50px 40px;
     margin: 5% auto;
     width: 80%;
     background: #ffffff;
-    border-radius: 3px; }
+    border-radius: 3px;
+    -webkit-animation: modalopen 1s;
+            animation: modalopen 1s; }
+    .modal-bg .modal-content h4 {
+      color: #2980b9;
+      font-size: 25px; }
     .modal-bg .modal-content img {
       max-width: 100%; }
     .modal-bg .modal-content p {
@@ -428,12 +417,34 @@ header {
     .modal-bg .modal-content a {
       color: #2980b9;
       display: block; }
+  .modal-bg .close-button {
+    color: #bdbdbd;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px; }
 
 .hidden {
   display: none; }
 
 .modal-open {
   overflow: hidden; }
+
+.filtered {
+  display: none; }
+
+@-webkit-keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /* Contact Section */
 .section-contact {

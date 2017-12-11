@@ -10,9 +10,9 @@ function setHeaderHeight() {
 }
 
 // on window resize height function is called.
-// window.addEventListener('resize', function() {
-//   setHeaderHeight();
-// });
+window.addEventListener('resize', function() {
+  setHeaderHeight();
+});
 
 setHeaderHeight();
 
@@ -21,30 +21,33 @@ setHeaderHeight();
 
 // Scroll function that animates the move to each section
 function scrollTo(element, to, duration) {
+  console.log(duration);
   if (duration <= 0) {
     return;
   }
   var difference = to - window.scrollY;
   var perTick = difference / duration * 10;
 
-  setTimeout(function() {
-    window.scroll(0, window.scrollY + perTick);
-    if (window.scrollY === to) {
-      return;
-    }
-    scrollTo(element, to, duration - 10);
-  }, 10);
+  if (perTick) {
+    setTimeout(function() {
+      window.scroll(0, window.scrollY + perTick);
+      if (window.scrollY === to) {
+        return;
+      }
+      scrollTo(element, to, duration - 10);
+    }, 10);
+  }
 }
 
 // Function that calls scroll to function with the corresponding id;
-function navClick(id) {
-  var id = id ? id.toLowerCase() : 'bio';
-  var section = document.getElementById(id);
+function navClick(navId) {
+  navId = navId ? navId.toLowerCase() : 'bio';
+  var section = document.getElementById(navId);
   scrollTo(document.body, section.offsetTop, 500);
 }
 
 // Click events for navigation
-var elements = document.querySelectorAll('.main-nav li, .footer-nav li');
+var elements = document.querySelectorAll('li');
 for (var i = 0; i < elements.length; i++) {
   elements[i].addEventListener('click', function(event) {
     navClick(event.target.innerText);
@@ -64,6 +67,7 @@ setInterval(function() {
   arrow.classList.toggle('flash');
 }, 3000);
 
+
 // MODAL CONTROLS
 
 // show modal
@@ -71,7 +75,8 @@ var portfolio = document.querySelectorAll('.portfolio-item-box');
 var modal = document.querySelector('.modal-bg');
 
 for (var i = 0; i < portfolio.length; i++) {
-  portfolio[i].addEventListener('click', function() {
+  portfolio[i].addEventListener('click', function(event) {
+    modalFilter(event.target.name);
     modal.classList.remove('hidden');
     body.classList.add('modal-open');
   });
@@ -92,5 +97,18 @@ window.addEventListener('click', function(event) {
     body.classList.remove('modal-open');
   }
 });
+
+// show selected modal item
+var modalItem = document.querySelectorAll('.portfolio-item');
+
+function modalFilter(modalId) {
+  for (var j = 0; j < modalItem.length; j++) {
+    if (modalItem[j].id === modalId) {
+      modalItem[j].classList.remove('filtered');
+    } else {
+      modalItem[j].classList.add('filtered');
+    }
+  }
+}
 
 

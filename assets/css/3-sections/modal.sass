@@ -8,27 +8,18 @@
   left: 0
   z-index: 1
 
-  .modal-title
-    display: flex
-    justify-content: space-between
-    align-items: center
-
-  h4
-    color: $main
-    font-size: 25px
-
-  .close-button
-    color: $greyicon
-    font-size: 40px
-    cursor: pointer
-
   .modal-content
+    position: relative
     padding: 10px 50px 40px
     margin: 5% auto
     width: 80%
     background: $white
     border-radius: 3px
+    animation: modalopen 1s
 
+    h4
+      color: $main
+      font-size: 25px
     img
       max-width: 100%
     p
@@ -37,8 +28,25 @@
       color: $main
       display: block
 
+  .close-button
+    color: $greyicon
+    font-size: 40px
+    cursor: pointer
+    position: absolute
+    top: 0
+    right: 10px
+
 .hidden
   display: none
 
 .modal-open
   overflow: hidden
+
+.filtered
+  display: none
+
+@keyframes modalopen
+  from
+    opacity: 0
+  to
+    opacity: 1
