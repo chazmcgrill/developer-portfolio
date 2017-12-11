@@ -200,6 +200,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/css\/3-sections\/modal.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/3-sections\/modal.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/css\/3-sections\/portfolio.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -672,6 +685,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/includes\/header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/modal.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/includes\/modal.html",
 		"oF": 0,
 		"oS": 0
 		},

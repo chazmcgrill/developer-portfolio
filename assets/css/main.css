@@ -348,7 +348,8 @@ header {
     background: #131313;
     width: 100%;
     overflow: hidden;
-    margin: 2% 0; }
+    margin: 2% 0;
+    cursor: pointer; }
     .portfolio-img-grid .portfolio-item-box:hover h3 {
       opacity: 1; }
     @media screen and (min-width: 480px) {
@@ -387,6 +388,7 @@ header {
     -webkit-transition: opacity 0.3s linear;
     transition: opacity 0.3s linear; }
 
+/* Portfolio Modal */
 .modal-bg {
   height: 100%;
   width: 100%;
@@ -411,7 +413,8 @@ header {
     font-size: 25px; }
   .modal-bg .close-button {
     color: #bdbdbd;
-    font-size: 40px; }
+    font-size: 40px;
+    cursor: pointer; }
   .modal-bg .modal-content {
     padding: 10px 50px 40px;
     margin: 5% auto;
@@ -430,8 +433,7 @@ header {
   display: none; }
 
 .modal-open {
-  overflow: hidden;
-  position: fixed; }
+  overflow: hidden; }
 
 /* Contact Section */
 .section-contact {

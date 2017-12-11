@@ -12,6 +12,7 @@
     width: 100%
     overflow: hidden
     margin: 2% 0
+    cursor: pointer
 
     &:hover h3
       opacity: 1
@@ -46,48 +47,3 @@
     opacity: 0
     pointer-events: none
     transition: opacity 0.3s linear
-
-.modal-bg
-  height: 100%
-  width: 100%
-  background: rgba($black, 0.8)
-  position: fixed
-  overflow: auto
-  top: 0
-  left: 0
-  z-index: 1
-
-  .modal-title
-    display: flex
-    justify-content: space-between
-    align-items: center
-
-  h4
-    color: $main
-    font-size: 25px
-
-  .close-button
-    color: $greyicon
-    font-size: 40px
-
-  .modal-content
-    padding: 10px 50px 40px
-    margin: 5% auto
-    width: 80%
-    background: $white
-    border-radius: 3px
-
-    img
-      max-width: 100%
-    p
-      margin: 10px 0
-    a
-      color: $main
-      display: block
-
-.hidden
-  display: none
-
-.modal-open
-  overflow: hidden
-  position: fixed
