@@ -21,7 +21,6 @@ setHeaderHeight();
 
 // Scroll function that animates the move to each section
 function scrollTo(element, to, duration) {
-  console.log(duration);
   if (duration <= 0) {
     return;
   }
@@ -100,13 +99,40 @@ window.addEventListener('click', function(event) {
 
 // show selected modal item
 var modalItem = document.querySelectorAll('.portfolio-item');
+var currentModalId;
 
 function modalFilter(modalId) {
-  for (var j = 0; j < modalItem.length; j++) {
-    if (modalItem[j].id === modalId) {
-      modalItem[j].classList.remove('filtered');
+  for (var i = 0; i < modalItem.length; i++) {
+    if (modalItem[i].id === modalId) {
+      currentModalId = i;
+      modalItem[i].classList.remove('filtered');
     } else {
-      modalItem[j].classList.add('filtered');
+      modalItem[i].classList.add('filtered');
     }
+  }
+  modalButtonDisplay(currentModalId, modalItem.length - 1)
+}
+
+// modal previous and next buttons
+var prevModal = document.querySelector('.modal-prev');
+var nextModal = document.querySelector('.modal-next');
+
+prevModal.addEventListener('click', function() {
+  modalFilter("pf" + (currentModalId - 1));
+}, false);
+
+nextModal.addEventListener('click', function() {
+  modalFilter("pf" + (currentModalId + 1));
+}, false);
+
+// remove prev or next at limit of items
+function modalButtonDisplay(id, max) {
+  prevModal.style.visibility = "visible";
+  nextModal.style.visibility = "visible";
+
+  if (id === 0) {
+    prevModal.style.visibility = "hidden";
+  } else if (id === max) {
+    nextModal.style.visibility = "hidden";
   }
 }

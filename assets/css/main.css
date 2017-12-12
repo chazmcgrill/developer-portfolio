@@ -398,32 +398,63 @@ header {
   top: 0;
   left: 0;
   z-index: 1; }
-  .modal-bg .modal-content {
-    position: relative;
-    padding: 10px 50px 40px;
-    margin: 5% auto;
-    width: 80%;
-    background: #ffffff;
-    border-radius: 3px;
-    -webkit-animation: modalopen 1s;
-            animation: modalopen 1s; }
-    .modal-bg .modal-content h4 {
-      color: #2980b9;
-      font-size: 25px; }
-    .modal-bg .modal-content img {
-      max-width: 100%; }
-    .modal-bg .modal-content p {
-      margin: 10px 0; }
-    .modal-bg .modal-content a {
-      color: #2980b9;
-      display: block; }
-  .modal-bg .close-button {
-    color: #bdbdbd;
+
+.modal {
+  background: #ffffff;
+  width: 80%;
+  margin: 5% auto; }
+  .modal h4 {
+    text-transform: uppercase; }
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ececec;
+  padding: 1px 10px; }
+  .modal-header .close-button {
     font-size: 40px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 10px; }
+    cursor: pointer; }
+  .modal-header h4 {
+    color: #bdbdbd; }
+
+.modal-content {
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-animation: modalopen 1s;
+          animation: modalopen 1s; }
+  .modal-content img {
+    margin: 20px;
+    border-radius: 20%;
+    max-width: 60%; }
+  .modal-content p {
+    text-align: left;
+    margin: 10px 0;
+    font-size: .8rem;
+    color: #bdbdbd; }
+  .modal-content a {
+    text-align: left;
+    font-size: .8rem;
+    color: #2980b9;
+    display: block; }
+
+.modal-footer {
+  border-top: 1px solid grey;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .hidden {
   display: none; }
@@ -433,6 +464,19 @@ header {
 
 .filtered {
   display: none; }
+
+button {
+  font-size: 0.9em;
+  background-color: #2980b9;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 2px;
+  padding: 5px 12px;
+  margin: 1px;
+  cursor: pointer;
+  outline: none; }
+  button:hover {
+    background-color: #20638f; }
 
 @-webkit-keyframes modalopen {
   from {
