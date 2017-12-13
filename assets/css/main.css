@@ -93,9 +93,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+          box-sizing: border-box; }
 
 html {
   font-family: "Roboto", sans-serif;
@@ -315,25 +313,53 @@ header {
 .section-skills {
   background: #ececec; }
   .section-skills .skills-container {
-    margin-bottom: 35px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px 0 35px; }
+    @media screen and (min-width: 780px) {
+      .section-skills .skills-container {
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 30px; } }
   .section-skills .skills-box {
+    text-overflow: clip;
+    max-width: 400px;
+    text-align: center;
     padding: 40px;
+    margin: 0 20px 20px;
     background-color: #ffffff;
     border-radius: 5px;
     -webkit-box-shadow: 2px 2px 10px 0px #dadada;
             box-shadow: 2px 2px 10px 0px #dadada; }
-  .section-skills .skill-titles {
-    text-align: center;
-    padding: 15px 0; }
-    .section-skills .skill-titles i {
-      font-size: 300%;
-      padding-bottom: 15px; }
-  .section-skills p {
-    text-align: center; }
-    @media (max-width: 768px) {
-      .section-skills p {
-        font-size: .85rem;
-        letter-spacing: 1; } }
+    .section-skills .skills-box i {
+      cursor: default;
+      font-size: 3em; }
+      .section-skills .skills-box i:hover {
+        color: inherit; }
+    .section-skills .skills-box h3 {
+      color: #2980b9;
+      margin: 10px 0;
+      font-weight: bold; }
+    @media screen and (min-width: 780px) {
+      .section-skills .skills-box {
+        max-width: 32%;
+        margin: 0; } }
 
 /* Portfolio Section */
 .section-portfolio {
