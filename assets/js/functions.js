@@ -99,7 +99,7 @@ window.addEventListener('click', function(event) {
 
 // show selected modal item
 var modalItem = document.querySelectorAll('.portfolio-item');
-var currentModalId;
+var currentModalId = 0;
 
 function modalFilter(modalId) {
   for (var i = 0; i < modalItem.length; i++) {

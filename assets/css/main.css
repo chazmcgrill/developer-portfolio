@@ -392,7 +392,7 @@ header {
 .modal-bg {
   height: 100%;
   width: 100%;
-  background: rgba(19, 19, 19, 0.8);
+  background: rgba(19, 19, 19, 0.9);
   position: fixed;
   overflow: auto;
   top: 0;
@@ -401,8 +401,12 @@ header {
 
 .modal {
   background: #ffffff;
-  width: 80%;
-  margin: 5% auto; }
+  max-width: 80%;
+  margin: 5% auto;
+  border-radius: 3px; }
+  @media screen and (min-width: 480px) {
+    .modal {
+      max-width: 300px; } }
   .modal h4 {
     text-transform: uppercase; }
 
@@ -419,6 +423,7 @@ header {
   background: #ececec;
   padding: 1px 10px; }
   .modal-header .close-button {
+    color: #614b63;
     font-size: 40px;
     cursor: pointer; }
   .modal-header h4 {
@@ -427,24 +432,22 @@ header {
 .modal-content {
   position: relative;
   padding: 20px 30px;
-  border-radius: 3px;
   text-align: center;
   -webkit-animation: modalopen 1s;
           animation: modalopen 1s; }
   .modal-content img {
-    margin: 20px;
-    border-radius: 20%;
-    max-width: 60%; }
+    margin: 20px 20px 10px;
+    border-radius: 100%;
+    max-width: 150px; }
   .modal-content p {
-    text-align: left;
-    margin: 10px 0;
-    font-size: .8rem;
+    margin: 10px 0 20px;
+    font-size: .9rem;
     color: #bdbdbd; }
   .modal-content a {
-    text-align: left;
-    font-size: .8rem;
+    font-size: .9rem;
     color: #2980b9;
-    display: block; }
+    display: block;
+    margin-bottom: 5px; }
 
 .modal-footer {
   border-top: 1px solid grey;
@@ -466,17 +469,22 @@ header {
   display: none; }
 
 button {
-  font-size: 0.9em;
+  font-size: 1.2em;
   background-color: #2980b9;
   color: #ffffff;
   border-style: none;
-  border-radius: 2px;
-  padding: 5px 12px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
   margin: 1px;
   cursor: pointer;
   outline: none; }
   button:hover {
     background-color: #20638f; }
+  button i {
+    pointer-events: none; }
 
 @-webkit-keyframes modalopen {
   from {
