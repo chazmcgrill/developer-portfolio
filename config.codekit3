@@ -70,32 +70,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/css\/1-tools\/mixins.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/css\/1-tools\/normalize.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/normalize.css",
-		"oF": 1,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/assets\/css\/1-tools\/variables.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -105,19 +79,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/1-tools\/variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/css\/2-basics\/grid.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/2-basics\/grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

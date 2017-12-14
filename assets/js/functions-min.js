@@ -11,7 +11,9 @@ function setHeaderHeight() {
 
 // on window resize height function is called.
 window.addEventListener('resize', function() {
-  setHeaderHeight();
+  if (window,innerHeight > 480) {
+    setHeaderHeight();
+  }
 });
 
 setHeaderHeight();

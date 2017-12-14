@@ -4,7 +4,6 @@ header
     size: cover
     position: center
     attachment: fixed
-  // height: 100vh js fallback?
   color: $white
   display: flex
   flex-direction: column
@@ -13,19 +12,13 @@ header
   h1
     @media (max-width: 480px)
       font-size: 2.2rem
-
     @media (max-width: 380px)
       font-size: 2rem
-
+  hr
+    max-width: 60%
   h3
     @media (max-width: 380px)
       font-size: 1.2rem
-
-  i
-    border: solid $arrow
-    border-width: 0 4px 4px 0
-    display: inline-block
-    padding: 12px
 
   .nav-container
     padding: 40px 20px 0
@@ -44,7 +37,6 @@ header
 
       @media (max-width: 768px)
         height: 58px
-
       @media (max-width: 480px)
         height: 65px
 
@@ -63,9 +55,14 @@ header
 
       &:hover
         color: $main
-
       @media (max-width: 768px)
         display: none
+
+  i
+    border: solid $arrow
+    border-width: 0 4px 4px 0
+    display: inline-block
+    padding: 12px
 
   .arrow
     transform: rotate(45deg)

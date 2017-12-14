@@ -87,7 +87,6 @@
   -webkit-animation-name: flash;
           animation-name: flash; }
 
-/* Mixins */
 /* Main Setup */
 * {
   margin: 0;
@@ -165,34 +164,6 @@ button {
      -moz-appearance: none;
           appearance: none; }
 
-/* Grid */
-.row-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-right: 1.4%; }
-  @media (max-width: 760px) {
-    .row-grid {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      margin-right: 3%; } }
-
-.col {
-  margin: 0.7% 0 0.7% 1.4%; }
-  @media (max-width: 760px) {
-    .col {
-      margin: 1% 0 1% 3%; } }
-
-.span-1-of-3 {
-  width: 32.26%; }
-  @media (max-width: 760px) {
-    .span-1-of-3 {
-      width: 97%; } }
-
 /* Header Section */
 header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 15, 0.8)), to(rgba(0, 0, 15, 0.8))), url(/assets/img/hero-image.jpg);
@@ -217,14 +188,11 @@ header {
   @media (max-width: 380px) {
     header h1 {
       font-size: 2rem; } }
+  header hr {
+    max-width: 60%; }
   @media (max-width: 380px) {
     header h3 {
       font-size: 1.2rem; } }
-  header i {
-    border: solid #614b63;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 12px; }
   header .nav-container {
     padding: 40px 20px 0;
     display: -webkit-box;
@@ -267,6 +235,11 @@ header {
     @media (max-width: 768px) {
       header .main-nav li {
         display: none; } }
+  header i {
+    border: solid #614b63;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 12px; }
   header .arrow {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
@@ -305,7 +278,7 @@ header {
             justify-content: space-between; }
     .section-bio .bio-wrap .bio-icons i {
       color: #bdbdbd;
-      font-size: 110%; }
+      font-size: 1.3rem; }
       .section-bio .bio-wrap .bio-icons i:hover {
         color: #131313; }
 
