@@ -2,6 +2,11 @@
 "AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
 "buildSteps": [
 	{
+		"name": "New \"Process Certain Files\" Step",
+		"stepType": 0,
+		"uuidString": "B1A7E20E-FD2A-4A29-8934-8B619E08460F"
+		},
+	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
 		"uuidString": "37545523-0DCC-4D33-9AA2-9BA33BDF5A7E"
@@ -13,35 +18,35 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.gitignore",
+		"oAP": "\/build\/.gitignore",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
 		"oF": 0
 		},
 	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
+		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
 		"oF": 0
 		},
 	"\/assets\/css\/1-tools\/animation.sass": {
@@ -52,7 +57,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/animation.css",
+		"oAP": "\/build\/assets\/css\/1-tools\/animation.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -65,7 +70,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/fonts.css",
+		"oAP": "\/build\/assets\/css\/1-tools\/fonts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -78,7 +83,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/1-tools\/variables.css",
+		"oAP": "\/build\/assets\/css\/1-tools\/variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -91,7 +96,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/2-basics\/main-setup.css",
+		"oAP": "\/build\/assets\/css\/2-basics\/main-setup.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -104,7 +109,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/2-basics\/reusables.css",
+		"oAP": "\/build\/assets\/css\/2-basics\/reusables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -117,7 +122,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/bio.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/bio.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -130,7 +135,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/contact.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/contact.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -143,7 +148,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/footer.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -156,7 +161,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/header.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -169,7 +174,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/modal.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/modal.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -182,7 +187,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/portfolio.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/portfolio.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -195,7 +200,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/css\/3-sections\/skills.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/skills.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -205,8 +210,8 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/css\/main-min.css",
+		"oA": 1,
+		"oAP": "\/build\/assets\/css\/main-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -218,7 +223,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/main.css",
+		"oAP": "\/build\/assets\/css\/main.css",
 		"oF": 3,
 		"oS": 0,
 		"uL": 1
@@ -227,10 +232,10 @@
 		"ft": 32768,
 		"iS": 815,
 		"oA": 0,
-		"oAP": "\/assets\/img\/favicon-16x16.png",
+		"oAP": "\/build\/assets\/img\/favicon-16x16.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -238,10 +243,10 @@
 		"ft": 32768,
 		"iS": 1238,
 		"oA": 0,
-		"oAP": "\/assets\/img\/favicon-32x32.png",
+		"oAP": "\/build\/assets\/img\/favicon-32x32.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -249,7 +254,7 @@
 		"ft": 16384,
 		"iS": 596927,
 		"oA": 0,
-		"oAP": "\/assets\/img\/hero-image.jpg",
+		"oAP": "\/build\/assets\/img\/hero-image.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -259,9 +264,9 @@
 		"ft": 32768,
 		"iS": 15401,
 		"oA": 0,
-		"oAP": "\/assets\/img\/logo.png",
+		"oAP": "\/build\/assets\/img\/logo.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -270,127 +275,127 @@
 		"ft": 16384,
 		"iS": 85172,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-analogclock.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-analogclock.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-calc.jpg": {
 		"ft": 16384,
 		"iS": 123696,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-calc.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-calc.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-hurricanecharlie.jpg": {
 		"ft": 16384,
 		"iS": 541802,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-hurricanecharlie.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-hurricanecharlie.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-leaderboard.jpg": {
 		"ft": 16384,
 		"iS": 147769,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-leaderboard.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-leaderboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-life.jpg": {
 		"ft": 16384,
 		"iS": 342181,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-life.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-life.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-pizzabox.jpg": {
 		"ft": 16384,
 		"iS": 106329,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-pizzabox.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-pizzabox.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-pomodoro.jpg": {
 		"ft": 16384,
 		"iS": 153073,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-pomodoro.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-pomodoro.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-quote.jpg": {
 		"ft": 16384,
 		"iS": 137697,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-quote.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-quote.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-simon.jpg": {
 		"ft": 16384,
 		"iS": 154628,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-simon.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-simon.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-tictactoe.jpg": {
 		"ft": 16384,
 		"iS": 102841,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-tictactoe.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-tictactoe.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-twitch.jpg": {
 		"ft": 16384,
 		"iS": 135235,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-twitch.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-twitch.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-weather.jpg": {
 		"ft": 16384,
 		"iS": 113242,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-weather.jpg",
+		"oAP": "\/build\/assets\/img\/portfolio-weather.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/img\/profile-pic.jpg": {
 		"ft": 16384,
 		"iS": 595736,
 		"oA": 0,
-		"oAP": "\/assets\/img\/profile-pic.jpg",
+		"oAP": "\/build\/assets\/img\/profile-pic.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -400,8 +405,8 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/functions-min-min.js",
+		"oA": 1,
+		"oAP": "\/build\/assets\/js\/functions-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -409,208 +414,17 @@
 	"\/assets\/js\/functions.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/assets\/js\/functions-min.js",
+		"oAP": "\/build\/assets\/js\/functions-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.gitignore",
-		"oF": 0
-		},
-	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
-		"oF": 0
-		},
-	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
-		"oF": 0
-		},
-	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
-		"oF": 0
-		},
-	"\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
-		"oF": 0
-		},
-	"\/build\/assets\/css\/1-tools\/animate.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/css\/1-tools\/animate-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/assets\/css\/1-tools\/normalize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/css\/1-tools\/normalize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/assets\/css\/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/assets\/css\/main-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/assets\/img\/hero-image.jpg": {
-		"ft": 16384,
-		"iS": 593858,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/hero-image.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/logo.png": {
-		"ft": 32768,
-		"iS": 9191,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/assets\/img\/portfolio-calc.jpg": {
-		"ft": 16384,
-		"iS": 33557,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-calc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/portfolio-hurricanecharlie.jpg": {
-		"ft": 16384,
-		"iS": 760133,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-hurricanecharlie.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/portfolio-pomodoro.jpg": {
-		"ft": 16384,
-		"iS": 41332,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-pomodoro.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/portfolio-quote.jpg": {
-		"ft": 16384,
-		"iS": 42967,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-quote.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/portfolio-twitch.jpg": {
-		"ft": 16384,
-		"iS": 47300,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-twitch.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/portfolio-weather.jpg": {
-		"ft": 16384,
-		"iS": 27632,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/portfolio-weather.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/img\/profile-pic.jpg": {
-		"ft": 16384,
-		"iS": 558023,
-		"oA": 0,
-		"oAP": "\/build\/assets\/img\/profile-pic.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/assets\/js\/functions-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/assets\/js\/functions-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/build\/assets\/js\/jquery-3.2.1.min-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/assets\/js\/jquery-3.2.1.min-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/build\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/index.html",
-		"oF": 0
-		},
-	"\/build\/mailer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/mailer.php",
-		"oF": 0
-		},
-	"\/build\/README.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/README.html",
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
 		"oF": 0
 		},
 	"\/includes\/bio.pug": {
@@ -618,7 +432,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/bio.html",
+		"oAP": "\/build\/includes\/bio.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -627,7 +441,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/contact.html",
+		"oAP": "\/build\/includes\/contact.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -636,7 +450,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/footer.html",
+		"oAP": "\/build\/includes\/footer.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -645,7 +459,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/header.html",
+		"oAP": "\/build\/includes\/header.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -654,7 +468,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/modal.html",
+		"oAP": "\/build\/includes\/modal.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -663,7 +477,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/portfolio.html",
+		"oAP": "\/build\/includes\/portfolio.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -672,7 +486,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/includes\/skills.html",
+		"oAP": "\/build\/includes\/skills.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -680,7 +494,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
-		"oAP": "\/index.html",
+		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
 	"\/index.pug": {
@@ -688,7 +502,7 @@
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/index.html",
+		"oAP": "\/build\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -696,7 +510,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/mailer.php",
+		"oAP": "\/build\/mailer.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -708,7 +522,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 0,
-		"oAP": "\/README.html",
+		"oAP": "\/build\/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -727,7 +541,7 @@
 	"displayValue": "developer-portfolio",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-fry",
-	"lastBuiltDate": 526563152
+	"lastBuiltDate": 534943805
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -982,7 +796,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"buildFolderActive": 0,
+	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
@@ -2874,7 +2688,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/build"
 	},
 "settingsFileVersion": "3"
 }
