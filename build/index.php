@@ -10,15 +10,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-91430542-2', 'auto');
-      ga('send', 'pageview');
-    </script>
   </head>
   <body>
     <header>
@@ -48,7 +39,7 @@
         <h2>Bio</h2>
         <div class="bio-wrap"><img src="assets/img/profile-pic.jpg" alt="Charlie Taylor">
           <p class="bio-text"><strong>Hello,</strong> my name is Charlie. I'm A front-end web developer and graphic artist from Leeds. I love making well designed responsive websites and interactive applications.</p>
-          <div class="bio-icons"><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true"><i class="fa fa-free-code-camp"></i></a><a href="https://instagram.com/charlietcoder" aria-hidden="true"><i class="fa fa-instagram"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true"><i class="fa fa-linkedin"></i></a><a href="https://codepen.io/chazmcgrill/" aria-hidden="true"><i class="fa fa-codepen"></i></a></div>
+          <div class="bio-icons"><a href="https://codepen.io/chazmcgrill/" aria-hidden="true" target="_blank"><i class="fa fa-codepen"></i></a><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fa fa-free-code-camp"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://instagram.com/charlietcoder" aria-hidden="true" target="_blank"><i class="fa fa-instagram"></i></a></div>
         </div>
       </div>
     </section>
@@ -155,7 +146,7 @@
           </div>
           <div class="portfolio-item filtered" id="pf7">
             <h4>Simon Game</h4><img src="assets/img/portfolio-simon.jpg" alt="Simon Game">
-            <p>A javascript version of the 1970s memory skill game simon. Requires user to repeat a random sequence of lights and sound tones.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/dzvPgp/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/simongame">view on github</a>
+            <p>A javascript version of the 1970s memory skill game simon. Requires user to repeat a random sequence of lights and sound tones.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/dzvPgp/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/simon-game">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf8">
             <h4>TicTacToe</h4><img src="assets/img/portfolio-tictactoe.jpg" alt="TicTacToe">
@@ -212,11 +203,11 @@
             <li>Portfolio</li>
             <li>Contact</li>
           </ul>
-          <div class="footer-icons"><a href="https://www.freecodecamp.com/chazmcgrill"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a><a href="https://instagram.com/charlietcoder"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://github.com/chazmcgrill"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="https://codepen.io/chazmcgrill/"><i class="fa fa-codepen" aria-hidden="true"></i></a></div>
+          <div class="footer-icons"><a href="https://codepen.io/chazmcgrill/" aria-hidden="true" target="_blank"><i class="fa fa-codepen"></i></a><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fa fa-free-code-camp"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://instagram.com/charlietcoder" aria-hidden="true" target="_blank"><i class="fa fa-instagram"></i></a></div>
         </div>
         <p>&copy; 2017 Charlie Taylor All Rights Reserved</p>
       </div>
     </footer>
-    <script src="assets/js/functions-min.js"></script>
+    <script src="assets/js/functions.js"></script>
   </body>
 </html>

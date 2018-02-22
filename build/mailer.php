@@ -4,11 +4,11 @@
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $message = trim($_POST["message"]);
+    $message = strip_tags(trim($_POST["message"]));
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.charlietaylordev.com/index.php?success=-1#form");
+        header("Location: http://www.charlietaylorcoder.com/index.php?success=-1#form");
         exit;
     }
 
@@ -30,7 +30,7 @@
     mail($recipient, $subject, $email_content, $email_headers);
 
     // Redirect to the index.html page with success code
-    header("Location: http://www.charlietaylordev.com/index.php?success=1#form");
+    header("Location: http://www.charlietaylorcoder.com/index.php?success=1#form");
 
 ?>
 
