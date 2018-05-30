@@ -172,6 +172,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/css\/3-sections\/skills.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/assets\/css\/3-sections\/skills.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -402,6 +415,12 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/includes\/bio.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -462,6 +481,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/includes\/services.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/includes\/skills.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/includes\/skills.html",
 		"oF": 0,
 		"oS": 0
 		},
