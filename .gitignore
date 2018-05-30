@@ -40,4 +40,6 @@ Temporary Items
 .sass-cache/
 *.css.map
 
+config.codekit3
+
 # End of https://www.gitignore.io/api/osx,sass,codekit

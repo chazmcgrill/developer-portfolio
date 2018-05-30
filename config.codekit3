@@ -2,51 +2,18 @@
 "AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
 "buildSteps": [
 	{
-		"name": "New \"Process Certain Files\" Step",
-		"stepType": 0,
-		"uuidString": "B1A7E20E-FD2A-4A29-8934-8B619E08460F"
-		},
-	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "37545523-0DCC-4D33-9AA2-9BA33BDF5A7E"
+		"uuidString": "384D0A5B-5957-4F5B-9BFC-A39B93E58890"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/.gitignore",
-		"oF": 0
-		},
-	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/animate.sassc",
-		"oF": 0
-		},
-	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/grid.sassc",
-		"oF": 0
-		},
-	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/normalize.sassc",
-		"oF": 0
-		},
-	"\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.sass-cache\/993388fbba0de64e5a6f44eebc14eab96cd8acd2\/style.sassc",
 		"oF": 0
 		},
 	"\/assets\/css\/1-tools\/animation.sass": {
@@ -192,7 +159,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/css\/3-sections\/skills.sass": {
+	"\/assets\/css\/3-sections\/services.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -200,7 +167,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/assets\/css\/3-sections\/skills.css",
+		"oAP": "\/build\/assets\/css\/3-sections\/services.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -230,175 +197,189 @@
 		},
 	"\/assets\/img\/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 815,
+		"iS": 530,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/favicon-16x16.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/img\/favicon-32x32.png": {
 		"ft": 32768,
-		"iS": 1238,
+		"iS": 947,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/favicon-32x32.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/img\/hero-image.jpg": {
 		"ft": 16384,
-		"iS": 596927,
+		"iS": 593858,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/hero-image.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/logo.png": {
 		"ft": 32768,
-		"iS": 15401,
+		"iS": 9191,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/logo.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-analogclock.jpg": {
 		"ft": 16384,
-		"iS": 85172,
+		"iS": 43178,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-analogclock.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-calc.jpg": {
 		"ft": 16384,
-		"iS": 123696,
+		"iS": 71717,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-calc.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-hurricanecharlie.jpg": {
 		"ft": 16384,
-		"iS": 541802,
+		"iS": 439469,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-hurricanecharlie.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-leaderboard.jpg": {
 		"ft": 16384,
-		"iS": 147769,
+		"iS": 86519,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-leaderboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-life.jpg": {
 		"ft": 16384,
-		"iS": 342181,
+		"iS": 263201,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-life.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-pizzabox.jpg": {
 		"ft": 16384,
-		"iS": 106329,
+		"iS": 56463,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-pizzabox.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-pomodoro.jpg": {
 		"ft": 16384,
-		"iS": 153073,
+		"iS": 104569,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-pomodoro.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-quote.jpg": {
 		"ft": 16384,
-		"iS": 137697,
+		"iS": 88180,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-quote.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-simon.jpg": {
 		"ft": 16384,
-		"iS": 154628,
+		"iS": 100440,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-simon.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-tictactoe.jpg": {
 		"ft": 16384,
-		"iS": 102841,
+		"iS": 52978,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-tictactoe.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-twitch.jpg": {
 		"ft": 16384,
-		"iS": 135235,
+		"iS": 80530,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-twitch.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/portfolio-weather.jpg": {
 		"ft": 16384,
-		"iS": 113242,
+		"iS": 67355,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/portfolio-weather.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/img\/profile-pic.jpg": {
 		"ft": 16384,
-		"iS": 595736,
+		"iS": 558023,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/assets\/img\/profile-pic.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/js\/functions-min.js": {
@@ -415,17 +396,11 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/assets\/js\/functions-min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
 		},
 	"\/includes\/bio.pug": {
 		"cB": 0,
@@ -481,24 +456,24 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/includes\/skills.pug": {
+	"\/includes\/services.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/build\/includes\/skills.html",
+		"oAP": "\/build\/includes\/services.html",
 		"oF": 0,
 		"oS": 0
 		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
 	"\/index.pug": {
-		"cB": 0,
+		"cB": 1,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -541,6 +516,7 @@
 	"displayValue": "developer-portfolio",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-fry",
+	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 534943805
 	},
 "projectSettings": {
@@ -549,6 +525,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -1112,6 +1089,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -2339,6 +2320,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
