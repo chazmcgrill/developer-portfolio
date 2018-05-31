@@ -339,17 +339,16 @@ header {
   background: #2980b9; }
 
 .skills-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px; }
 
 .icon {
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(../img/sprite.svg); }
+  background-image: url(../img/sprite.svg);
+  zoom: 150%;
+  justify-self: center; }
 
 .icon-babel {
   width: 32px;
