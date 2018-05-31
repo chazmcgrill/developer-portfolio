@@ -276,10 +276,10 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .section-bio .bio-wrap .bio-icons i {
+    .section-bio .bio-wrap .bio-icons svg, .section-bio .bio-wrap .bio-icons i {
       color: #bdbdbd;
-      font-size: 1.3rem; }
-      .section-bio .bio-wrap .bio-icons i:hover {
+      font-size: 1.4rem; }
+      .section-bio .bio-wrap .bio-icons svg:hover, .section-bio .bio-wrap .bio-icons i:hover {
         color: #131313; }
 
 /* Services Section */
@@ -321,8 +321,8 @@ header {
     -webkit-box-shadow: 2px 2px 10px 0px #dadada;
             box-shadow: 2px 2px 10px 0px #dadada; }
     .section-services .services-box i {
-      cursor: default;
-      font-size: 3em; }
+      font-size: 3em;
+      cursor: default; }
       .section-services .services-box i:hover {
         color: inherit; }
     .section-services .services-box h3 {
@@ -629,8 +629,10 @@ footer {
   height: 150px; }
   footer .row {
     padding: 0 20px; }
-  footer p, footer i, footer li {
+  footer p, footer i, footer svg, footer li {
     color: #665f66; }
+  footer svg:hover {
+    color: #2980b9; }
   footer p {
     text-align: center; }
   footer .footer-container {
@@ -668,13 +670,10 @@ footer {
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
-      @media (max-width: 768px) {
+              justify-content: space-between;
+      font-size: 1.2em; }
+      @media screen and (max-width: 768px) {
         footer .footer-container .footer-icons {
           width: 200px;
-          padding: 20px 0; } }
-      footer .footer-container .footer-icons i {
-        font-size: 16px; }
-        @media (max-width: 768px) {
-          footer .footer-container .footer-icons i {
-            font-size: 21px; } }
+          padding: 20px 0;
+          font-size: 1.7em; } }
