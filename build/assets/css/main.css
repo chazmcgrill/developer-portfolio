@@ -337,11 +337,21 @@ header {
 /* Skills Section */
 .section-skills {
   background: #2980b9; }
+  .section-skills h3 {
+    color: #ececec;
+    text-align: center;
+    margin-bottom: 30px; }
 
 .skills-box {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px; }
+  @media screen and (min-width: 740px) {
+    .skills-box {
+      grid-template-columns: repeat(6, 1fr); } }
+  @media screen and (min-width: 960px) {
+    .skills-box {
+      grid-template-columns: repeat(9, 1fr); } }
 
 .icon {
   display: inline-block;
