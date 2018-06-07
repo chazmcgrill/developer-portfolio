@@ -345,7 +345,8 @@ header {
 .skills-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  padding: 20px 40px; }
   @media screen and (min-width: 740px) {
     .skills-box {
       grid-template-columns: repeat(6, 1fr); } }
