@@ -263,12 +263,34 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/portfolio-bugsweeper.jpeg": {
+		"ft": 16384,
+		"iS": 103666,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-bugsweeper.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/img\/portfolio-calc.jpg": {
 		"ft": 16384,
 		"iS": 71717,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/portfolio-calc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/portfolio-coinage.jpeg": {
+		"ft": 16384,
+		"iS": 74975,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/img\/portfolio-coinage.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -425,10 +447,38 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
+	"\/build\/assets\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/assets\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/assets\/img\/sprite.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/assets\/img\/sprite.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/build\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/index.html",
+		"oF": 0
+		},
+	"\/build\/mailer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/mailer.php",
 		"oF": 0
 		},
 	"\/includes\/bio.pug": {
