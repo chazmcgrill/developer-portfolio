@@ -164,6 +164,11 @@ button {
      -moz-appearance: none;
           appearance: none; }
 
+/* Transitions */
+svg, i, .footer-nav li, .main-nav li {
+  -webkit-transition: color 0.4s ease-in;
+  transition: color 0.4s ease-in; }
+
 /* Header Section */
 header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 15, 0.8)), to(rgba(0, 0, 15, 0.8))), url(/assets/img/hero-image.jpg);
@@ -704,7 +709,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      font-size: 1.3em; }
+      font-size: 1.4em; }
       @media screen and (max-width: 768px) {
         footer .footer-container .footer-icons {
           width: 200px;
