@@ -263,7 +263,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/portfolio-bugsweeper.jpeg": {
+	"\/assets\/img\/portfolio-bugsweeper.jpg": {
 		"ft": 16384,
 		"iS": 103666,
 		"jF": 0,
@@ -285,7 +285,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/portfolio-coinage.jpeg": {
+	"\/assets\/img\/portfolio-coinage.jpg": {
 		"ft": 16384,
 		"iS": 74975,
 		"jF": 0,
@@ -384,12 +384,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/img\/portfolio-twitch.jpg": {
+	"\/assets\/img\/portfolio-twitchtv.jpg": {
 		"ft": 16384,
-		"iS": 80530,
+		"iS": 55854,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/assets\/img\/portfolio-twitch.jpg",
+		"oAP": "\/assets\/img\/portfolio-twitchtv.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
