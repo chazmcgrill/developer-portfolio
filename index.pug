@@ -6,11 +6,11 @@ html(lang="en")
     meta(name="description", content="Modern web development and graphic arts, the official website of Charlie Taylor.")
     meta(meta name="author", content="Charlie Taylor")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    script(src="https://use.fontawesome.com/d891ebaa12.js")
     script(defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous")
     link(rel="stylesheet", type="text/css", href="assets/css/main.css")
     link(rel="icon", type="image/png", sizes="32x32", href="assets/img/favicon-32x32.png")
     link(rel="icon", type="image/png", sizes="16x16", href="assets/img/favicon-16x16.png")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300,400|Slabo+27px" rel="stylesheet")
       
   body
     include includes/header
@@ -21,5 +21,25 @@ html(lang="en")
     include includes/modal
     include includes/contact
     include includes/footer
-      
-    script(src="assets/js/functions.js")
+    
+    
+    script.
+      var body = document.getElementsByTagName('body')[0];
+      var header = document.getElementsByTagName('header')[0];
+
+      // Finds height of window or client and resizes header.
+      function setHeaderHeight() {
+        var y = window.innerHeight || document.documentElement.clientHeight || body.clientHeight;
+        header.style.height = y + 'px';
+      }
+
+      // on window resize height function is called.
+      window.addEventListener('resize', function() {
+        if (window,innerHeight > 480) {
+          setHeaderHeight();
+        }
+      });
+
+      setHeaderHeight();
+
+    script(defer src="assets/js/functions.js")

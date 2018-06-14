@@ -6,14 +6,14 @@
     <meta name="description" content="Modern web development and graphic arts, the official website of Charlie Taylor.">
     <meta meta name="author" content="Charlie Taylor">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fontawesome.com/d891ebaa12.js?ckcachebust=549632959"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js?ckcachebust=549632959" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css?ckcachebust=ec90a213677b003aa24970bfd0a8c600">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png?ckcachebust=549632959">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png?ckcachebust=549632959">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Slabo+27px" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header style="background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(/assets/img/hero-image.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
       <nav>
         <div class="row">
           <div class="nav-container"><img class="animated fadeInDown" src="assets/img/logo.png" alt="Charlie Taylor Logo">
@@ -39,8 +39,8 @@
       <div class="row">
         <h2>Bio</h2>
         <div class="bio-wrap"><img src="assets/img/profile-pic.jpg" alt="Charlie Taylor">
-          <p class="bio-text"><strong>Hello,</strong> my name is Charlie. I'm A front-end web developer and graphic artist from Leeds. I love making well designed responsive websites and interactive applications.</p>
-          <div class="bio-icons"><a href="https://codepen.io/chazmcgrill/" aria-hidden="true" target="_blank"><i class="fab fa-codepen"></i></a><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fab fa-free-code-camp"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://instagram.com/charlietcoder" aria-hidden="true" target="_blank"><i class="fab fa-instagram"></i></a></div>
+          <p class="bio-text"><strong>Hello,</strong> I'm Charlie A front-end developer and graphic artist from Leeds. I love making well designed responsive websites and interactive applications.</p>
+          <div class="bio-icons"><a href="https://codepen.io/chazmcgrill/" aria-hidden="true" target="_blank"><i class="fab fa-codepen"></i></a><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fab fa-free-code-camp"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/charliejbtaylor/" aria-hidden="true" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://instagram.com/charlietcoder" aria-hidden="true" target="_blank"><i class="fab fa-instagram"></i></a></div>
         </div>
       </div>
     </section>
@@ -52,15 +52,15 @@
         <div class="services-container">
           <div class="services-box"><i class="fas fa-pencil-alt fa-3x" aria-hidden="true"></i>
             <h3>Design</h3>
-            <p>For every project I carefully plan ideas using sketches, mind maps and wireframes. I have a strong background in graphic arts and illustration. I'm fluent in many Adobe programs including Photoshop and Illustrator.</p>
+            <p>Every project is carefully planned using sketches, mind maps and wireframes. I come from a graphic arts background so I really enjoy a design challenge.</p>
           </div>
           <div class="services-box"><i class="fas fa-desktop fa-3x" aria-hidden="true"></i>
             <h3>Code</h3>
-            <p>I build sites and applications using HTML CSS and Javascript. I keep my code semantic and well documented so it is easy to maintain and understand. I'm also confident in a range of libraries like jQuery and Bootstrap.</p>
+            <p>I'm confident in a range of technologies and love learning new ones. I like to keep my code semantic and well documented so it's easy to maintain and understand.</p>
           </div>
           <div class="services-box"><i class="fas fa-server fa-3x" aria-hidden="true"></i>
             <h3>Build</h3>
-            <p>My projects are precompiled from Sass and Pug using CodeKit. I manage changes and version control through GitHub. I'm currently studying backend technologies such as Node, mySQL and PHP.</p>
+            <p>Your project is always built with optimisation, accessibility and security in mind. If required I can also provide hosting and domain services.</p>
           </div>
         </div>
       </div>
@@ -68,7 +68,26 @@
     <section class="section-skills" id="skills">
       <div class="row">
         <h3>Technologies used:</h3>
-        <div class="skills-box"><span class="icon icon-html5"></span><span class="icon icon-css3"></span><span class="icon icon-sass"></span><span class="icon icon-javascript"></span><span class="icon icon-jasmine"></span><span class="icon icon-react"></span><span class="icon icon-mysql"></span><span class="icon icon-php"></span><span class="icon icon-wordpress">  </span><span class="icon icon-git"></span><span class="icon icon-github"></span><span class="icon icon-npm"></span><span class="icon icon-nodejs"></span><span class="icon icon-webpack"></span><span class="icon icon-express"></span><span class="icon icon-heroku"></span><span class="icon icon-illustrator"></span><span class="icon icon-photoshop"></span></div>
+        <div class="skills-box">
+          <div class="icon icon-html5" tool-title="html5"></div>
+          <div class="icon icon-css3" tool-title="css3"></div>
+          <div class="icon icon-sass" tool-title="sass"></div>
+          <div class="icon icon-javascript" tool-title="javascript"></div>
+          <div class="icon icon-jasmine" tool-title="jasmine"></div>
+          <div class="icon icon-react" tool-title="react"></div>
+          <div class="icon icon-mysql" tool-title="mysql"></div>
+          <div class="icon icon-php" tool-title="php"></div>
+          <div class="icon icon-wordpress" tool-title="wordpress"></div>
+          <div class="icon icon-git" tool-title="git"></div>
+          <div class="icon icon-github" tool-title="github"></div>
+          <div class="icon icon-npm" tool-title="npm"></div>
+          <div class="icon icon-nodejs" tool-title="nodejs"></div>
+          <div class="icon icon-webpack" tool-title="webpack"></div>
+          <div class="icon icon-express" tool-title="express"></div>
+          <div class="icon icon-heroku" tool-title="heroku"></div>
+          <div class="icon icon-illustrator" tool-title="illustrator"></div>
+          <div class="icon icon-photoshop" tool-title="photoshop"></div>
+        </div>
       </div>
     </section>
     <section class="section-portfolio" id="portfolio">
@@ -98,20 +117,20 @@
           <div class="portfolio-item-box"><img src="assets/img/portfolio-life.jpg" alt="Life App" name="pf6">
             <h3>React Life App</h3>
           </div>
-          <div class="portfolio-item-box"><img src="assets/img/portfolio-simon.jpg" alt="Simon Game" name="pf7">
-            <h3>Simon Game</h3>
+          <div class="portfolio-item-box"><img src="assets/img/portfolio-bugsweeper.jpg" alt="Bugsweeper" name="pf7">
+            <h3>Bugsweeper</h3>
           </div>
           <div class="portfolio-item-box"><img src="assets/img/portfolio-tictactoe.jpg" alt="Tictactoe Game" name="pf8">
             <h3>TicTacToe</h3>
           </div>
-          <div class="portfolio-item-box"><img src="assets/img/portfolio-twitch.jpg" alt="Twitch TV App" name="pf9">
-            <h3>Twitch TV App</h3>
+          <div class="portfolio-item-box"><img src="assets/img/portfolio-twitchtv.jpg" alt="TwitchBox" name="pf9">
+            <h3>TwitchBox</h3>
           </div>
           <div class="portfolio-item-box"><img src="assets/img/portfolio-weather.jpg" alt="Weather App" name="pf10">
-            <h3>Weather App</h3>
+            <h3>Weather</h3>
           </div>
-          <div class="portfolio-item-box"><img src="assets/img/portfolio-leaderboard.jpg" alt="FCC Camper Leaderboard" name="pf11">
-            <h3>Camper Leaderboard</h3>
+          <div class="portfolio-item-box"><img src="assets/img/portfolio-coinage.jpg" alt="Coinage App" name="pf11">
+            <h3>Coinage</h3>
           </div>
         </div>
       </div>
@@ -133,15 +152,15 @@
           </div>
           <div class="portfolio-item filtered" id="pf2">
             <h4>Hurricane Charlie Website</h4><img src="assets/img/portfolio-hurricanecharlie.jpg" alt="Hurricane Charlie">
-            <p>Personal illustration and art portfolio containing gallery, blog and shop. This was made using bootstrap and jquery.</p><a target="_blank" href="http://www.hurricanecharlie.co.uk">view website</a><a target="_blank" href="https://github.com/chazmcgrill/hurricane-charlie-website">view on github</a>
+            <p>Personal illustration portfolio contains gallery, contact and shop. key technologies React, React-router, Node, Express and CSS grid. </p><a target="_blank" href="http://www.hurricanecharlie.co.uk">view website</a><a target="_blank" href="https://github.com/chazmcgrill/hurricane-charlie-website">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf3">
             <h4>React Pizza App</h4><img src="assets/img/portfolio-pizzabox.jpg" alt="React Pizza App">
-            <p>React app for storing pizza recipes, functionality for adding new recipes and editing or deleting existing recipes. Data is stored locally so when browser is reloaded the information is kept.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/pdOjGm/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/recipe-box">view on github</a>
+            <p>React app for storing pizza recipes, functionality for adding new recipes and editing or deleting existing recipes. Info is stored locally so when browser is reloaded the data persists.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/pdOjGm/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/recipe-box">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf4">
             <h4>Pomodoro Timer</h4><img src="assets/img/portfolio-pomodoro.jpg" alt="FCC Camper Leaderboard">
-            <p>Pomodoro timer for improving time management and workflow. Animated and coded using css and javascript.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/rwGbVR/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/pomodoro-clock">view on github</a>
+            <p>Pomodoro timer for an app for improving time management and workflow. Animated and coded using css and javascript.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/rwGbVR/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/pomodoro-clock">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf5">
             <h4>Quote Machine</h4><img src="assets/img/portfolio-quote.jpg" alt="Quote Machine">
@@ -152,15 +171,15 @@
             <p>React project based on the cellular automaton 'Life' devised by mathematician John Conway.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/QOoOaj/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/game-of-life">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf7">
-            <h4>Simon Game</h4><img src="assets/img/portfolio-simon.jpg" alt="Simon Game">
-            <p>A javascript version of the 1970s memory skill game simon. Requires user to repeat a random sequence of lights and sound tones.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/dzvPgp/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/simon-game">view on github</a>
+            <h4>Bugsweeper</h4><img src="assets/img/portfolio-bugsweeper.jpg" alt="Bugsweeper">
+            <p>Recreation of the classic windows desktop game minesweeper. Built using React javascript, it utilises an 'flood fill' algorithm.</p><a target="_blank" href="https://charlietaylorcoder.com/bugsweeper">view app</a><a target="_blank" href="https://github.com/chazmcgrill/bugsweeper">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf8">
             <h4>TicTacToe</h4><img src="assets/img/portfolio-tictactoe.jpg" alt="TicTacToe">
             <p>Game of noughts and crosses human vs computer. Utilises a minimax algorithm to make the computer unbeatable.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/EwyGOG/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/tic-tac-toe">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf9">
-            <h4>TwitchTV App</h4><img src="assets/img/portfolio-twitch.jpg" alt="FCC Camper Leaderboard">
+            <h4>TwitchBox</h4><img src="assets/img/portfolio-twitchtv.jpg" alt="TwitchBox">
             <p>Application for showing TwitchTV channel data using their API. Shows channel status and links to the video stream.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/oWpVOG/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/twitch-tv">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf10">
@@ -168,8 +187,8 @@
             <p>Provides current weather status for your current location. Uses geolocation and uses two external API's for location and weather.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/BRKaPB/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/weather">view on github</a>
           </div>
           <div class="portfolio-item filtered" id="pf11">
-            <h4>Camper Leaderboard</h4><img src="assets/img/portfolio-leaderboard.jpg" alt="FCC Camper Leaderboard">
-            <p>React leaderboard showing the top point scoring campers on freecodecamp. It uses an API to populate the data.</p><a target="_blank" href="https://codepen.io/chazmcgrill/full/NwPBWE/">view on codepen</a><a target="_blank" href="https://github.com/chazmcgrill/camper-leaderboard">view on github</a>
+            <h4>Coinage</h4><img src="assets/img/portfolio-coinage.jpg" alt="Coinage">
+            <p>Simple cryptocurrency price tracking app. Built using react test driven development. Data is pulled from cryptocompare api via multiple AJAX requests.</p><a target="_blank" href="https://charlietaylorcoder.com/coinage">view app</a><a target="_blank" href="https://github.com/chazmcgrill/coinage">view on github</a>
           </div>
         </div>
         <div class="modal-footer">
@@ -182,7 +201,7 @@
       <div class="row">
         <h2>Contact</h2>
         <div class="form-container" id="form">
-          <p><strong>I'm currently available for your projects.</strong> please use this form to get in touch with any ideas.</p>
+          <p><strong>I'm currently available for your projects,</strong> please use this form to get in touch...</p>
           <form method="post" action="mailer.php">
             <input type="text" name="name" placeholder="name" id="name" required>
             <input type="email" name="email" placeholder="email" id="email" required>
@@ -206,6 +225,26 @@
         <p>&copy; 2017 Charlie Taylor All Rights Reserved</p>
       </div>
     </footer>
-    <script src="assets/js/functions.js?ckcachebust=549632959"></script>
+    <script>
+      var body = document.getElementsByTagName('body')[0];
+      var header = document.getElementsByTagName('header')[0];
+      
+      // Finds height of window or client and resizes header.
+      function setHeaderHeight() {
+        var y = window.innerHeight || document.documentElement.clientHeight || body.clientHeight;
+        header.style.height = y + 'px';
+      }
+      
+      // on window resize height function is called.
+      window.addEventListener('resize', function() {
+        if (window,innerHeight > 480) {
+          setHeaderHeight();
+        }
+      });
+      
+      setHeaderHeight();
+      
+    </script>
+    <script defer src="assets/js/functions.js"></script>
   </body>
 </html>

@@ -5,15 +5,16 @@
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = trim($_POST["message"]);
+    $url = "http://charlietaylorcoder.com";
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.charlietaylorcoder.com/index.php?success=-1#form");
-        exit;
+      header("Location: " . $url . "/index.php?success=-1#form");
+      exit;
     }
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "EMAIL GOES HERE";
+    $recipient = "mail@charlietaylorcoder.com";
 
     // Set the email subject.
     $subject = "New contact from $name";
@@ -30,18 +31,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
 
     // Redirect to the index.html page with success code
-    header("Location: http://www.charlietaylorcoder.com/index.php?success=1#form");
+    header("Location: " . $url . "/index.php?success=1#form");
 
-?>
-
-<!-- place on index page change to php -->
-
-<?php
-  if ($_GET['success'] == 1) {
-    echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
-  }
-
-  if ($_GET['success'] == -1) {
-    echo "<div class=\"form-messages error\">Oops message sending failed.</div>";
-  }
 ?>
