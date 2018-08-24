@@ -41,9 +41,12 @@ gulp.task('scripts', () => {
     .pipe(gulp.dest(paths.js.dist));
 });
 
-gulp.task('imageMin', () => {
+gulp.task('image-min', () => {
   return gulp.src(paths.img.src)
-    .pipe(plugs.imagemin([plugs.imagemin.jpegtran({ progressive: true })]))
+    .pipe(plugs.imagemin([
+      plugs.imagemin.jpegtran({ progressive: true }),
+      plugs.imagemin.optipng({ optimizationLevel: 5 }),
+    ]))
     .pipe(gulp.dest(paths.img.dist))
 });
 
@@ -52,7 +55,7 @@ gulp.task('imageMin', () => {
 
 gulp.task('watch', () => {
   gulp.watch(paths.js.src, gulp.series("scripts"));
-  gulp.watch(paths.img.src, gulp.series("imageMin"));
+  gulp.watch(paths.img.src, gulp.series("image-min"));
   gulp.watch(paths.sass.src, gulp.series("sass"));
 });
 
@@ -72,7 +75,7 @@ gulp.task('browser-sync', () => {
   });
 });
 
-const build = gulp.series('sass', 'scripts', 'imageMin', 'php', 'browser-sync');
+const build = gulp.series('sass', 'scripts', 'image-min', 'php', 'browser-sync');
 
 gulp.task('default', gulp.parallel(build, gulp.series(gulp.parallel('browser-sync', 'watch'))));
 gulp.task('prod', gulp.parallel(build));
