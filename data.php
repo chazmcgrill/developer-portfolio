@@ -137,4 +137,12 @@
     'illustrator', 'photoshop'
   ];
 
+  $social_icons = [
+    ['name' => 'codepen', 'url' => 'https://codepen.io/chazmcgrill/'],
+    ['name' => 'free-code-camp', 'url' => 'https://www.freecodecamp.com/chazmcgrill'],
+    ['name' => 'github', 'url' => 'https://github.com/chazmcgrill'],
+    ['name' => 'linkedin', 'url' => 'https://www.linkedin.com/in/charlie-taylor-941434134/'],
+    ['name' => 'instagram', 'url' => 'https://instagram.com/charlietcoder'],
+  ];
+
 ?>

@@ -7,7 +7,15 @@
         <li>Portfolio</li>
         <li>Contact</li>
       </ul>
-      <div class="footer-icons"><a href="https://codepen.io/chazmcgrill/" aria-hidden="true" target="_blank"><i class="fab fa-codepen"></i></a><a href="https://www.freecodecamp.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fab fa-free-code-camp"></i></a><a href="https://github.com/chazmcgrill" aria-hidden="true" target="_blank"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/charlie-taylor-941434134/" aria-hidden="true" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://instagram.com/charlietcoder" aria-hidden="true" target="_blank"><i class="fab fa-instagram"></i></a></div>
+      <div class="footer-icons">
+
+        <?php foreach($social_icons as $s_icon) { ?>
+          <a href="<?php echo $s_icon['url']; ?>" aria-hidden="true" target="_blank">
+            <i class="fab fa-<?php echo $s_icon['name']; ?>"></i>
+          </a>
+        <?php } ?>
+        
+      </div>
     </div>
     <p>&copy; 2017 Charlie Taylor All Rights Reserved</p>
   </div>
