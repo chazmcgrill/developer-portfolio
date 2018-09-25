@@ -129,4 +129,12 @@
     ]
   ];
 
+  $skills = [
+    'html5', 'css3', 'sass', 'javascript', 
+    'jasmine', 'react', 'mysql', 'php', 
+    'wordpress', 'git', 'github', 'npm',
+    'nodejs', 'webpack', 'express', 'heroku',
+    'illustrator', 'photoshop'
+  ];
+
 ?>
