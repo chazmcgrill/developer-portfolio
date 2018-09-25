@@ -145,4 +145,22 @@
     ['name' => 'instagram', 'url' => 'https://instagram.com/charlietcoder'],
   ];
 
+  $services = [
+    [
+      'title' => 'Design',
+      'icon' => 'fa-pencil-alt',
+      'text' => 'Every project is carefully planned using sketches, mind maps and wireframes. I come from a graphic arts background so I really enjoy a design challenge.'
+    ],
+    [
+      'title' => 'Code',
+      'icon' => 'fa-desktop',
+      'text' => 'I\'m confident in a range of technologies and love learning new ones. I like to keep my code semantic and well documented so it\'s easy to maintain and understand.'
+    ],
+    [
+      'title' => 'Build',
+      'icon' => 'fa-server',
+      'text' => 'Your project is always built with optimisation, accessibility and security in mind. If required I can also provide hosting and domain services.'
+    ]
+  ];
+
 ?>
