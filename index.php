@@ -15,14 +15,17 @@
 </head>
 <body>
 
-  <?php include './includes/header.php'; ?>
-  <?php include './includes/bio.php'; ?>
-  <?php include './includes/services.php'; ?>
-  <?php include './includes/skills.php'; ?>
-  <?php include './includes/portfolio.php'; ?>
-  <?php include './includes/modal.php'; ?>
-  <?php include './includes/contact.php'; ?>
-  <?php include './includes/footer.php'; ?>
+  <?php
+    include './data.php';
+    include './includes/header.php';
+    include './includes/bio.php';
+    include './includes/services.php';
+    include './includes/skills.php';
+    include './includes/portfolio.php';
+    include './includes/modal.php';
+    include './includes/contact.php';
+    include './includes/footer.php'; 
+  ?>
   
   <script defer src="./dist/assets/js/app.js"></script>
 </body>

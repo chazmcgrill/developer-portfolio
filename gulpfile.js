@@ -66,7 +66,8 @@ gulp.task('php', () => {
 gulp.task('browser-sync', () => {
   php.server({port: 8010}, () => {
     browserSync.init({
-      proxy: '127.0.0.1:8010'
+      proxy: '127.0.0.1:8010',
+      notify: false
     });
   });
 
