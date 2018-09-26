@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const uglify = require("gulp-uglify-es").default;
 const browserSync = require('browser-sync').create();
-const plugs = require('gulp-load-plugins')({lazy: false});
+const plugs = require('gulp-load-plugins')({ lazy: false });
 const php = require('gulp-connect-php');
 
 // -- FILE PATHS
@@ -12,7 +12,8 @@ const paths = {
     dist: 'dist/assets/css'
   },
   php: {
-    watch: '**/*.php'
+    src: 'src/**/*.php',
+    dist: 'dist/'
   },
   js: {
     src: 'src/js/**/*.js',
@@ -21,7 +22,7 @@ const paths = {
   img: {
     src: 'src/img/*',
     dist: 'dist/assets/img'
-  }  
+  }
 }
 
 
@@ -46,38 +47,42 @@ gulp.task('image-min', () => {
     .pipe(plugs.imagemin([
       plugs.imagemin.jpegtran({ progressive: true }),
       plugs.imagemin.optipng({ optimizationLevel: 5 }),
+      plugs.imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]
+      })
     ]))
     .pipe(gulp.dest(paths.img.dist))
 });
 
+gulp.task('php', () => {
+  return gulp.src(paths.php.src).pipe(gulp.dest(paths.php.dist))
+})
+
 
 // -- MAIN TASKS
 
-gulp.task('watch', () => {
-  gulp.watch(paths.js.src, gulp.series("scripts"));
-  gulp.watch(paths.img.src, gulp.series("image-min"));
-  gulp.watch(paths.sass.src, gulp.series("sass"));
-});
-
-gulp.task('php', () => {
-  return php.server({ port: 8010 });
-});
-
 gulp.task('browser-sync', () => {
-  php.server({port: 8010}, () => {
+  php.server({
+    port: 8080,
+    base: './dist',
+    debug: false
+  }, function () {
     browserSync.init({
-      proxy: '127.0.0.1:8010',
+      proxy: '127.0.0.1:8080/',
       notify: false
     });
   });
 
-  gulp.watch('**/*.php').on('change', () => {
-    browserSync.reload();
-  });
+  gulp.watch(paths.js.src, gulp.series("scripts")).on('change', browserSync.reload);
+  gulp.watch(paths.img.src, gulp.series("image-min")).on('change', browserSync.reload);
+  gulp.watch(paths.sass.src, gulp.series("sass")).on('change', browserSync.reload);
+  gulp.watch(paths.php.src, gulp.series("php")).on('change', browserSync.reload);
 });
 
 const build = gulp.series('sass', 'scripts', 'image-min', 'php', 'browser-sync');
 
-gulp.task('default', gulp.parallel(build, gulp.series(gulp.parallel('browser-sync', 'watch'))));
-gulp.task('prod', gulp.parallel(build));
-
+gulp.task('default', build);
+gulp.task('prod', build); // add minify scripts

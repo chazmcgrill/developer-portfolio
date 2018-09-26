@@ -1,8 +1,8 @@
-<header style="background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(./dist/assets/img/hero-image.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
+<header style="background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(./assets/img/hero-image.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
   <nav>
     <div class="row">
       <div class="nav-container">
-        <img class="animated fadeInDown" src="./dist/assets/img/logo.png" alt="Charlie Taylor Logo">
+        <img class="animated fadeInDown" src="./assets/img/logo.png" alt="Charlie Taylor Logo">
         <ul class="main-nav">
           <li>Bio</li>
           <li>Services</li>

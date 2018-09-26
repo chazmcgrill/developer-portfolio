@@ -8,7 +8,7 @@
 
       <?php foreach($portfolio as $modal_item) { ?>
         <div class="portfolio-item" id="<?php echo $modal_item['id']; ?>">
-          <img src="./dist/assets/img/<?php echo $modal_item['img']; ?>" alt="<?php echo $modal_item['title']; ?>">
+          <img src="./assets/img/<?php echo $modal_item['img']; ?>" alt="<?php echo $modal_item['title']; ?>">
           <h4><?php echo $modal_item['title']; ?></h4>
           <p><?php echo $modal_item['text']; ?></p>
           <?php foreach($modal_item['links'] as $link) { ?>

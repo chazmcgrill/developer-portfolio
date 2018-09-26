@@ -14,9 +14,9 @@
             <i class="fab fa-<?php echo $s_icon['name']; ?>"></i>
           </a>
         <?php } ?>
-        
+
       </div>
     </div>
-    <p>&copy; 2017 Charlie Taylor All Rights Reserved</p>
+    <p>&copy; 2018 Charlie Taylor All Rights Reserved</p>
   </div>
 </footer>
