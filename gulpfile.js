@@ -3,6 +3,7 @@ const uglify = require("gulp-uglify-es").default;
 const browserSync = require('browser-sync').create();
 const plugs = require('gulp-load-plugins')({ lazy: false });
 const php = require('gulp-connect-php');
+const cleanCSS = require('gulp-clean-css');
 
 // -- FILE PATHS
 
@@ -31,6 +32,8 @@ const paths = {
 gulp.task('sass', () => {
   return gulp.src(paths.sass.src)
     .pipe(plugs.sass().on('error', plugs.sass.logError))
+    .pipe(plugs.autoprefixer())
+    .pipe(cleanCSS())
     .pipe(gulp.dest(paths.sass.dist));
 });
 
