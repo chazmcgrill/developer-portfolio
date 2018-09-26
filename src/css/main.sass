@@ -1,34 +1,36 @@
-// Tools folder
+// holds vendor code, helpers, mixins, variables, and general selector styles (body, h1, p, a, etc.)
+@import '01-base/fonts'
+@import '01-base/vars'
+@import '01-base/functions'
+@import '01-base/mixins'
+@import '01-base/normalize'
+@import '01-base/base'
 
-/* Fonts */
-@import '1-tools/fonts'
-/* Variables */
-@import '1-tools/variables'
-/* Animation */
-@import '1-tools/animation'
+// holds macro layout styles
+@import '02-layout/grid'
+@import '02-layout/header'
+@import '02-layout/bio'
+@import '02-layout/services'
+@import '02-layout/skills'
+@import '02-layout/contact'
+@import '02-layout/portfolio'
+@import '02-layout/footer'
+@import '02-layout/modal'
 
-// Basics
+// holds micro layouts styles
+// @import '03-module/buttons'
+// @import '03-module/forms'
+// @import '03-module/navs'
+// @import '03-module/social-icons'
+// @import '03-module/menu-item'
+// @import '03-module/review'
+// @import '03-module/location'
+// @import '03-module/star'
+// @import '03-module/icon'
 
-/* Main Setup */
-@import '2-basics/main-setup'
-/* Reusables */
-@import '2-basics/reusables'
+// holds state specific code, how buttons look on hover and similar
+// @import '04-state/state'
+@import '04-state/animation'
 
-// Site Sections
-
-/* Header Section */
-@import '3-sections/header'
-/* Bio Section */
-@import '3-sections/bio'
-/* Services Section */
-@import '3-sections/services'
-/* Skills Section */
-@import '3-sections/skills'
-/* Portfolio Section */
-@import '3-sections/portfolio'
-/* Portfolio Modal */
-@import '3-sections/modal'
-/* Contact Section */
-@import '3-sections/contact'
-/* Footer Section */
-@import '3-sections/footer'
+// any hacky css to be later improved
+@import '05-hacks/shame'
