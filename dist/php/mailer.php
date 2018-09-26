@@ -8,11 +8,11 @@
       $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
       $message = trim($_POST["message"]);
       $message = preg_replace($re, 'URL ATTEMPT', $message);
-      $url = ".";
+      $url = "../index.php";
 
       // redirect with error status if invalid
       if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: " . $url . "/index.php?success=-1#form");
+        header("Location: " . $url . "?success=-1#form");
         exit;
       }
 
@@ -24,7 +24,7 @@
   
       // mail and redirect if valid
       mail($to, $subject, $message, $headers);
-      header("Location: " . $url . "/index.php?success=1#form");
+      header("Location: " . $url . "?success=1#form");
     }
 
 ?>
