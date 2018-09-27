@@ -1,8 +1,8 @@
 <section class="section-portfolio" id="portfolio">
-  <div class="row">
+  <div class="row row_centered">
     <h2>Portfolio</h2>
   </div>
-  <div class="row">
+  <div class="row row_centered">
     <div class="portfolio-img-grid">
 
       <?php foreach ($portfolio as $p) { ?>
