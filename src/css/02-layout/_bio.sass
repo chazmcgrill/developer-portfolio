@@ -1,36 +1,36 @@
 .section-bio
+  text-align: center
 
   .bio-wrap
-    max-width: 300px
-    margin: 0 auto
+    text-align: center
 
-    img
-      display: block
-      width: 150px
-      border-radius: 50%
-      margin: 0 auto 30px
-      transition: opacity 0.2s
+  img
+    display: block
+    width: 150px
+    border-radius: 50%
+    margin: 0 auto 30px
+    transition: opacity 0.2s
+
+    &:hover
+      opacity: 0.8
+
+  .bio-text
+    margin: 0 auto
+    font-size: 1.3rem
+    color: $main
+    text-align: center
+    line-height: 35px
+
+  .bio-icons
+    width: 180px
+    margin: 45px auto 70px auto
+    display: flex
+    justify-content: space-between
+
+    svg, i
+      color: $greyicon
+      font-size: 1.4rem
+      
 
       &:hover
-        opacity: 0.8
-
-    .bio-text
-      margin: 0 auto
-      font-size: 1.3rem
-      color: $main
-      text-align: center
-      line-height: 35px
-
-    .bio-icons
-      width: 180px
-      margin: 45px auto 70px auto
-      display: flex
-      justify-content: space-between
-
-      svg, i
-        color: $greyicon
-        font-size: 1.4rem
-        
-
-        &:hover
-          color: black
+        color: black
