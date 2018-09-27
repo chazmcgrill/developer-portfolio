@@ -1,50 +1,29 @@
 footer
+  padding: 20px
   background: $footbg
-  font-size: 0.7rem
+  font-size: 0.8rem
   height: 150px
+  color: $foottext
 
-  .row
-    padding: 0 20px
+  .row_spaced
+    align-items: center
 
-  p, i, svg, li
+  @media (max-width: 768px)
+    height: auto
+
+  svg
     color: $foottext
 
-  svg:hover
-    color: $main
+    &:hover
+      color: $main
 
-  p
-    text-align: center
-
-  .footer-container
+  .footer-icons
+    width: 150px
     display: flex
-    align-items: center
     justify-content: space-between
+    font-size: 1.5em
 
     @media (max-width: 768px)
-      flex-direction: column
-
-    .footer-nav
-      text-transform: uppercase
-      padding: 30px 0
-
-      @media (max-width: 768px)
-        padding: 30px 0 0
-
-      li
-        display: inline-block
-        list-style: none
-
-      li + li
-        margin-left: 20px
-
-    .footer-icons
-      width: 150px
-      margin-left: 10px
-      display: flex
-      justify-content: space-between
-      font-size: 1.4em
-
-      @media screen and (max-width: 768px)
-        width: 200px
-        padding: 20px 0
-        font-size: 1.7em
+      width: 200px
+      padding: 10px 0
+      font-size: 1.6rem
