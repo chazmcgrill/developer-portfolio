@@ -2,12 +2,16 @@
   text-transform: uppercase
 
   &--item
-    margin: 0 0 3px
+    margin: 0 10px 0 0
+    display: block
+      
+    &:last-child
+      margin-right: 0
     
+    &:hover
+      color: $bluehover
 
-    @media (max-width: 640px)
-      margin: 0 10px 0 0
+    @media (min-width: 640px)
       display: inline-block
-
-      &:last-child
-        margin-right: 0
+      margin: 0 0 3px
+      

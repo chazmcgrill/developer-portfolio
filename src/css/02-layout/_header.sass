@@ -1,63 +1,26 @@
 header
-  // background:
-  //   image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(/assets/img/hero-image.jpg)
-  //   size: cover
-  //   position: center
-  //   attachment: fixed
+  background:
+    image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(../img/hero-image.jpg)
+    size: cover
+    position: center
+    attachment: fixed
   color: $bg-white
   display: flex
   flex-direction: column
   justify-content: space-between
   height: 100vh
+  padding: 0 5px
 
-  h1
-    @media (max-width: 480px)
-      font-size: 2.2rem
-    @media (max-width: 380px)
-      font-size: 2rem
-  hr
-    max-width: 60%
-  h3
-    @media (max-width: 380px)
-      font-size: 1.2rem
-
-  .nav-container
-    padding: 40px 20px 0
-    display: flex
-    justify-content: space-between
+  .nav-bar
     align-items: center
-    max-width: 1160px
-    margin: 0 auto
+    padding: 20px 0
 
-    @media (max-width: 768px)
-      justify-content: center
-
-    img
+    &--logo
       height: 50px
-      margin-bottom: 20px
+      width: 50px
 
-      @media (max-width: 768px)
-        height: 58px
-      @media (max-width: 480px)
-        height: 65px
-
-  .hero-text-box
-    width: 100%
+  .hero-text
     text-align: center
-    padding-bottom: 20px
-
-  .main-nav
-    li
-      text-transform: uppercase
-      list-style: none
-      display: inline-block
-      font-size: 0.9rem
-      margin-left: 15px
-
-      &:hover
-        color: $main
-      @media (max-width: 768px)
-        display: none
 
   i
     border: solid $arrow
@@ -72,3 +35,56 @@ header
     width: 100%
     text-align: center
     padding-bottom: 40px
+
+
+
+  // h1
+  //   @media (max-width: 480px)
+  //     font-size: 2.2rem
+  //   @media (max-width: 380px)
+  //     font-size: 2rem
+  // hr
+  //   max-width: 60%
+  // h3
+  //   @media (max-width: 380px)
+  //     font-size: 1.2rem
+
+  // .nav-container
+  //   padding: 40px 20px 0
+  //   display: flex
+  //   justify-content: space-between
+  //   align-items: center
+  //   max-width: 1160px
+  //   margin: 0 auto
+
+  //   @media (max-width: 768px)
+  //     justify-content: center
+
+
+
+  //     @media (max-width: 768px)
+  //       height: 58px
+  //     @media (max-width: 480px)
+  //       height: 65px
+
+  // .hero-text-box
+  //   width: 100%
+  //   text-align: center
+  //   padding-bottom: 20px
+
+  // // .main-nav
+  // //   li
+  // //     text-transform: uppercase
+  // //     list-style: none
+  // //     display: inline-block
+  // //     font-size: 0.9rem
+  // //     margin-left: 15px
+
+  // //     &:hover
+  // //       color: $main
+  // //     @media (max-width: 768px)
+  // //       display: none
+
+
+
+

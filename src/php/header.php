@@ -1,23 +1,23 @@
-<header style="background-image: linear-gradient(rgba(0, 0, 15, 0.8), rgba(0, 0, 15, 0.8)), url(./assets/img/hero-image.jpg); background-size: cover; background-position: center; background-attachment: fixed;">
-  <nav>
-    <div class="row">
-      <div class="nav-container">
-        <img class="animated fadeInDown" src="./assets/img/logo.png" alt="Charlie Taylor Logo">
-        <ul class="main-nav">
-          <li>Bio</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="row animated fadeIn">
-    <div class="hero-text-box">
+<header>
+  <div class="nav-bar row row_spaced">
+    <img class="nav-bar--logo animated fadeInDown" src="./assets/img/logo.png" alt="Charlie Taylor Logo">
+    <nav class="nav">
+      <li class="nav--item">Bio</li>
+      <li class="nav--item">Services</li>
+      <li class="nav--item">Portfolio</li>
+      <li class="nav--item">Contact</li>
+    </nav>
+  </div>
+
+  <div class="row row_centered">
+    <div class="hero-text col col_center animated fadeIn">
       <h1>Charlie Taylor</h1>
       <hr class="animated zoomIn">
       <h3>Web Developer &amp; Graphic Artist</h3>
     </div>
   </div>
-  <div class="arrow-box"><i class="arrow animated"></i></div>
+
+  <div class="arrow-box">
+    <i class="arrow animated"></i>
+  </div>
 </header>

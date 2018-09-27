@@ -1,41 +1,30 @@
-.row
-  max-width: 1200px
-  margin: 0 auto
-
 section
-  padding: 50px 0
+  padding: 50px 5px
 
-// section
-//   padding: 50px 0 100px 
+.row
+  margin: 0 auto
+  width: 100%
+  max-width: 1000px
+  display: flex
 
-// .row
-//   box-sizing: border-box
-//   display: flex
-//   flex-direction: row
-//   margin: 0 10px
+  &_spaced
+    justify-content: space-between
 
-//   &_center
-//     justify-content: center
-  
-//   &_spaced
-//     justify-content: space-around
+  &_centered
+    justify-content: center
 
-// .col
-//   width: 580px
+  @media (max-width: 640px)
+    display: block
 
-//   &_wide
-//     width: 1160px
+.col
+  width: 32%
+  background: pink
 
-//   &_half
-//     width: 50%
+  &_full
+    width: 100%
 
-//   &_full
-//     width: 100%
+  &_center
+    width: 36%
 
-// @media (max-width: 640px)
-
-//   .row
-//     display: block
-
-//   .col
-//     width: 100%
+  @media (max-width: 640px)
+    width: 100%
