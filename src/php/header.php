@@ -13,7 +13,7 @@
     <div class="hero-text col col_center animated fadeIn">
       <h1>Charlie Taylor</h1>
       <hr class="animated zoomIn">
-      <h3>Web Developer &amp; Graphic Artist</h3>
+      <p class="lead">Web Developer &amp; Graphic Artist</p>
     </div>
   </div>
 
