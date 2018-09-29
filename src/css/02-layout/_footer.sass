@@ -1,9 +1,24 @@
-footer
+.footer
   padding: 20px
   background: $footbg
   font-size: 0.8rem
   height: 150px
   color: $foottext
+
+
+  &--icons
+    width: 150px
+    display: flex
+    justify-content: space-between
+    font-size: 1.5em
+
+    @media (max-width: 768px)
+      width: 200px
+      padding: 10px 0
+      font-size: 1.6rem
+
+  &--copyright
+    font-family: $header-font
 
   .row_spaced
     align-items: center
@@ -16,14 +31,3 @@ footer
 
     &:hover
       color: $main
-
-  .footer-icons
-    width: 150px
-    display: flex
-    justify-content: space-between
-    font-size: 1.5em
-
-    @media (max-width: 768px)
-      width: 200px
-      padding: 10px 0
-      font-size: 1.6rem
