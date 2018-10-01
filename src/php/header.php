@@ -17,7 +17,7 @@
     </div>
   </div>
 
-  <div class="arrow-box">
-    <i class="arrow animated"></i>
+  <div class="arrow">
+    <i class="arrow--icon animated"></i>
   </div>
 </header>

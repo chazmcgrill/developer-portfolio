@@ -1,7 +1,7 @@
 // HEADER HEIGHT SETUP
 
-// var body = document.getElementsByTagName('body')[0];
-// var header = document.getElementsByTagName('header')[0];
+var body = document.getElementsByTagName('body')[0];
+var header = document.getElementsByTagName('header')[0];
 
 // // Finds height of window or client and resizes header.
 // function setHeaderHeight() {
@@ -56,7 +56,7 @@ for (var i = 0; i < elements.length; i++) {
 }
 
 // Click event for down arrow
-var arrow = document.querySelector('.arrow');
+var arrow = document.querySelector('.arrow--icon');
 arrow.addEventListener('click', function(event) {
   navClick(event.target.id);
 }, false);
