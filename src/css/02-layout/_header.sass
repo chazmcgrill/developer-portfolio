@@ -22,5 +22,9 @@ header
 
   .hero-text
     text-align: center
-    min-width: 400px
+    width: 400px
+
+    @media (max-width: 480px)
+      // box-sizing: border-box
+      width: calc(100% - 10px)
       
