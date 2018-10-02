@@ -1,40 +1,18 @@
-// HEADER HEIGHT SETUP
-
-var body = document.getElementsByTagName('body')[0];
-var header = document.getElementsByTagName('header')[0];
-
-// // Finds height of window or client and resizes header.
-// function setHeaderHeight() {
-//   var y = window.innerHeight || document.documentElement.clientHeight || body.clientHeight;
-//   header.style.height = y + 'px';
-// }
-
-// // on window resize height function is called.
-// window.addEventListener('resize', function() {
-//   if (window,innerHeight > 480) {
-//     setHeaderHeight();
-//   }
-// });
-
-// setHeaderHeight();
-
+const body = document.getElementsByTagName('body')[0];
 
 // SMOOTH SCROLL
 
 // Scroll function that animates the move to each section
 function scrollTo(element, to, duration) {
-  if (duration <= 0) {
-    return;
-  }
-  var difference = to - window.scrollY;
-  var perTick = difference / duration * 10;
+  if (duration <= 0) return;
+
+  let difference = to - window.scrollY;
+  let perTick = difference / duration * 10;
 
   if (perTick) {
-    setTimeout(function() {
+    setTimeout(() => {
       window.scroll(0, window.scrollY + perTick);
-      if (window.scrollY === to) {
-        return;
-      }
+      if (window.scrollY === to) return;
       scrollTo(element, to, duration - 10);
     }, 10);
   }
@@ -43,98 +21,91 @@ function scrollTo(element, to, duration) {
 // Function that calls scroll to function with the corresponding id;
 function navClick(navId) {
   navId = navId ? navId.toLowerCase() : 'bio';
-  var section = document.getElementById(navId);
+  const section = document.getElementById(navId);
   scrollTo(document.body, section.offsetTop, 500);
 }
 
 // Click events for navigation
-var elements = document.querySelectorAll('li');
-for (var i = 0; i < elements.length; i++) {
-  elements[i].addEventListener('click', function(event) {
-    navClick(event.target.innerText);
+const navs = document.querySelectorAll('.nav--item');
+for (var i = 0; i < navs.length; i++) {
+  navs[i].addEventListener('click', (e) => {
+    navClick(e.target.innerText);
   }, false);
 }
 
 // Click event for down arrow
-var arrow = document.querySelector('.arrow--icon');
-arrow.addEventListener('click', function(event) {
-  navClick(event.target.id);
+const arrow = document.querySelector('.arrow--icon');
+arrow.addEventListener('click', (e) => {
+  navClick(e.target.id);
 }, false);
 
 
 // FLASHING ARROW
-
-setInterval(function() {
+setInterval(() => {
   arrow.classList.toggle('flash');
 }, 3000);
 
 
 // MODAL CONTROLS
 
-// show modal
-var portfolio = document.querySelectorAll('.project');
-var modalBg = document.querySelector('.modal-bg');
-var modal = document.querySelector('.modal');
+const folio = document.querySelectorAll('.project');
+const modalBg = document.querySelector('.modal-bg');
+const modal = document.querySelector('.modal');
 
-for (var i = 0; i < portfolio.length; i++) {
-  portfolio[i].addEventListener('click', function(event) {
-    modalFilter(event.target.id);
-    modalBg.classList.remove('is-hidden');
-    modal.classList.remove('modal-close');
-    modal.classList.add('modal-open');
-    body.classList.add('is-fixed');
-  });
+function handleModalOpen(e) {
+  modalFilter(e.target.id);
+  modalBg.classList.remove('is-hidden');
+  modal.classList.remove('modal-close');
+  modal.classList.add('modal-open');
+  body.classList.add('is-fixed');
 }
 
-// close modal via button
-var modalClose = document.getElementById('modal-close');
-
-modalClose.addEventListener('click', function() {
+function handleModalClose() {
   modal.classList.remove('modal-open');
   modal.classList.add('modal-close');
   setTimeout(() => {
     modalBg.classList.add('is-hidden');
     body.classList.remove('is-fixed');
   }, 300);
-});
+}
 
-// close modal by clicking outside modal
-window.addEventListener('click', function(event) {
-  if (event.target == modalBg) {
-    modal.classList.remove('modal-open');
-    modal.classList.add('modal-close');
-    setTimeout(() => {
-      modalBg.classList.add('is-hidden');
-      body.classList.remove('is-fixed');
-    }, 300);
-  }
+// Projects Click Event - Opens Modal
+folio.forEach(f => f.addEventListener('click', handleModalOpen));
+
+// Modal Close Button Click Event
+const modalClose = document.getElementById('modal-close');
+modalClose.addEventListener('click', handleModalClose);
+
+// Click Outside Modal Click Event
+window.addEventListener('click', (e) => {
+  if (e.target == modalBg) handleModalClose();
 });
 
 // show selected modal item
-var modalItem = document.querySelectorAll('.portfolio-item');
-var currentModalId = 0;
+const modalItems = document.querySelectorAll('.portfolio-item');
+let currentModalId = 0;
 
 function modalFilter(modalId) {
-  for (var i = 0; i < modalItem.length; i++) {
-    if (modalItem[i].id === modalId) {
+  for (let i = 0; i < modalItems.length; i++) {
+    if (modalItems[i].id === modalId) {
       currentModalId = i;
-      modalItem[i].classList.remove('is-filtered');
+      modalItems[i].classList.remove('is-filtered');
     } else {
-      modalItem[i].classList.add('is-filtered');
+      modalItems[i].classList.add('is-filtered');
     }
   }
-  modalButtonDisplay(currentModalId, modalItem.length - 1)
+  modalButtonDisplay(currentModalId, modalItems.length - 1)
 }
 
 // modal previous and next buttons
-var prevModal = document.getElementById('modal-prev');
-var nextModal = document.getElementById('modal-next');
+const prevModal = document.getElementById('modal-prev');
+const nextModal = document.getElementById('modal-next');
 
-prevModal.addEventListener('click', function() {
+prevModal.addEventListener('click', () => {
   modalFilter("pf" + (currentModalId - 1));
 }, false);
 
-nextModal.addEventListener('click', function() {
+nextModal.addEventListener('click', () => {
   modalFilter("pf" + (currentModalId + 1));
 }, false);
 
