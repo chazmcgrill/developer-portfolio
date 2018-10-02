@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="row row_spaced">
+  <div class="row row_spaced-aligned">
 
       <ul class="nav">
         <li class="nav--item">Bio</li>
@@ -8,10 +8,14 @@
         <li class="nav--item">Contact</li>
       </ul>
 
-      <div class="footer--icons">
+      <div class="icons icons_footer">
         <?php foreach($social_icons as $s_icon) { ?>
           <a href="<?php echo $s_icon['url']; ?>" aria-hidden="true" target="_blank">
-            <i class="fab fa-<?php echo $s_icon['name']; ?>"></i>
+            <?php
+              $icon = file_get_contents('assets/img/si-' . $s_icon['name'] . '.svg');
+              $icon_footer = str_replace('#', 'icon_footer', $icon);
+              echo $icon_footer;
+            ?>
           </a>
         <?php } ?>
       </div>
