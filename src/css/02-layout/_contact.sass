@@ -1,18 +1,14 @@
 .section-contact
   background: $greybg
 
-  .form-container
-    // width: 400px
+  .form
     margin: 0 auto
+    max-width: 350px
 
-    @media (max-width: 500px)
-      width: 90%
+    &--title
+      margin: 0
 
-    p
-      text-align: center
-      padding: 0 15%
-
-    form input, textarea
+    &--input
       display: block
       padding: 15px
       width: 100%
@@ -27,26 +23,10 @@
       font-family: $sans-font
 
       &:focus
-        border: 1px solid $main
+        box-shadow: inset 0 4px 4px 0 hsla(0,0%,0%,0.09)
+        // border: 1px solid $main
 
-    .form-messages
-      font-size: .7rem
+    &--messages
+      font-size: 0.8rem
       text-align: center
       font-family: $sans-font
-
-    .success
-      color: $main
-
-    .error
-      color: red
-
-    form input[type=submit]
-      color: $greybg
-      background-color: $main
-      text-align: center
-      width: 40%
-      border-radius: 20px
-
-      &:hover
-        background-color: $bluehover
-        cursor: pointer
