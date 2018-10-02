@@ -15,25 +15,4 @@
     display: flex
     justify-content: space-between
 
-.icon
-  transition: fill 0.3s ease-in-out
-  cursor: pointer
-
-  &_footer
-    fill: $foottext
-    @include square-size(1rem)
-    
-    @media (max-width: 640px)
-      @include square-size(1.4rem)
-
-    &:hover
-      fill: $main
-
-  &_bio
-    @include square-size(1.3rem)
-    fill: $greyicon
-
-    &:hover
-      fill: black
-
           
