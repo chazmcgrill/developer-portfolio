@@ -3,7 +3,7 @@
 
     <div class="modal-header">
       <h4 class="modal-header--title">portfolio</h4>
-      <div class="modal-header--cross" id="modal-close">&times;</div>
+      <div id="modal-close"><?php include('./assets/img/cross.svg'); ?></div>
     </div>
 
     <div class="modal-content">
