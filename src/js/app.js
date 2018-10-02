@@ -72,12 +72,12 @@ setInterval(function() {
 // MODAL CONTROLS
 
 // show modal
-var portfolio = document.querySelectorAll('.portfolio-item-box');
+var portfolio = document.querySelectorAll('.project');
 var modal = document.querySelector('.modal-bg');
 
 for (var i = 0; i < portfolio.length; i++) {
   portfolio[i].addEventListener('click', function(event) {
-    modalFilter(event.target.name);
+    modalFilter(event.target.id);
     modal.classList.remove('hidden');
     body.classList.add('modal-open');
   });

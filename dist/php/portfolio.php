@@ -3,14 +3,12 @@
     <h2>Portfolio</h2>
   </div>
   <div class="row row_centered">
-    <div class="portfolio-img-grid">
+    <div class="projects">
 
       <?php foreach ($portfolio as $p) { ?>
-        <div class="portfolio-item-box">
-          <img src="./assets/img/<?php echo $p['img']; ?>"
-            alt="<?php echo $p['title']; ?>" 
-            name="<?php echo $p['id']; ?>">
-          <h3><?php echo $p['title']; ?></h3>
+        <div class="project" id="<?php echo $p['id']; ?>" style="background-image: url('./assets/img/<?php echo $p['img']; ?>')">
+          <div class="project--overlay"></div>
+          <h3 class="project--title"><?php echo $p['title']; ?></h3>
         </div>
       <?php } ?>
       
