@@ -41,8 +41,28 @@
 .flash
   animation-name: flash
 
-@keyframes modal-open
+@keyframes modalOpen
   from
     opacity: 0
+    transform: translateY(400px)
+  90%
+    transform: translateY(-20px)
   to
     opacity: 1
+    transform: translateY(0px)
+
+.modal-open
+  animation: modalOpen 0.3s ease-in-out forwards
+
+@keyframes modalClose
+  from
+    transform: translateY(0px)
+  10%
+    opacity: 1
+    transform: translateY(-20px)
+  to
+    opacity: 0
+    transform: translateY(400px)
+
+.modal-close
+  animation: modalClose 0.3s ease-in-out forwards

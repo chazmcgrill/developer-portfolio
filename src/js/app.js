@@ -73,12 +73,15 @@ setInterval(function() {
 
 // show modal
 var portfolio = document.querySelectorAll('.project');
-var modal = document.querySelector('.modal-bg');
+var modalBg = document.querySelector('.modal-bg');
+var modal = document.querySelector('.modal');
 
 for (var i = 0; i < portfolio.length; i++) {
   portfolio[i].addEventListener('click', function(event) {
     modalFilter(event.target.id);
-    modal.classList.remove('is-hidden');
+    modalBg.classList.remove('is-hidden');
+    modal.classList.remove('modal-close');
+    modal.classList.add('modal-open');
     body.classList.add('is-fixed');
   });
 }
@@ -87,15 +90,23 @@ for (var i = 0; i < portfolio.length; i++) {
 var modalClose = document.getElementById('modal-close');
 
 modalClose.addEventListener('click', function() {
-  modal.classList.add('is-hidden');
-  body.classList.remove('is-fixed');
+  modal.classList.remove('modal-open');
+  modal.classList.add('modal-close');
+  setTimeout(() => {
+    modalBg.classList.add('is-hidden');
+    body.classList.remove('is-fixed');
+  }, 300);
 });
 
 // close modal by clicking outside modal
 window.addEventListener('click', function(event) {
-  if (event.target == modal) {
-    modal.classList.add('is-hidden');
-    body.classList.remove('is-fixed');
+  if (event.target == modalBg) {
+    modal.classList.remove('modal-open');
+    modal.classList.add('modal-close');
+    setTimeout(() => {
+      modalBg.classList.add('is-hidden');
+      body.classList.remove('is-fixed');
+    }, 300);
   }
 });
 
