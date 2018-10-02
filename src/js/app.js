@@ -78,24 +78,24 @@ var modal = document.querySelector('.modal-bg');
 for (var i = 0; i < portfolio.length; i++) {
   portfolio[i].addEventListener('click', function(event) {
     modalFilter(event.target.id);
-    modal.classList.remove('hidden');
-    body.classList.add('modal-open');
+    modal.classList.remove('is-hidden');
+    body.classList.add('is-fixed');
   });
 }
 
 // close modal via button
-var modalClose = document.getElementsByClassName('close-button')[0];
+var modalClose = document.getElementById('modal-close');
 
 modalClose.addEventListener('click', function() {
-  modal.classList.add('hidden');
-  body.classList.remove('modal-open');
+  modal.classList.add('is-hidden');
+  body.classList.remove('is-fixed');
 });
 
 // close modal by clicking outside modal
 window.addEventListener('click', function(event) {
   if (event.target == modal) {
-    modal.classList.add('hidden');
-    body.classList.remove('modal-open');
+    modal.classList.add('is-hidden');
+    body.classList.remove('is-fixed');
   }
 });
 
@@ -107,17 +107,17 @@ function modalFilter(modalId) {
   for (var i = 0; i < modalItem.length; i++) {
     if (modalItem[i].id === modalId) {
       currentModalId = i;
-      modalItem[i].classList.remove('filtered');
+      modalItem[i].classList.remove('is-filtered');
     } else {
-      modalItem[i].classList.add('filtered');
+      modalItem[i].classList.add('is-filtered');
     }
   }
   modalButtonDisplay(currentModalId, modalItem.length - 1)
 }
 
 // modal previous and next buttons
-var prevModal = document.querySelector('.modal-prev');
-var nextModal = document.querySelector('.modal-next');
+var prevModal = document.getElementById('modal-prev');
+var nextModal = document.getElementById('modal-next');
 
 prevModal.addEventListener('click', function() {
   modalFilter("pf" + (currentModalId - 1));
