@@ -43,28 +43,32 @@ arrow.addEventListener('click', (e) => {
 
 // =======================
 
-// HAMBURGER TOGGLE NAV
+// HAMBURGER TOGGLE NAV / BURGER ANIMATION
 
 const burger = document.getElementById('burger');
 const nav = document.getElementById('nav');
 
-let navOpen = true;
+let navOpen = false;
 
 burger.addEventListener('click', navToggle);
 
 function navToggle() {
-  nav.classList.remove(navOpen ? 'nav-close' : 'nav-open');
-  nav.classList.add(navOpen ? 'nav-open' : 'nav-close');
+  nav.classList.remove(navOpen ? 'nav-open' : 'nav-close');
+  nav.classList.add(navOpen ? 'nav-close' : 'nav-open');
   burger.classList.toggle('is-opened');
   navOpen = !navOpen;
 }
 
-// =======================
+// REMOVE OPEN NAV STATE ON WINDOW RESIZE
 
-// HAMBURGER ANIMATION
-
-
-
+window.addEventListener('resize', () => { 
+  if (window.innerWidth > 640) {
+    nav.classList.remove('nav-open');
+    nav.classList.remove('nav-close');
+    burger.classList.remove('is-opened');
+    navOpen = false;
+  }
+});
 
 // =======================
 
@@ -73,7 +77,6 @@ function navToggle() {
 setInterval(() => {
   arrow.classList.toggle('flash');
 }, 3000);
-
 
 // =======================
 
