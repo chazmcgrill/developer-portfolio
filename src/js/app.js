@@ -1,5 +1,7 @@
 const body = document.getElementsByTagName('body')[0];
 
+// =======================
+
 // SMOOTH SCROLL
 
 // Scroll function that animates the move to each section
@@ -16,28 +18,6 @@ function scrollTo(element, to, duration) {
       scrollTo(element, to, duration - 10);
     }, 10);
   }
-}
-
-// HAMBURGER
-
-const burger = document.getElementById('burger');
-const nav = document.getElementById('nav');
-
-let navOpen = true;
-
-burger.addEventListener('click', () => {
-  if (navOpen) {
-    nav.classList.remove('nav-close');
-    nav.classList.add('nav-open');
-  } else {
-    nav.classList.remove('nav-open');
-    nav.classList.add('nav-close');  
-  }
-  navOpen = !navOpen;
-});
-
-function navToggle() {
-
 }
 
 // Function that calls scroll to function with the corresponding id;
@@ -61,12 +41,41 @@ arrow.addEventListener('click', (e) => {
   navClick(e.target.id);
 }, false);
 
+// =======================
+
+// HAMBURGER TOGGLE NAV
+
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+
+let navOpen = true;
+
+burger.addEventListener('click', navToggle);
+
+function navToggle() {
+  nav.classList.remove(navOpen ? 'nav-close' : 'nav-open');
+  nav.classList.add(navOpen ? 'nav-open' : 'nav-close');
+  burger.classList.toggle('is-opened');
+  navOpen = !navOpen;
+}
+
+// =======================
+
+// HAMBURGER ANIMATION
+
+
+
+
+// =======================
 
 // FLASHING ARROW
+
 setInterval(() => {
   arrow.classList.toggle('flash');
 }, 3000);
 
+
+// =======================
 
 // MODAL CONTROLS
 

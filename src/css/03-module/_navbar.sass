@@ -2,6 +2,7 @@
   align-items: center
   padding: 20px 0
   position: relative
+  overflow: hidden
 
   &--logo
     height: 40px
@@ -21,9 +22,8 @@
     height: 22px
     display: none
     position: absolute
-    top: 28px
+    top: 30px
     right: 0
-    background: pink
     cursor: pointer
 
     @media (max-width: 640px)
@@ -39,17 +39,17 @@
       &::after
         width: 30px
         height: 3px
-        background-color: white
-        border-radius: 3px
+        background-color: $arrow
         position: absolute
-        transition: transform 0.15s ease
+        transition: transform 0.15s ease-in-out, opacity 0.1s linear
 
-      &::before
-        content: ""
-        display: block
-        top: -10px
-
+      &::before,
       &::after
         content: ""
         display: block
+
+      &::before
+        top: -10px
+
+      &::after
         bottom: -10px

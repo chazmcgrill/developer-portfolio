@@ -12,3 +12,16 @@
 
 .is-error
   color: $danger
+
+// hamburger open
+
+.nav-bar-burger.is-opened .nav-bar-burger--inner
+  transform: rotate(225deg)
+
+.nav-bar-burger.is-opened .nav-bar-burger--inner::after
+  top: 0
+  opacity: 0
+
+.nav-bar-burger.is-opened .nav-bar-burger--inner::before
+  top: 0
+  transform: rotate(-90deg)
