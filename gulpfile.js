@@ -4,6 +4,9 @@ const browserSync = require('browser-sync').create();
 const plugs = require('gulp-load-plugins')({ lazy: false });
 const php = require('gulp-connect-php');
 const cleanCSS = require('gulp-clean-css');
+var imageminMozjpeg = require('imagemin-mozjpeg');
+var imageminPngquant = require('imagemin-pngquant');
+const imageminZopfli = require('imagemin-zopfli');
 
 // -- FILE PATHS
 
@@ -48,8 +51,17 @@ gulp.task('scripts', () => {
 gulp.task('image-min', () => {
   return gulp.src(paths.img.src)
     .pipe(plugs.imagemin([
-      plugs.imagemin.jpegtran({ progressive: true }),
-      plugs.imagemin.optipng({ optimizationLevel: 5 }),
+      imageminMozjpeg({quality:90}),
+      imageminPngquant({
+        speed: 10,
+        quality: 90
+      }),
+      imageminZopfli({
+        more: true
+        // iterations: 50 // very slow but more effective
+      }),
+      // plugs.imagemin.jpegtran({ progressive: true }),
+      // plugs.imagemin.optipng({ optimizationLevel: 5 }),
       plugs.imagemin.svgo({
         plugins: [
           { removeViewBox: true },
