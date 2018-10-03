@@ -66,3 +66,31 @@
 
 .modal-close
   animation: modalClose 0.3s ease-in-out forwards
+
+// NAV OPEN CLOSE
+
+@keyframes navOpen
+  from
+    opacity: 0
+    transform: translateX(400px)
+  90%
+    transform: translateX(-20px)
+  to
+    opacity: 1
+    transform: translateX(0px)
+
+.nav-open
+  animation: navOpen 0.3s ease-in-out forwards
+
+@keyframes navClose
+  from
+    opacity: 1
+    transform: translateX(0px)
+  10%
+    transform: translateX(20px)
+  to
+    opacity: 0
+    transform: translateX(-400px)
+
+.nav-close
+  animation: navClose 0.3s ease-in-out forwards

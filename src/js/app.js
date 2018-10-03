@@ -18,6 +18,28 @@ function scrollTo(element, to, duration) {
   }
 }
 
+// HAMBURGER
+
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+
+let navOpen = true;
+
+burger.addEventListener('click', () => {
+  if (navOpen) {
+    nav.classList.remove('nav-close');
+    nav.classList.add('nav-open');
+  } else {
+    nav.classList.remove('nav-open');
+    nav.classList.add('nav-close');  
+  }
+  navOpen = !navOpen;
+});
+
+function navToggle() {
+
+}
+
 // Function that calls scroll to function with the corresponding id;
 function navClick(navId) {
   navId = navId ? navId.toLowerCase() : 'bio';

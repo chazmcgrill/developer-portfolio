@@ -11,18 +11,14 @@ header
   height: 100vh
   padding: 0 20px
 
-  .nav-bar
-    align-items: center
-    padding: 20px 0
-
-    &--logo
-      height: 50px
-      width: 50px
-      margin-bottom: 20px
-
-  .hero-text
+  .hero
     text-align: center
     width: 400px
+
+    &--title
+
+      @media (max-width: 347px)
+        font-size: 40px
 
     @media (max-width: 480px)
       width: calc(100% - 10px)
