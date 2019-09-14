@@ -24,7 +24,7 @@ const paths = {
     dist: 'dist/assets/js'
   },
   img: {
-    src: 'src/img/*',
+    src: 'src/img/*.{jpg,png,svg}',
     dist: 'dist/assets/img'
   }
 }
@@ -48,26 +48,28 @@ gulp.task('scripts', () => {
     .pipe(gulp.dest(paths.js.dist));
 });
 
-gulp.task('image-min', async () => {
-  await plugs.imagemin([paths.img.src], paths.img.dist, {
-    use: [
+gulp.task('image-min', () => {
+  return gulp.src(paths.img.src)
+    .pipe(plugs.imagemin([
       imageminMozjpeg({ quality: 90 }),
       imageminPngquant({
         speed: 10,
-        quality: 90
+        quality: [0.9, 1] // min, max
       }),
       imageminZopfli({
         more: true
         // iterations: 50 // very slow but more effective
       }),
+      // plugs.imagemin.jpegtran({ progressive: true }),
+      // plugs.imagemin.optipng({ optimizationLevel: 5 }),
       plugs.imagemin.svgo({
         plugins: [
           { removeViewBox: true },
           { cleanupIDs: false }
         ]
       })
-    ]
-  })
+    ]))
+    .pipe(gulp.dest(paths.img.dist))
 });
 
 gulp.task('php', () => {
