@@ -1,30 +1,36 @@
 <?php
 
     if (isset($_POST)) {
-      $re = '@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?).*$)@m';
-      // extract and sanitize form data
-      $name = strip_tags(trim($_POST["name"]));
-      $name = str_replace(array("\r","\n"),array(" "," "),$name);
-      $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-      $message = trim($_POST["message"]);
-      $message = preg_replace($re, 'URL ATTEMPT', $message);
-      $url = "../index.php";
+        $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
+        $subject = $subject = "New Contact - Dev Portfolio: From: $name";;
+        $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+        $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+        $url = "../index.php";
 
-      // redirect with error status if invalid
-      if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if (!preg_match("/^[A-Za-z .'-]+$/", $name)) {
+            $name_error = true;
+        }
+
+        if (!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)) {
+            $email_error = true;
+        }
+
+        if (strlen($message) === 0) {
+            $message_error = true;
+        }
+    }
+
+    if (!isset($name_error) && !isset($email_error) && !isset($message_error)) {
+        $to = "mail@charlietaylorcoder.com"; 
+        $body = " Name: $name\n E-mail: $email\n Message:\n $message";
+
+        if (mail($to, $subject, $body)) {
+            header("Location: " . $url . "?success=1#form");
+        } else {
+            header("Location: " . $url . "?success=-1#form");
+        }
+    } else {
         header("Location: " . $url . "?success=-1#form");
-        exit;
-      }
-
-      // create the email content
-      $to = "mail@charlietaylorcoder.com";
-      $subject = "New Contact From: $name";
-      $message = "Name: $name\nEmail: $email\n\n$message";
-      $headers = "From: $to";
-  
-      // mail and redirect if valid
-      mail($to, $subject, $message, $headers);
-      header("Location: " . $url . "?success=1#form");
     }
 
 ?>
