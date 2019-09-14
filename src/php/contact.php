@@ -9,6 +9,7 @@
         <input class="form--input" type="text" name="name" placeholder="name" id="name" required>
         <input class="form--input" type="email" name="email" placeholder="email" id="email" required>
         <textarea class="form--input" name="message" placeholder="your message" data-new-placeholder="your message" rows="5"></textarea>
+
         <?php
           if (isset($_GET['success'])) {
             $cls = 'is-success';
@@ -20,6 +21,7 @@
             echo "<div class=\"form--messages $cls\">$msg</div>";
           }
         ?>
+        
         <input class="btn btn_submit" type="submit" value="send message">
       </form>
     </div>

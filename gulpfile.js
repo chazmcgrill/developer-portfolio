@@ -24,7 +24,7 @@ const paths = {
     dist: 'dist/assets/js'
   },
   img: {
-    src: 'src/img/*',
+    src: 'src/img/*.{jpg,png,svg}',
     dist: 'dist/assets/img'
   }
 }
@@ -51,10 +51,10 @@ gulp.task('scripts', () => {
 gulp.task('image-min', () => {
   return gulp.src(paths.img.src)
     .pipe(plugs.imagemin([
-      imageminMozjpeg({quality:90}),
+      imageminMozjpeg({ quality: 90 }),
       imageminPngquant({
         speed: 10,
-        quality: 90
+        quality: [0.9, 1] // min, max
       }),
       imageminZopfli({
         more: true
@@ -75,7 +75,6 @@ gulp.task('image-min', () => {
 gulp.task('php', () => {
   return gulp.src(paths.php.src).pipe(gulp.dest(paths.php.dist))
 })
-
 
 // -- MAIN TASKS
 
