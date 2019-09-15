@@ -1,6 +1,6 @@
 <?php
 
-    if (isset($_POST)) {
+    if (isset($_POST) && isset($_POST['url']) && $_POST['url'] == '') {
         $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
         $subject = $subject = "New Contact - Dev Portfolio: From: $name";;
         $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
