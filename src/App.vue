@@ -1,7 +1,40 @@
+<template>
+  <div id="app">
+      <Header />
+  </div>
+</template>
+
+<script>
+import Header from './components/Header.vue'
+
+export default {
+  name: 'app',
+  components: {
+    Header
+  }
+}
+</script>
+
+<style lang="sass">
+
+@import './sass/_grid.sass'
+@import './sass/_normalize.sass'
+
+// fonts
+@import './sass/_variables.sass'
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Oswald')
+
+#app
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+
 // Core Styles
 
 *
   box-sizing: border-box
+  padding: 0
+  margin: 0
 
 body
   background: $bg-white
@@ -117,3 +150,5 @@ ul
 
 li
   list-style: none
+
+</style>
