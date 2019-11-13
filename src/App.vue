@@ -1,8 +1,9 @@
 <template>
   <div id="app">
       <Header />
-      <Bio v-bind:social-icons="socialIcons"/>
-      <Services v-bind:services="services"/>
+      <Bio v-bind:social-icons="socialIcons" />
+      <Services v-bind:services="services" />
+      <Skills v-bind:skills="skills" />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Header from './components/Header.vue'
 import Bio from './components/Bio.vue'
 import Services from './components/Services.vue'
+import Skills from './components/Skills.vue'
 
 export default {
     name: 'app',
     components: {
         Header,
         Bio,
-        Services
+        Services,
+        Skills
     },
     data() {
         return {
@@ -43,7 +46,27 @@ export default {
                     icon: 'fa-server',
                     text: 'Your project is always built with optimisation, accessibility and security in mind. If required I can also provide hosting and domain services.'
                 }
-            ]
+            ],
+            skills: [
+                'html5',
+                'css3',
+                'sass',
+                'javascript', 
+                'jasmine',
+                'react',
+                'mysql',
+                'php', 
+                'wordpress',
+                'git',
+                'github',
+                'npm',
+                'nodejs',
+                'webpack',
+                'express',
+                'heroku',
+                'illustrator',
+                'photoshop'
+            ],
         }
     }
 }
@@ -62,7 +85,6 @@ export default {
 #app
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
 
 // Core Styles
 
