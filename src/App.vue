@@ -1,16 +1,30 @@
 <template>
   <div id="app">
       <Header />
+      <Bio v-bind:social-icons="socialIcons"/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Bio from './components/Bio.vue'
 
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    Bio
+  },
+  data() {
+      return {
+          socialIcons: [
+            {name: 'codepen', url: 'https://codepen.io/chazmcgrill/'},
+            {name: 'twitter', url: 'https://twitter.com/charlietcoder'},
+            {name: 'github', url: 'https://github.com/chazmcgrill'},
+            {name: 'linkedin', url: 'https://www.linkedin.com/in/charlie-taylor-941434134/'},
+            {name: 'instagram', url: 'https://instagram.com/charlietcoder'},
+          ]
+      }
   }
 }
 </script>
@@ -19,6 +33,7 @@ export default {
 
 @import './sass/_grid.sass'
 @import './sass/_normalize.sass'
+@import './sass/_mixins.sass'
 
 // fonts
 @import './sass/_variables.sass'
@@ -150,5 +165,42 @@ ul
 
 li
   list-style: none
+
+.icon
+  transition: fill 0.3s linear
+  cursor: pointer
+
+  &_footer
+    fill: $foottext
+    @include square-size(1rem)
+    
+    @media (max-width: 640px)
+      @include square-size(1.4rem)
+
+    &:hover
+      fill: $main
+
+  &_bio > path
+    fill: $greyicon
+
+    &:hover
+      fill: black
+
+.icons
+
+  &_footer
+    width: 150px
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 640px)
+      width: 200px
+      padding: 10px 0
+
+  &_bio
+    width: 180px
+    margin: 45px auto 70px auto
+    display: flex
+    justify-content: space-between
 
 </style>
