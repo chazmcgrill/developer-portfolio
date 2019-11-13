@@ -2,30 +2,50 @@
   <div id="app">
       <Header />
       <Bio v-bind:social-icons="socialIcons"/>
+      <Services v-bind:services="services"/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Bio from './components/Bio.vue'
+import Services from './components/Services.vue'
 
 export default {
-  name: 'app',
-  components: {
-    Header,
-    Bio
-  },
-  data() {
-      return {
-          socialIcons: [
-            {name: 'codepen', url: 'https://codepen.io/chazmcgrill/'},
-            {name: 'twitter', url: 'https://twitter.com/charlietcoder'},
-            {name: 'github', url: 'https://github.com/chazmcgrill'},
-            {name: 'linkedin', url: 'https://www.linkedin.com/in/charlie-taylor-941434134/'},
-            {name: 'instagram', url: 'https://instagram.com/charlietcoder'},
-          ]
-      }
-  }
+    name: 'app',
+    components: {
+        Header,
+        Bio,
+        Services
+    },
+    data() {
+        return {
+            socialIcons: [
+                {name: 'codepen', url: 'https://codepen.io/chazmcgrill/'},
+                {name: 'twitter', url: 'https://twitter.com/charlietcoder'},
+                {name: 'github', url: 'https://github.com/chazmcgrill'},
+                {name: 'linkedin', url: 'https://www.linkedin.com/in/charlie-taylor-941434134/'},
+                {name: 'instagram', url: 'https://instagram.com/charlietcoder'},
+            ],
+            services: [
+                {
+                    title: 'Design',
+                    icon: 'fa-pencil-alt',
+                    text: 'Every project is carefully planned using sketches, mind maps and wireframes. I come from a graphic arts background so I really enjoy a design challenge.'
+                },
+                {
+                    title: 'Code',
+                    icon: 'fa-desktop',
+                    text: 'I\'m confident in a range of technologies and love learning new ones. I like to keep my code semantic and well documented so it\'s easy to maintain and understand.'
+                },
+                {
+                    title: 'Build',
+                    icon: 'fa-server',
+                    text: 'Your project is always built with optimisation, accessibility and security in mind. If required I can also provide hosting and domain services.'
+                }
+            ]
+        }
+    }
 }
 </script>
 
