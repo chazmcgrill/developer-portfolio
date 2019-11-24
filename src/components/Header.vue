@@ -2,12 +2,7 @@
 <header>
   <div class="nav-bar row row_spaced">
     <img class="nav-bar--logo animated fadeInDown" src="../assets/logo.png" alt="Charlie Taylor Logo">
-    <nav class="nav-bar--nav nav" id="nav">
-      <li class="nav--item">Bio</li>
-      <li class="nav--item">Services</li>
-      <li class="nav--item">Portfolio</li>
-      <li class="nav--item">Contact</li>
-    </nav>
+    <Nav />
 
     <span class="nav-bar-burger" id="burger">
       <span class="nav-bar-burger--inner"></span>
@@ -30,8 +25,13 @@
 </template>
 
 <script>
+import Nav from './Nav'
+
 export default {
-  name: 'Header',
+    name: 'Header',
+    components: {
+        Nav,
+    }
 }
 </script>
 
@@ -124,22 +124,4 @@ header
       &::after
         bottom: -10px
 
-.nav
-  text-transform: uppercase
-  font-family: $sans-font
-
-  &--item
-    margin: 0 5px 0 0
-    display: inline-block
-    letter-spacing: 0.5px
-    transition: color 0.3s linear
-      
-    &:last-child
-      margin-right: 0
-    
-    &:hover
-      color: $bluehover
-
-    @media (min-width: 640px)
-      margin: 0 3px 3px
-</style>style
+</style>

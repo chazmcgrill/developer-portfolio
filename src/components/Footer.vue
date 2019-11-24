@@ -1,13 +1,7 @@
 <template>
     <footer class="footer">
         <div class="row row_spaced-aligned">
-            <ul class="nav">
-                <li class="nav--item">Bio</li>
-                <li class="nav--item">Services</li>
-                <li class="nav--item">Portfolio</li>
-                <li class="nav--item">Contact</li>
-            </ul>
-
+            <Nav />
             <SocialIcons icon-type="footer" /> 
         </div>
 
@@ -20,11 +14,13 @@
 <script>
 
 import SocialIcons from './SocialIcons'
+import Nav from './Nav'
 
 export default {
     name: 'Footer',
     components: {
         SocialIcons,
+        Nav,
     }
 }
 
@@ -33,25 +29,6 @@ export default {
 <style lang="sass" scoped>
 @import '../sass/_variables.sass'
 @import '../sass/_grid.sass'
-
-.nav
-    text-transform: uppercase
-    font-family: $sans-font
-
-    &--item
-        margin: 0 5px 0 0
-        display: inline-block
-        letter-spacing: 0.5px
-        transition: color 0.3s linear
-        
-        &:last-child
-            margin-right: 0
-        
-        &:hover
-            color: $bluehover
-
-        @media (min-width: 640px)
-            margin: 0 3px 3px
 
 .footer
     padding: 20px
