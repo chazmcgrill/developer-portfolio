@@ -6,11 +6,7 @@
             <div>
                 <img class="bio--img" src="../assets/profile-pic.jpg" alt="Charlie Taylor">
                 <p class="bio--text"><strong>Hello,</strong> I'm Charlie A front-end developer and graphic artist from Leeds. I love making well designed responsive websites and interactive applications.</p>
-                <div class="icons_bio">
-                    <a v-bind:key="icon.name" v-for="icon in socialIcons" v-bind:href="icon.url" aria-hidden="true" target="_blank">
-                        <font-awesome-icon :icon="['fab', icon.name]" class="icon_bio" size="lg" />
-                    </a>                
-                </div>
+                <SocialIcons icon-type="bio"  />
             </div>
             </div>
         </div>
@@ -18,9 +14,13 @@
 </template>
 
 <script>
+import SocialIcons from './SocialIcons'
+
 export default {
-  name: 'Header',
-  props: ['socialIcons']
+    name: 'Header',
+    components: {
+        SocialIcons,
+    }
 }
 </script>
 
