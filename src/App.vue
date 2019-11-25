@@ -5,6 +5,7 @@
       <Services v-bind:services="services" />
       <Skills v-bind:skills="skills" />
       <Portfolio v-bind:projects="projects" v-on:select-project="setSelectedProject" />
+      <Contact />
       <Footer />
       <Modal v-bind:selected-project="selectedProject" v-on:select-project="setSelectedProject" />
   </div>
@@ -16,6 +17,7 @@ import Bio from './components/Bio.vue'
 import Services from './components/Services.vue'
 import Skills from './components/Skills.vue'
 import Portfolio from './components/Portfolio.vue'
+import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import Modal from './components/Modal.vue'
 
@@ -27,6 +29,7 @@ export default {
         Services,
         Skills,
         Portfolio,
+        Contact,
         Footer,
         Modal,
     },
