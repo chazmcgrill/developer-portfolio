@@ -7,8 +7,8 @@
                     v-bind:key="skill"
                     v-for="skill in skills"
                     v-bind:class="'skill skill--' + skill"
-                    v-bind:tool-title="skill">
-                </div>
+                    v-bind:tool-title="skill"
+                />
             </div>
         </div>
     </section>

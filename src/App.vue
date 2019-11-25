@@ -4,8 +4,9 @@
       <Bio />
       <Services v-bind:services="services" />
       <Skills v-bind:skills="skills" />
-      <Portfolio v-bind:projects="projects" />
+      <Portfolio v-bind:projects="projects" v-on:select-project="setSelectedProject" />
       <Footer />
+      <Modal v-bind:selected-project="selectedProject" v-on:select-project="setSelectedProject" />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Services from './components/Services.vue'
 import Skills from './components/Skills.vue'
 import Portfolio from './components/Portfolio.vue'
 import Footer from './components/Footer.vue'
+import Modal from './components/Modal.vue'
 
 export default {
     name: 'app',
@@ -26,9 +28,16 @@ export default {
         Skills,
         Portfolio,
         Footer,
+        Modal,
+    },
+    methods: {
+        setSelectedProject: function (id) {
+            this.selectedProject = this.projects.find(project => project.id === id);
+        },
     },
     data() {
         return {
+            selectedProject: null,
             services: [
                 {
                     title: 'Design',
@@ -70,7 +79,7 @@ export default {
                 {
                     img: 'portfolio-analogclock.jpg', 
                     title: 'Analog Style Clock',
-                    id: 'pf0',
+                    id: 0,
                     text: 'Analog style clock created using vanilla javascript. Makes use of loops within pug and sass to create the clock.',
                     links: [
                         { 'site': 'codepen', 'url': 'mMjVmy/' },
@@ -80,7 +89,7 @@ export default {
                 {
                     img: 'portfolio-calc.jpg', 
                     title: 'Javascript Calculator',
-                    id: 'pf1',
+                    id: 1,
                     text: 'Simple arithmetic calculator created using javascript. Includes percentage, decimals and negate functionality.',
                     links: [
                         { 'site': 'codepen', 'url': 'QgKvLZ/' },
@@ -90,7 +99,7 @@ export default {
                 {
                     img: 'portfolio-hurricanecharlie.jpg', 
                     title: 'Hurricane Charlie Website',
-                    id: 'pf2',
+                    id: 2,
                     text: 'Personal illustration portfolio contains gallery, contact and shop. key technologies React, React-router, Node, Express and CSS grid.',
                     links: [
                         { 'site': 'website', 'url': 'https://www.hurricanecharlie.co.uk' },
@@ -100,7 +109,7 @@ export default {
                 {
                     img: 'portfolio-pizzabox.jpg', 
                     title: 'React Pizza Box',
-                    id: 'pf3',
+                    id: 3,
                     text: 'React app for storing pizza recipes, functionality for adding new recipes and editing or deleting existing recipes. Info is stored locally so when browser is reloaded the data persists.',
                     links: [
                         { 'site': 'codepen', 'url': 'pdOjGm/' },
@@ -110,7 +119,7 @@ export default {
                 {
                     img: 'portfolio-pomodoro.jpg', 
                     title: 'Pomodoro Timer',
-                    id: 'pf4',
+                    id: 4,
                     text: 'Pomodoro timer for an app for improving time management and workflow. Animated and coded using css and javascript.',
                     links: [
                         { 'site': 'codepen', 'url': 'rwGbVR/' },
@@ -120,17 +129,17 @@ export default {
                 {
                     img: 'portfolio-quote.jpg', 
                     title: 'Quote Machine',
-                    id: 'pf5',
+                    id: 5,
                     text: 'App that generates random quotes collected from an external API. New quotes can be generated and can be shared on twitter.',
                     links: [
-                    { 'site': 'codepen', 'url': 'jBmygM/' },
-                    { 'site': 'github', 'url': 'quote-machine' }
+                        { 'site': 'codepen', 'url': 'jBmygM/' },
+                        { 'site': 'github', 'url': 'quote-machine' }
                     ]
                 },
                 {
                     img: 'portfolio-life.jpg', 
                     title: 'Life App',
-                    id: 'pf6',
+                    id: 6,
                     text: 'React project based on the cellular automaton \'Life\' devised by mathematician John Conway.',
                     links: [
                         { 'site': 'codepen', 'url': 'QOoOaj/' },
@@ -140,7 +149,7 @@ export default {
                 {
                     img: 'portfolio-bugsweeper.jpg', 
                     title: 'Bugsweeper',
-                    id: 'pf7',
+                    id: 7,
                     text: 'Recreation of the classic windows desktop game minesweeper. Built using React javascript, it utilises an \'flood fill\' algorithm.', 
                     links: [
                         { 'site': 'website', 'url': 'https://charlietaylorcoder.com/bugsweeper' },
@@ -150,7 +159,7 @@ export default {
                 {
                     img: 'portfolio-tictactoe.jpg', 
                     title: 'Tictactoe Game',
-                    id: 'pf8',
+                    id: 8,
                     text: 'Game of noughts and crosses human vs computer. Utilises a minimax algorithm to make the computer unbeatable.',
                     links: [
                         { 'site': 'codepen', 'url': 'EwyGOG/' },
@@ -160,7 +169,7 @@ export default {
                 {
                     img: 'portfolio-twitchtv.jpg', 
                     title: 'TwitchBox',
-                    id: 'pf9',
+                    id: 9,
                     text: 'Application for showing TwitchTV channel data using their API. Shows channel status and links to the video stream.',
                     links: [
                         { 'site': 'codepen', 'url': 'oWpVOG/' },
@@ -170,7 +179,7 @@ export default {
                 {
                     img: 'portfolio-weather.jpg', 
                     title: 'Weather App',
-                    id: 'pf10',
+                    id: 10,
                     text: 'Provides current weather status for your current location. Uses geolocation and uses two external API\'s for location and weather.',
                     links: [
                         { 'site': 'codepen', 'url': 'BRKaPB/' },
@@ -180,7 +189,7 @@ export default {
                 {
                     img: 'portfolio-coinage.jpg', 
                     title: 'Coinage App',
-                    id: 'pf11',
+                    id: 11,
                     text: 'Simple cryptocurrency price tracking app. Built using react test driven development. Data is pulled from cryptocompare api via multiple AJAX requests.',
                     links: [
                         { 'site': 'website', 'url': 'https://charlietaylorcoder.com/coinage' },

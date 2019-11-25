@@ -6,7 +6,7 @@
         <div class="row row_centered">
             <div class="projects">
 
-                <div v-for="project in projects" :key="project.title" class="project" :id="project.id" :style="{backgroundImage: 'url(' + require('../assets/'+ project.img) + ')' }">
+                <div v-for="project in projects" :key="project.title" class="project" :id="project.id" :style="{backgroundImage: 'url(' + require('../assets/'+ project.img) + ')' }" @click="$emit('select-project', project.id)">
                     <div class="project--overlay"></div>
                     <h3 class="project--title">{{project.title}}</h3>
                 </div>
@@ -19,7 +19,7 @@
 <script>
 export default {
     name: 'Portfolio',
-    props: ['projects']
+    props: ['projects'],
 }
 </script>
 
