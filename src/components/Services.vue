@@ -14,10 +14,10 @@
 </template>
 
 <script>
-    export default {
-        name: 'Services',
-        props: ['services']
-    }
+export default {
+    name: 'Services',
+    props: ['services']
+}
 </script>
 
 <style lang="sass" scoped>

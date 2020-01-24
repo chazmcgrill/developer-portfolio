@@ -1,52 +1,51 @@
 <template>
     <div class="modal-bg" v-if="selectedProject">
-  <div class="modal">
+        <div class="modal">
 
-    <div class="modal-header">
-      <h4 class="modal-header--title">portfolio</h4>
-      <font-awesome-icon
-        :icon="['fas', 'times']"
-        class="modal-header--cross"
-        size="lg"
-        @click="$emit('select-project', null)"
-    />
-    </div>
+            <div class="modal-header">
+                <h4 class="modal-header--title">portfolio</h4>
+                <font-awesome-icon
+                    :icon="['fas', 'times']"
+                    class="modal-header--cross"
+                    size="lg"
+                    @click="$emit('select-project', null)"
+                />
+            </div>
 
-    <div class="modal-content">
-        <div class="portfolio-item" :id="selectedProject.id" :key="selectedProject.id">
-            <img class="modal-content--img" :src="getImageUrl(selectedProject.img)" :alt="selectedProject.title">
-            <h4 class="modal-content--title">{{selectedProject.title}}</h4>
-            <p class="modal-content--text">{{selectedProject.text}}</p>
-            
-            <a
-                v-for="link in selectedProject.links"
-                :key="link.url"
-                class="modal-content--link"
-                target="_blank"
-                :href="sites[link.site] + link.url"
-            >
-                {{`view on ${link.site}`}}
-            </a>
+            <div class="modal-content">
+                <div class="portfolio-item" :id="selectedProject.id" :key="selectedProject.id">
+                    <img class="modal-content--img" :src="getImageUrl(selectedProject.img)" :alt="selectedProject.title">
+                    <h4 class="modal-content--title">{{selectedProject.title}}</h4>
+                    <p class="modal-content--text">{{selectedProject.text}}</p>
+                    
+                    <a
+                        v-for="link in selectedProject.links"
+                        :key="link.url"
+                        class="modal-content--link"
+                        target="_blank"
+                        :href="sites[link.site] + link.url"
+                    >
+                        {{`view on ${link.site}`}}
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <font-awesome-icon
+                    :icon="['fas', 'arrow-left']"
+                    class="modal-footer--arrow"
+                    size="lg"
+                    @click="$emit('select-project', selectedProject.id - 1)"
+                />
+                <font-awesome-icon
+                    :icon="['fas', 'arrow-right']"
+                    class="modal-footer--arrow"
+                    size="lg"
+                    @click="$emit('select-project', selectedProject.id + 1)"
+                />
+            </div>
         </div>
     </div>
-
-    <div class="modal-footer">
-        <font-awesome-icon
-            :icon="['fas', 'arrow-left']"
-            class="modal-footer--arrow"
-            size="lg"
-            @click="$emit('select-project', selectedProject.id - 1)"
-        />
-        <font-awesome-icon
-            :icon="['fas', 'arrow-right']"
-            class="modal-footer--arrow"
-            size="lg"
-            @click="$emit('select-project', selectedProject.id + 1)"
-        />
-    </div>
-
-  </div>
-</div>
 </template>
 
 <script>

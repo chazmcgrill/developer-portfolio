@@ -6,11 +6,11 @@
         <div class="row row_centered">
             <div class="form col col_center" id="form">
                 <p class="form--title"><strong>I'm currently available for your projects,</strong> please use this form to get in touch...</p>
-                <form action="onSubmit">
-                    <input class="form--input" type="text" name="name" placeholder="name" id="name" required>
-                    <input class="form--input" type="email" name="email" placeholder="email" id="email" required>
+                <form v-on:submit="onSubmit" action="#">
+                    <input class="form--input" type="text" name="name" placeholder="name" v-model="name" required>
+                    <input class="form--input" type="email" name="email" placeholder="email" v-model="email.value" required>
                     <input class="form--anti-spam" type="text" name="url" />
-                    <textarea class="form--input" name="message" placeholder="your message" data-new-placeholder="your message" rows="5"></textarea>
+                    <textarea class="form--input" name="message" placeholder="your message" rows="5" v-model="message.text"></textarea>
 
                     <!-- <?php
                     if (isset($_GET['success'])) {
@@ -35,9 +35,28 @@
 export default {
     name: 'Contact',
     methods: {
-        onSubmit: function () {
-            
+        onSubmit: function (event) {
+            event.preventDefault();
+            console.log('form submittion', {
+                name: this.name,
+                email: this.email,
+                message: this.message,
+            });
         }
+    },
+    data() {
+        return {
+            name: '',
+            email: {
+                value: '',
+                valid: true
+            },
+            message: {
+                text: '',
+                maxlength: 255
+            },
+            submitted: false
+        };
     }
 }
 </script>

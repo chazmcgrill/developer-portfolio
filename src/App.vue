@@ -12,6 +12,7 @@
 </template>
 
 <script>
+
 import Header from './components/Header.vue'
 import Bio from './components/Bio.vue'
 import Services from './components/Services.vue'

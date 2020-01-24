@@ -34,14 +34,14 @@ export default {
     text-align: center
 
     &--img
-      display: block
-      width: 150px
-      border-radius: 50%
-      margin: 0 auto 30px
-      transition: opacity 0.2s
+        display: block
+        width: 150px
+        border-radius: 50%
+        margin: 0 auto 30px
+        transition: opacity 0.2s
 
-      &:hover
-        opacity: 0.8
+        &:hover
+            opacity: 0.8
 
     &--text
       font-size: 1.3rem
