@@ -12,17 +12,7 @@
                     <input class="form--anti-spam" type="text" name="url" />
                     <textarea class="form--input" name="message" placeholder="your message" rows="5" v-model="message.text"></textarea>
 
-                    <!-- <?php
-                    if (isset($_GET['success'])) {
-                        $cls = 'is-success';
-                        $msg = 'Thank you! Your message has been sent.';
-                        if ($_GET['success'] == -1) {
-                        $cls = 'is-error';
-                        $msg = 'Oops message sending failed.';
-                        }
-                        echo "<div class=\"form--messages $cls\">$msg</div>";
-                    }
-                    ?> -->
+                    <div :class="`form--messages ${messageClass}`" v-if="submissionMessage">{{submissionMessage}}</div>
 
                     <input class="btn btn_submit" type="submit" value="send message">
                 </form>
@@ -35,13 +25,28 @@
 export default {
     name: 'Contact',
     methods: {
-        onSubmit: function (event) {
+        onSubmit: async function (event) {
             event.preventDefault();
-            console.log('form submittion', {
-                name: this.name,
-                email: this.email,
-                message: this.message,
+            const { name, email, message } = this;
+            const data = { name, email: email.value, message: message.text };
+            
+            const messageResponse = await fetch('https://ct-core-api.herokuapp.com/dp-contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
             });
+
+            const { ok } = messageResponse;
+
+            this.submissionMessage = ok
+                ? 'Thank you! Your message has been sent.'
+                : 'Oops message sending failed.';
+
+            this.messageClass = ok ? 'is-success' : 'is-error';
+
+            this.submitted = true;
         }
     },
     data() {
@@ -55,6 +60,8 @@ export default {
                 text: '',
                 maxlength: 255
             },
+            submissionMessage: '',
+            messageClass: '',
             submitted: false
         };
     }
@@ -108,6 +115,7 @@ export default {
     color: $bg-white
     cursor: pointer
     transition: all 0.3s ease-in-out
+    outline: none
 
     &_submit
         display: block

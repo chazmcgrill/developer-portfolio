@@ -212,6 +212,7 @@ export default {
 @import './sass/_normalize.sass'
 @import './sass/_variables.sass'
 @import './sass/_animation.sass'
+@import './sass/_state.sass'
 
 // fonts
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Oswald')
