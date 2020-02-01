@@ -1,15 +1,18 @@
 <template>
-    <ul class="nav">
-        <li class="nav--item">Bio</li>
-        <li class="nav--item">Services</li>
-        <li class="nav--item">Portfolio</li>
-        <li class="nav--item">Contact</li>
-    </ul>
+    <transition name="nav-slide">
+        <ul class="nav" v-if="navOpen">
+            <li class="nav--item">Bio</li>
+            <li class="nav--item">Services</li>
+            <li class="nav--item">Portfolio</li>
+            <li class="nav--item">Contact</li>
+        </ul>
+    </transition>
 </template>
 
 <script>
 export default {
     name: 'Nav',
+    props: ['nav-open'],
 }
 </script>
 

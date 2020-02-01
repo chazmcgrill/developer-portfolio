@@ -69,6 +69,12 @@
 
 // NAV OPEN CLOSE
 
+.nav-slide-enter-active
+    animation: navOpen 0.3s ease-in-out forwards
+
+.nav-slide-leave-active
+    animation: navClose 0.3s ease-in-out forwards
+
 @keyframes navOpen
     from
         opacity: 0
@@ -79,9 +85,6 @@
         opacity: 1
         transform: translateX(0px)
 
-.nav-open
-    animation: navOpen 0.3s ease-in-out forwards
-
 @keyframes navClose
     from
         opacity: 1
@@ -91,6 +94,3 @@
     to
         opacity: 0
         transform: translateX(-400px)
-
-.nav-close
-    animation: navClose 0.3s ease-in-out forwards

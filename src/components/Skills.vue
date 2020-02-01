@@ -47,7 +47,7 @@ export default {
   display: inline-block
   background-repeat: no-repeat
   background-image: url(../assets/sprite.svg)
-  zoom: 150%
+  // zoom: 150%
   justify-self: center
   width: 32px
   height: 32px

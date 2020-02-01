@@ -2,9 +2,9 @@
     <header>
         <div class="nav-bar row row_spaced">
             <img class="nav-bar--logo animated fadeInDown" src="../assets/logo.png" alt="Charlie Taylor Logo">
-            <Nav />
+            <Nav v-bind:nav-open="navOpen" />
 
-            <span class="nav-bar-burger" id="burger">
+            <span class="nav-bar-burger" id="burger" v-on:click="navOpen = !navOpen">
                 <span class="nav-bar-burger--inner" />
             </span>
         </div>
@@ -30,7 +30,24 @@ export default {
     name: 'Header',
     components: {
         Nav,
-    }
+    },
+    methods: {
+        toggleNavOpen() {     
+            this.navOpen = !this.navOpen;
+        }
+    },
+    data() {
+        return {
+            navOpen: false,
+        }
+    },
+    created: function() {
+        this.navOpen = window.innerWidth > 640
+
+        window.addEventListener('resize', () => {
+            this.navOpen = window.innerWidth > 640
+        });
+    },
 }
 </script>
 
@@ -74,12 +91,6 @@ header
 
             @media (max-width: 640px)
                 margin-bottom: 20px
-
-        &--nav
-            opacity: 1
-
-            @media (max-width: 640px)
-                opacity: 0
 
         &-burger
             width: 30px
