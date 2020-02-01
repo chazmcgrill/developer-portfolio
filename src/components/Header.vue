@@ -18,7 +18,9 @@
         </div>
 
         <div class="arrow">
-            <i class="arrow--icon animated"></i>
+            <transition name="flash">
+                <i v-if="arrowFlash" class="arrow--icon animated"></i>
+            </transition>
         </div>
     </header>
 </template>
@@ -39,6 +41,7 @@ export default {
     data() {
         return {
             navOpen: false,
+            arrowFlash: false
         }
     },
     created: function() {
@@ -47,6 +50,10 @@ export default {
         window.addEventListener('resize', () => {
             this.navOpen = window.innerWidth > 640
         });
+
+        setInterval(() => {
+            this.arrowFlash = !this.arrowFlash
+        }, 1000);
     },
 }
 </script>
