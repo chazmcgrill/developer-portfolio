@@ -7,7 +7,7 @@
       <Portfolio v-bind:projects="projects" v-on:select-project="setSelectedProject" />
       <Contact />
       <Footer />
-      <Modal v-bind:selected-project="selectedProject" v-on:select-project="setSelectedProject" />
+      <Modal v-bind:selected-project="selectedProject" v-on:select-project="setSelectedProject" v-bind:show-modal="showModal" />
   </div>
 </template>
 
@@ -36,12 +36,14 @@ export default {
     },
     methods: {
         setSelectedProject: function (id) {
+            this.showModal = Boolean(id)
             this.selectedProject = this.projects.find(project => project.id === id);
         },
     },
     data() {
         return {
             selectedProject: null,
+            modalOpen: false,
             services: [
                 {
                     title: 'Design',
