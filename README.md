@@ -1,4 +1,8 @@
-# developer-portfolio
+# Developer Portfolio
+
+Built using Vue js
+
+[charlietaylorcoder.com](https://charlietaylorcoder.com)
 
 ## Project setup
 ```
