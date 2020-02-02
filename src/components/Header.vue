@@ -4,9 +4,11 @@
             <img class="nav-bar--logo animated fadeInDown" src="../assets/logo.png" alt="Charlie Taylor Logo">
             <Nav v-bind:nav-open="navOpen" />
 
-            <span class="nav-bar-burger" id="burger" v-on:click="navOpen = !navOpen">
-                <span class="nav-bar-burger--inner" />
-            </span>
+            <div class="nav-bar-burger" id="burger" v-on:click="toggleNavOpen">
+                <div :class="`nav-bar-burger--burger-top${navOpen ? ' open' : ''}`" />
+                <div :class="`nav-bar-burger--burger-middle${navOpen ? ' open' : ''}`" />
+                <div :class="`nav-bar-burger--burger-bottom${navOpen ? ' open' : ''}`" />
+            </div>
         </div>
 
         <div class="row row_centered">
@@ -35,7 +37,7 @@ export default {
         Nav,
     },
     methods: {
-        toggleNavOpen() {     
+        toggleNavOpen() {
             this.navOpen = !this.navOpen;
         },
         onArrowPress() {
@@ -105,7 +107,7 @@ header
 
         &-burger
             width: 30px
-            height: 22px
+            height: 23px
             display: none
             position: absolute
             top: 35px
@@ -115,30 +117,40 @@ header
             @media (max-width: 640px)
                 display: inline-block
 
-            &--inner
-                display: block
-                top: 50%
-                margin-top: -1.5px
-            
-            &,
-            &::before,
-            &::after
+            &--burger-top,
+            &--burger-middle,
+            &--burger-bottom,
+                position: absolute
+                left: 0
+                right: 0
                 width: 30px
                 height: 3px
                 background-color: $arrow
-                position: absolute
                 transition: transform 0.15s ease-in-out, opacity 0.1s linear
 
-            &::before,
-            &::after
-                content: ""
-                display: block
+            &--burger-top
+                top: 0px
+                bottom: 3px
+                      
+                &.open
+                    top: 10px
+                    transform: rotate(45deg)
 
-            &::before
-                top: -10px
+            &--burger-middle
+                top: 10px
+                bottom: 13px
 
-            &::after
-                bottom: -10px
+                &.open
+                    transform: translateX(-30px)
+                    opacity: 0
+            
+            &--burger-bottom
+                top: 20px
+                bottom: 23px
+
+                &.open
+                    top: 10px
+                    transform: rotate(-45deg)
 
 .arrow
     width: 100%

@@ -49,6 +49,9 @@ export default {
             ...data
         }
     },
+    created: function() {
+        fetch('https://ct-core-api.herokuapp.com/')
+    }
 }
 </script>
 
