@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="row row_spaced-aligned">
-            <Nav />
+            <Nav v-bind:nav-open="true" />
             <SocialIcons icon-type="footer" /> 
         </div>
 

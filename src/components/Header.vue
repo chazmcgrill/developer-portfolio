@@ -19,14 +19,15 @@
 
         <div class="arrow">
             <transition name="flash">
-                <i v-if="arrowFlash" class="arrow--icon animated"></i>
+                <i v-if="arrowFlash" class="arrow--icon animated" @click="onArrowPress" />
             </transition>
         </div>
     </header>
 </template>
 
 <script>
-import Nav from './Nav'
+import Nav from './Nav';
+import { navClick } from '../utils';
 
 export default {
     name: 'Header',
@@ -36,6 +37,9 @@ export default {
     methods: {
         toggleNavOpen() {     
             this.navOpen = !this.navOpen;
+        },
+        onArrowPress() {
+            navClick('bio')
         }
     },
     data() {
