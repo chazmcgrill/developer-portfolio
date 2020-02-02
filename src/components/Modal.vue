@@ -1,8 +1,7 @@
 <template>
     <div>
         <transition name="modal-fade" appear>
-            <div class="modal-bg" v-if="showModal">
-            </div>
+            <div class="modal-bg" v-if="showModal" @click="$emit('select-project', null)" />
         </transition>
         <transition name="modal-slide">
             <div class="modal" v-if="showModal">
@@ -87,6 +86,7 @@ export default {
     top: 0
     left: 0
     z-index: 3
+    overflow: auto
 
 .modal
     position: fixed

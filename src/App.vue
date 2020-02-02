@@ -38,12 +38,13 @@ export default {
         setSelectedProject: function (id) {
             this.showModal = Boolean(id)
             this.selectedProject = this.projects.find(project => project.id === id);
+            id ? document.body.classList.add('is-fixed') : document.body.classList.remove('is-fixed');
         },
     },
     data() {
         return {
             selectedProject: null,
-            modalOpen: false,
+            showModal: false,
             services: [
                 {
                     title: 'Design',
