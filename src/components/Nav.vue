@@ -1,12 +1,14 @@
 <template>
-    <transition name="nav-slide">
-        <ul class="nav" v-if="navOpen">
-            <li class="nav--item" @click="onNavClick('bio')">Bio</li>
-            <li class="nav--item" @click="onNavClick('services')">Services</li>
-            <li class="nav--item" @click="onNavClick('portfolio')">Portfolio</li>
-            <li class="nav--item" @click="onNavClick('contact')">Contact</li>
-        </ul>
-    </transition>
+    <div class="nav--container">
+        <transition name="nav-slide">
+            <ul class="nav" v-if="navOpen">
+                <li class="nav--item" @click="onNavClick('bio')">Bio</li>
+                <li class="nav--item" @click="onNavClick('services')">Services</li>
+                <li class="nav--item" @click="onNavClick('portfolio')">Portfolio</li>
+                <li class="nav--item" @click="onNavClick('contact')">Contact</li>
+            </ul>
+        </transition>
+    </div>
 </template>
 
 <script>
@@ -29,6 +31,9 @@ export default {
 .nav
     text-transform: uppercase
     font-family: $sans-font
+
+    &--container
+        height: 20px
 
     &--item
         margin: 0 5px 0 0

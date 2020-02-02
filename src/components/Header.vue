@@ -156,6 +156,8 @@ header
     width: 100%
     text-align: center
     padding-bottom: 40px
+    height: 20px
+    margin-bottom: 20px
 
     &--icon
         border: solid $arrow

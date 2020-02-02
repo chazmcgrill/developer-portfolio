@@ -37,9 +37,10 @@ export default {
     },
     methods: {
         setSelectedProject: function (id) {
-            this.showModal = Boolean(id)
+            const idTruthy = id === 0 || Boolean(id);
+            this.showModal = idTruthy;
             this.selectedProject = this.projects.find(project => project.id === id);
-            id ? document.body.classList.add('is-fixed') : document.body.classList.remove('is-fixed');
+            idTruthy ? document.body.classList.add('is-fixed') : document.body.classList.remove('is-fixed');
         },
     },
     data() {
