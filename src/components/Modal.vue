@@ -35,14 +35,16 @@
 
                 <div class="modal-footer">
                     <font-awesome-icon
+                        v-if="selectedProject.id > 0"
                         v-bind:icon="['fas', 'arrow-left']"
                         class="modal-footer--arrow"
                         size="lg"
                         @click="$emit('select-project', selectedProject.id - 1)"
                     />
                     <font-awesome-icon
+                        v-if="selectedProject.id + 1 < projectCount"
                         v-bind:icon="['fas', 'arrow-right']"
-                        class="modal-footer--arrow"
+                        class="modal-footer--arrow left"
                         size="lg"
                         @click="$emit('select-project', selectedProject.id + 1)"
                     />
@@ -55,7 +57,7 @@
 <script>
 export default {
     name: 'Modal',
-    props: ['selected-project', 'show-modal'],
+    props: ['selected-project', 'show-modal', 'project-count'],
     methods: {
         getImageUrl(pic) {
             return require('../assets/' + pic);
@@ -146,8 +148,10 @@ export default {
 
         &--arrow
             cursor: pointer
-            fill: $main
 
             &:hover
                 fill: darken($main,10%)
+
+            &.left
+                margin-left: auto
 </style>

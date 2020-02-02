@@ -7,7 +7,7 @@
       <Portfolio v-bind:projects="projects" v-on:select-project="setSelectedProject" />
       <Contact />
       <Footer />
-      <Modal v-bind:selected-project="selectedProject" v-on:select-project="setSelectedProject" v-bind:show-modal="showModal" />
+      <Modal v-bind:project-count="projects.length" v-bind:selected-project="selectedProject" v-on:select-project="setSelectedProject" v-bind:show-modal="showModal" />
   </div>
 </template>
 
