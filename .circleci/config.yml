@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: setup environment
-          command: ssh-keyscan $SITE_IP >> ~/.ssh/known_hosts
+          command: ssh-keyscan -t rsa -H $SITE_IP >> ~/.ssh/known_hosts
       - attach_workspace:
           at: ~/chazmcgrill/developer-portfolio
       - restore_cache:
