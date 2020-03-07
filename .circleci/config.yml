@@ -9,7 +9,9 @@ jobs:
       - add_ssh_keys
       - run:
           name: setup environment
-          command: ssh-keyscan -t rsa -H ${SITE_IP} >> ~/.ssh/known_hosts
+          command: |
+            cat ssh-keyscan -t ssh-rsa -H ${SITE_IP}
+            ssh-keyscan -t ssh-rsa -H ${SITE_IP} >> ~/.ssh/known_hosts
       - attach_workspace:
           at: ~/chazmcgrill/developer-portfolio
       - restore_cache:
@@ -24,4 +26,3 @@ jobs:
       - run:
           name: deploy to hosting
           command: scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
-          
