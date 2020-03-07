@@ -25,4 +25,4 @@ jobs:
       - run: npm run build
       - run:
           name: deploy to hosting
-          command: scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
+          command: scp -vvv -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
