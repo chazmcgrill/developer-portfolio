@@ -1,36 +1,4 @@
-# version: 2.1
-# jobs:
-#   build:
-#     docker:
-#       - image: circleci/node:10.8.0
-#     parallelism: 1
-#     steps:
-#       - checkout
-#       - add_ssh_keys:
-#           fingerprints:
-#             - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
-#       - run:
-#           name: setup environment
-#           command: |
-#             pwd
-#             ssh-keyscan -t ssh-rsa ${SITE_IP} >> ~/.ssh/known_hosts
-#       - attach_workspace:
-#           at: ~/chazmcgrill/developer-portfolio
-#       - restore_cache:
-#           key: v1-npm-{{ checksum "package-lock.json" }}
-#       - run: npm install
-#       - save_cache:
-#           key: v1-npm-{{ checksum "package-lock.json" }}
-#           paths:
-#             - ./node_modules
-#       - run: npm run test
-#       - run: npm run build
-#       - run:
-#           name: deploy to hosting
-#           command: scp -vvv -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
-
-
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -75,17 +43,17 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
+
       - add_ssh_keys:
           fingerprints:
-            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
+            - "5b:9e:e9:f9:77:f3:a3:0e:49:88:d9:7f:62:ff:4d:bc"
 
       - run:
           name: deploy to hosting
-          command: |
-            scp -r -o StrictHostKeyChecking=no ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}
+          command: scp -r -o StrictHostKeyChecking=no ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}
 
 workflows:
-  version: 2
+  version: 2.1
   build-deploy:
     jobs:
       - build
