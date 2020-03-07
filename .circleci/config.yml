@@ -5,13 +5,11 @@ jobs:
       - image: circleci/node:10.8.0
     parallelism: 1
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
       - checkout
+      - add_ssh_keys
       - run:
           name: setup environment
-          command: ssh-keyscan -t rsa -H ${DEPLOY_SERVER} >> ~/.ssh/known_hosts
+          command: ssh-keyscan -t rsa -H ${SITE_IP} >> ~/.ssh/known_hosts
       - attach_workspace:
           at: ~/chazmcgrill/developer-portfolio
       - restore_cache:
@@ -25,4 +23,5 @@ jobs:
       - run: npm run build
       - run:
           name: deploy to hosting
-          command: scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.  
+          command: scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
+          
