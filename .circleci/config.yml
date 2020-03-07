@@ -6,7 +6,9 @@ jobs:
     parallelism: 1
     steps:
       - checkout
-      - add_ssh_keys
+      - add_ssh_keys:
+          fingerprints:
+            - "1b:79:18:43:5a:c5:48:ea:f0:1e:1c:e5:63:15:9f:3d"
       - run:
           name: setup environment
           command: |
