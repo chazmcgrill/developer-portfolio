@@ -19,7 +19,7 @@ jobs:
       - run: npm run build
       - add_ssh_keys:
           fingerprints:
-            - ${DEPLOY_FINGERPRINT}
+            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
       - run:
           name: deploy to hosting
           command: scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.  
