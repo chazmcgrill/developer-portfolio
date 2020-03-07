@@ -86,7 +86,7 @@ jobs:
       - run:
           name: deploy to hosting
           command: |
-            echo '${SITE_IP} ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtB/ACD6t6s1Rr0Je1Vk3TSFz0l2F7D1hkGg6rZ7Xyj4PIFoa5cNAh+mIbt6PFDpuVioCR+7n1lqa9Pqj3RDnkXKqJKJMNu0OKLb/QfOU6aNXDS3FfbX+fxgd+yTFLcuAOCMpePMmV1qFjZX3+LQT1l4FD1jtsuO2+/q0mzi2Nyr8f7lXIuvneW2nxoXbEib2XtAnCspr+wXZNoJpB/8n0M9aTlNR9vqpse9zYpoWygrEK67Tb0v0AFagGTgh6uTG0lnfkH1rJv/F4/cqbaZ5PyqXFlD3ZPbRxeVhQ5kAPD40IlBXy6dHSWBtfC1N0Oqo2Ny4T8jEWyZGyNPGup3yF' >> ~/.ssh/known_hosts
+            echo 37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35 >> ~/.ssh/known_hosts
             scp -vvv -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
 
 workflows:
