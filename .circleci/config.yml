@@ -40,7 +40,9 @@ jobs:
 
     steps:
       - checkout
-      - add_ssh_keys
+      - add_ssh_keys:
+          fingerprints:
+            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
 
       - restore_cache:
           keys:
@@ -77,7 +79,10 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-      - add_ssh_keys
+      - add_ssh_keys:
+          fingerprints:
+            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
+
       - run:
           name: deploy to hosting
           command: |
