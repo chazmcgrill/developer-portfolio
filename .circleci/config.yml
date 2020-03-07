@@ -86,9 +86,6 @@ jobs:
       - run:
           name: deploy to hosting
           command: |
-            mkdir ~/.ssh
-            chmod 700 ~/.ssh
-            cat ~/.ssh/known_hosts
             echo 37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35 >> ~/.ssh/known_hosts
             cat ~/.ssh/known_hosts
             scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
