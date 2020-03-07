@@ -1,30 +1,95 @@
-version: 2.1
+# version: 2.1
+# jobs:
+#   build:
+#     docker:
+#       - image: circleci/node:10.8.0
+#     parallelism: 1
+#     steps:
+#       - checkout
+#       - add_ssh_keys:
+#           fingerprints:
+#             - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
+#       - run:
+#           name: setup environment
+#           command: |
+#             pwd
+#             ssh-keyscan -t ssh-rsa ${SITE_IP} >> ~/.ssh/known_hosts
+#       - attach_workspace:
+#           at: ~/chazmcgrill/developer-portfolio
+#       - restore_cache:
+#           key: v1-npm-{{ checksum "package-lock.json" }}
+#       - run: npm install
+#       - save_cache:
+#           key: v1-npm-{{ checksum "package-lock.json" }}
+#           paths:
+#             - ./node_modules
+#       - run: npm run test
+#       - run: npm run build
+#       - run:
+#           name: deploy to hosting
+#           command: scp -vvv -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
+
+
+version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10.8.0
-    parallelism: 1
+      - image: circleci/node:8.11
+
+    working_directory: ~/repo
+
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
-      - run:
-          name: setup environment
-          command: |
-            pwd
-            ssh-keyscan -t ssh-rsa ${SITE_IP} >> ~/.ssh/known_hosts
-      - attach_workspace:
-          at: ~/chazmcgrill/developer-portfolio
+      - add_ssh_keys
+
       - restore_cache:
-          key: v1-npm-{{ checksum "package-lock.json" }}
-      - run: npm install
-      - save_cache:
-          key: v1-npm-{{ checksum "package-lock.json" }}
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run:
+          name: Install packages
+          command: npm install
+
+      - run:
+          name: Build project
+          command: npm run build
+
+      - persist_to_workspace:
+          root: ~/repo
           paths:
-            - ./node_modules
-      - run: npm run test
-      - run: npm run build
+            - src
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Run tests
+          command: npm run test
+
+  deploy:
+    docker:
+      - image: circleci/node:8.11
+
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - add_ssh_keys
       - run:
           name: deploy to hosting
           command: scp -vvv -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          # filters:
+          #   branches:
+          #     only: master
