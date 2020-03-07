@@ -10,7 +10,7 @@ jobs:
       - run:
           name: setup environment
           command: |
-            cat ssh-keyscan -t ssh-rsa ${SITE_IP}
+            ssh-keyscan -t ssh-rsa ${SITE_IP}
             ssh-keyscan -t ssh-rsa ${SITE_IP} >> ~/.ssh/known_hosts
       - attach_workspace:
           at: ~/chazmcgrill/developer-portfolio
