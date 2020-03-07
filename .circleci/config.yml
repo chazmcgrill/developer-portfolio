@@ -47,7 +47,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
       - run:
@@ -86,7 +85,7 @@ jobs:
       - run:
           name: deploy to hosting
           command: |
-            scp -r -o StrictHostKeyChecking=no ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}/.
+            scp -r dist/ ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}
 
 workflows:
   version: 2
