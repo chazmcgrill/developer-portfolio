@@ -8,11 +8,11 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "1b:79:18:43:5a:c5:48:ea:f0:1e:1c:e5:63:15:9f:3d"
+            - "37:5e:80:3b:6a:15:6e:3c:e2:ab:77:5f:69:d0:c9:35"
       - run:
           name: setup environment
           command: |
-            ssh-keyscan -t ssh-rsa ${SITE_IP}
+            pwd
             ssh-keyscan -t ssh-rsa ${SITE_IP} >> ~/.ssh/known_hosts
       - attach_workspace:
           at: ~/chazmcgrill/developer-portfolio
