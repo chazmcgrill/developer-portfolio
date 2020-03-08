@@ -54,7 +54,7 @@ jobs:
 
       - run:
           name: deploy to hosting
-          command: scp -r -o StrictHostKeyChecking=no ~/repo/dist/. ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}
+          command: scp -r ~/repo/dist/. ${DEPLOY_USER}@${DEPLOY_SERVER}:${DEPLOY_DIR}
 
 workflows:
   version: 2.1
@@ -64,6 +64,6 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: master
+          # filters:
+          #   branches:
+          #     only: master
