@@ -55,7 +55,6 @@ jobs:
       - run:
           name: deploy to hosting
           command: |
-            echo '${DEPLOY_SERVER_IP} ssh-rsa lY2Z10EYs0EV/Zf3+/hl2Mv5TpU=|vWGTRbWCk5h5EAWgJmxrzYrV7bQ=' >> ~/.ssh/known_hosts
             scp -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER_IP}:${DEPLOY_DIR}
 
 workflows:
