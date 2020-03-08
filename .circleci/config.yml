@@ -25,7 +25,7 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths:
-            - src
+            - dist
 
       # - save_cache:
       #     paths:
