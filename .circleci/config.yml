@@ -54,10 +54,7 @@ jobs:
 
       - run:
           name: deploy to hosting
-          command: |
-            ssh -o StrictHostKeyChecking=no hello@hello.com
-            echo '${DEPLOY_SERVER_IP} ssh-rsa 163726w' >> ~/.ssh/known_hosts
-            scp -r ~/repo/dist/. ${DEPLOY_USER}@${DEPLOY_SERVER_IP}:${DEPLOY_DIR}
+          command: scp -o StrictHostKeyChecking=no -r ~/dist ${DEPLOY_USER}@${DEPLOY_SERVER_IP}:${DEPLOY_DIR}
 
 workflows:
   version: 2.1
