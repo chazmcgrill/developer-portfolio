@@ -1,5 +1,7 @@
 # Developer Portfolio
 
+[![CircleCI](https://circleci.com/gh/chazmcgrill/developer-portfolio/tree/master.svg?style=svg)](https://circleci.com/gh/chazmcgrill/developer-portfolio/tree/master)
+
 Built using Vue js
 
 [charlietaylorcoder.com](https://charlietaylorcoder.com)
