@@ -1,6 +1,6 @@
 {
   "name": "developer-portfolio",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -40,18 +40,18 @@
       "eslint:recommended"
     ],
     "rules": {
-        "no-console": "off",
-        "indent": [
-            "error",
-            4
-        ],
-        "vue/script-indent": [
-            "error",
-            4,
-            {
-                "baseIndent": 0
-            }
-        ]
+      "no-console": "off",
+      "indent": [
+        "error",
+        4
+      ],
+      "vue/script-indent": [
+        "error",
+        4,
+        {
+          "baseIndent": 0
+        }
+      ]
     },
     "parserOptions": {
       "parser": "babel-eslint"
