@@ -80,6 +80,9 @@ header
     height: 100vh
     padding: 0 20px
 
+    @supports (-webkit-touch-callout: none)
+        background-attachment: initial
+
     .hero
         text-align: center
         width: 400px
