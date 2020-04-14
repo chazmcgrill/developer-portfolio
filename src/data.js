@@ -99,11 +99,11 @@ export default {
         },
         {
             img: 'portfolio-life.jpg',
-            title: 'Life App',
+            title: 'Cell Automaton',
             id: 6,
-            text: 'React project based on the cellular automaton \'Life\' devised by mathematician John Conway.',
+            text: 'React project based on the cellular automaton \'Game of Life\' devised by mathematician John Conway.',
             links: [
-                { 'site': 'codepen', 'url': 'QOoOaj/' },
+                { 'site': 'website', 'url': 'https://cell-automaton.charlietaylorcoder.com' },
                 { 'site': 'github', 'url': 'game-of-life' }
             ]
         },
@@ -113,7 +113,7 @@ export default {
             id: 7,
             text: 'Recreation of the classic windows desktop game minesweeper. Built using React javascript, it utilises an \'flood fill\' algorithm.',
             links: [
-                { 'site': 'website', 'url': 'https://charlietaylorcoder.com/bugsweeper' },
+                { 'site': 'website', 'url': 'https://bugsweeper.charlietaylorcoder.com' },
                 { 'site': 'github', 'url': 'bugsweeper' }
             ]
         },
@@ -153,7 +153,7 @@ export default {
             id: 11,
             text: 'Simple cryptocurrency price tracking app. Built using react test driven development. Data is pulled from cryptocompare api via multiple AJAX requests.',
             links: [
-                { 'site': 'website', 'url': 'https://charlietaylorcoder.com/coinage' },
+                { 'site': 'website', 'url': 'https://coinage.charlietaylorcoder.com' },
                 { 'site': 'github', 'url': 'coinage' }
             ]
         }
