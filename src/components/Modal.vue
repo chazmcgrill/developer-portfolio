@@ -27,6 +27,7 @@
                             class="modal-content--link"
                             target="_blank"
                             v-bind:href="sites[link.site] + link.url"
+                            rel="noopener"
                         >
                             {{`view on ${link.site}`}}
                         </a>

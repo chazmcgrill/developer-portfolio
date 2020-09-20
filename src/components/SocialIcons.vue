@@ -1,6 +1,6 @@
 <template>
     <div :class="'icons icons_' + iconType">
-        <a v-bind:key="icon.name" v-for="icon in socialIcons" v-bind:href="icon.url" aria-hidden="true" target="_blank">
+        <a v-bind:key="icon.name" v-for="icon in socialIcons" v-bind:href="icon.url" aria-hidden="true" target="_blank" rel="noopener">
             <font-awesome-icon :icon="['fab', icon.name]" :class="'icon_' + iconType" size="lg" />
         </a>                
     </div>
