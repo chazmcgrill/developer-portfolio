@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "build": "next build",
+        "check-types": "npx tsc --noEmit",
         "dev": "next dev",
         "format": "npm run prettier -- --write",
         "lint": "next lint",
