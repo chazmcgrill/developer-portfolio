@@ -1,69 +1,27 @@
 {
-  "name": "developer-portfolio",
-  "version": "1.5.2",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test": "echo \"Please add testing.\"",
-    "preversion": "npm test",
-    "version": "git add .",
-    "postversion": "git push && git push --tags"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/vue-fontawesome": "^0.1.8",
-    "core-js": "^3.3.2",
-    "vue": "^2.6.10"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.6",
-    "@vue/cli-plugin-eslint": "^4.5.6",
-    "@vue/cli-service": "^4.5.6",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "developer-portfolio",
+    "version": "1.5.2",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "preversion": "npm test",
+        "version": "git add .",
+        "postversion": "git push && git push --tags"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {
-      "no-console": "off",
-      "indent": [
-        "error",
-        4
-      ],
-      "vue/script-indent": [
-        "error",
-        4,
-        {
-          "baseIndent": 0
-        }
-      ]
+    "dependencies": {
+        "next": "12.2.5",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
     },
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "devDependencies": {
+        "@types/node": "18.7.8",
+        "@types/react": "18.0.17",
+        "@types/react-dom": "18.0.6",
+        "eslint": "8.22.0",
+        "eslint-config-next": "12.2.5",
+        "typescript": "4.7.4"
     }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
 }
