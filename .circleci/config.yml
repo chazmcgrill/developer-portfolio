@@ -25,7 +25,8 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths:
-            - dist
+            # TODO: this needs to be investigated before deploy
+            - .next
 
       - save_cache:
           paths:
