@@ -12,6 +12,7 @@
         "prettier": "prettier --ignore-path .gitignore --ignore-path .prettierignore \"**/*.+(js|json|ts|tsx)\"",
         "preversion": "npm test",
         "start": "next start",
+        "validate": "npm run check-types && npm run lint",
         "version": "git add ."
     },
     "dependencies": {
