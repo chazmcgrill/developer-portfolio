@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
+import Navbar from './Navbar';
 
 interface PageContainerProps {
     children: ReactNode;
@@ -18,7 +19,7 @@ const PageContainer = ({ children }: PageContainerProps) => {
                 {/* TODO: twitter meta info */}
             </Head>
             <main>
-                <h1>header</h1>
+                <Navbar />
                 {children}
                 <h1>footer</h1>
             </main>
