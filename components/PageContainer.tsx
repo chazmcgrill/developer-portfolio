@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 interface PageContainerProps {
     children: ReactNode;
@@ -21,7 +22,7 @@ const PageContainer = ({ children }: PageContainerProps) => {
             <main>
                 <Navbar />
                 {children}
-                <h1>footer</h1>
+                <Footer />
             </main>
         </div>
     );
