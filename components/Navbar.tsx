@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import styles from '../styles/Navbar.module.sass';
 
 const getNavItemClass = (pathname: string, currentPathName: string) => {
@@ -20,9 +21,15 @@ const Navbar = () => {
             </div>
 
             <div>
-                <span className={getNavItemClass('about', pathname)}>About</span>
-                <span className={getNavItemClass('projects', pathname)}>Projects</span>
-                <span className={getNavItemClass('contact', pathname)}>Contact</span>
+                <Link className={getNavItemClass('about', pathname)} href="/about">
+                    About
+                </Link>
+                <Link className={getNavItemClass('projects', pathname)} href="/projects">
+                    Projects
+                </Link>
+                <Link className={getNavItemClass('contact', pathname)} href="/contact">
+                    Contact
+                </Link>
             </div>
 
             <div className={styles.icons}>
