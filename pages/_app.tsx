@@ -2,7 +2,7 @@ import '../styles/globals.sass';
 import type { AppProps } from 'next/app';
 import { Inter } from '@next/font/google';
 
-const inter = Inter();
+const inter = Inter({ subsets: ['latin'] });
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
