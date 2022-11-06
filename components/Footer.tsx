@@ -3,6 +3,8 @@ import styles from '../styles/Footer.module.sass';
 import Nav from './Nav';
 import SocialIcons from './SocialIcons';
 
+const getYear = () => new Date().getFullYear();
+
 const Footer = () => (
     <div className={styles.footer}>
         <hr />
@@ -14,7 +16,7 @@ const Footer = () => (
             </div>
             <div className={styles.footerNav}>
                 <Nav />
-                <p>© 2022 Charlie Taylor, All rights reserved.</p>
+                <p>{`© ${getYear()} Charlie Taylor, All rights reserved.`}</p>
             </div>
         </div>
     </div>
