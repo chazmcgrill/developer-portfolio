@@ -3,7 +3,9 @@ import styles from '../styles/Footer.module.sass';
 
 const Footer = () => (
     <div className={styles.footer}>
-        <div>Footer</div>
+        <hr />
+        <h4>Charlie Taylor</h4>
+        <p>Lorem ipsum, dolor sit amet.</p>
     </div>
 );
 
