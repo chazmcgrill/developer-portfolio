@@ -16,7 +16,9 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.title}>
-                <h3>Charlie Taylor</h3>
+                <Link href="/">
+                    <h3>Charlie Taylor</h3>
+                </Link>
                 <h4 className={styles.jobDescription}>Full Stack Developer</h4>
             </div>
 
