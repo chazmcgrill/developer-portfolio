@@ -7,14 +7,14 @@ const Footer = () => (
     <div className={styles.footer}>
         <hr />
         <div className={styles.footerContent}>
-            <div>
+            <div className={styles.footerTitle}>
                 <h4>Charlie Taylor</h4>
                 <p>Lorem ipsum, dolor sit amet.</p>
                 <SocialIcons />
             </div>
-            <div>
+            <div className={styles.footerNav}>
                 <Nav />
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>© 2022 Charlie Taylor, All rights reserved.</p>
             </div>
         </div>
     </div>

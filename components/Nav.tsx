@@ -10,7 +10,7 @@ const getNavItemClass = (pathname: string, currentPathName: string) => {
 const Nav = () => {
     const { pathname } = useRouter();
     return (
-        <div>
+        <div className={styles.nav}>
             <Link className={getNavItemClass('about', pathname)} href="/about">
                 About
             </Link>
