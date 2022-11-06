@@ -1,28 +1,40 @@
 import React from 'react';
-import styles from '../styles/Navbar.module.sass';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { useRouter } from 'next/router';
+import styles from '../styles/Navbar.module.sass';
+
+const getNavItemClass = (pathname: string, currentPathName: string) => {
+    if (pathname === currentPathName) return styles.selectedNavItem;
+    return styles.navItem;
+};
 
 const Navbar = () => {
-    // TODO: use routing to determine which page we are on
+    const { pathname } = useRouter();
+
     return (
         <div className={styles.navbar}>
             <div className={styles.title}>
                 <h3>Charlie Taylor</h3>
-                <h4>Full Stack Developer</h4>
+                <h4 className={styles.jobDescription}>Full Stack Developer</h4>
             </div>
 
             <div>
-                <span className={styles.navItem}>about</span>
-                <span className={styles.navItem}>projects</span>
-                <span className={styles.navItem}>contact</span>
+                <span className={getNavItemClass('about', pathname)}>About</span>
+                <span className={getNavItemClass('projects', pathname)}>Projects</span>
+                <span className={getNavItemClass('contact', pathname)}>Contact</span>
             </div>
 
             <div className={styles.icons}>
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faGithub} />
-                <FontAwesomeIcon icon={faLinkedin} />
+                <a href="https://twitter.com/charlietcoder" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faTwitter} />
+                </a>
+                <a href="https://github.com/chazmcgrill" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://uk.linkedin.com/in/charliejbtaylor" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                </a>
             </div>
         </div>
     );
