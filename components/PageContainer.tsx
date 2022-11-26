@@ -11,7 +11,7 @@ interface PageContainerProps {
 
 const PageContainer = ({ children }: PageContainerProps) => {
     return (
-        <div>
+        <>
             <Head>
                 {/* TODO: pass actual meta info and icon */}
                 <title>Title goes here</title>
@@ -24,7 +24,7 @@ const PageContainer = ({ children }: PageContainerProps) => {
                 {children}
                 <Footer />
             </main>
-        </div>
+        </>
     );
 };
 

@@ -1,10 +1,12 @@
 import React from 'react';
+import BioSection from './BioSection';
 
-interface HomeProps {}
-
-const HomePage = ({ ...props }: HomeProps) => {
-    console.log(props);
-    return <h1>Home Page</h1>;
+const HomePage = () => {
+    return (
+        <>
+            <BioSection />
+        </>
+    );
 };
 
 export default HomePage;
