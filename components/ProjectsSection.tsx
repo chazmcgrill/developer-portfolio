@@ -9,23 +9,27 @@ const ProjectsSection = () => {
                 <button>view all</button>
             </div>
 
-            <div className={styles.projectItem}>
-                <div className={styles.projecItemHeader}>
-                    <h3>Title 1</h3>
+            <div className={styles.projectGrid}>
+                <div className={styles.projectItem}>
+                    <div className={styles.projecItemImage} style={{ height: 500 }}></div>
+                    <h3>Project title 1</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
                 </div>
-                <div className={styles.projecItemImage}></div>
-            </div>
-            <div className={styles.projectItem}>
-                <div className={styles.projecItemHeader}>
-                    <h3>Title 1</h3>
+                <div className={styles.projectItem}>
+                    <div className={styles.projecItemImage} style={{ height: 400 }}></div>
+                    <h3>Project title 2</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
                 </div>
-                <div className={styles.projecItemImage}></div>
-            </div>
-            <div className={styles.projectItem}>
-                <div className={styles.projecItemHeader}>
-                    <h3>Title 1</h3>
+                <div className={styles.projectItem}>
+                    <div className={styles.projecItemImage} style={{ height: 400 }}></div>
+                    <h3>Project title 3</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
                 </div>
-                <div className={styles.projecItemImage}></div>
+                <div className={styles.projectItem}>
+                    <div className={styles.projecItemImage} style={{ height: 500 }}></div>
+                    <h3>Project title 4</h3>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small>
+                </div>
             </div>
         </section>
     );
