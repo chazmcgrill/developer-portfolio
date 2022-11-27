@@ -5,7 +5,7 @@ import SectionHeader from './SectionHeader';
 const ProjectsSection = () => {
     return (
         <section className={styles.projectsSection}>
-            <SectionHeader title="Projects" buttonText="view all" onClickButton={() => {}} />
+            <SectionHeader title="Projects" buttonText="view all" buttonHref="/projects" />
 
             <div className={styles.projectGrid}>
                 <div className={styles.projectItem}>
