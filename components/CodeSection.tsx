@@ -1,4 +1,3 @@
-import { spawn } from 'child_process';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/CodeSection.module.sass';

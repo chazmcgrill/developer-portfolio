@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Projects.module.sass';
+import styles from '../styles/ProjectsSection.module.sass';
 import SectionHeader from './SectionHeader';
 
 const ProjectsSection = () => {
