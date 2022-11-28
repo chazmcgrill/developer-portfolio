@@ -43,7 +43,6 @@ const CodeRepoItem = ({ repository }: { repository: GithubRepo }) => {
 
 const CodeSection = () => {
     const repositories = useGithubRepositories();
-    console.log('repositories', repositories);
     return (
         <section className={styles.codeSection}>
             <SectionHeader title="Code" buttonText="view on github" buttonHref="https://github.com/chazmcgrill?tab=repositories" />
