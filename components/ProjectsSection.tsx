@@ -1,13 +1,11 @@
 import React from 'react';
-import styles from '../styles/Projects.module.sass';
+import styles from '../styles/ProjectsSection.module.sass';
+import SectionHeader from './SectionHeader';
 
 const ProjectsSection = () => {
     return (
         <section className={styles.projectsSection}>
-            <div className={styles.projectsHeader}>
-                <h2>Projects</h2>
-                <button>view all</button>
-            </div>
+            <SectionHeader title="Projects" buttonText="view all" buttonHref="/projects" />
 
             <div className={styles.projectGrid}>
                 <div className={styles.projectItem}>
