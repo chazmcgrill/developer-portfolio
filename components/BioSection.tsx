@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Bio.module.sass';
+import styles from '../styles/BioSection.module.sass';
 
 const BioSection = () => {
     return (

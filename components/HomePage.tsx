@@ -1,5 +1,6 @@
 import React from 'react';
 import BioSection from './BioSection';
+import CodeSection from './CodeSection';
 import ProjectsSection from './ProjectsSection';
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
         <>
             <BioSection />
             <ProjectsSection />
+            <CodeSection />
         </>
     );
 };
