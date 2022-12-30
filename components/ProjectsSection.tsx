@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from '../styles/ProjectsSection.module.sass';
+import config from '../utils/config';
 import SectionHeader from './SectionHeader';
 
 const ProjectsSection = () => {
     return (
         <section className={styles.projectsSection}>
-            <SectionHeader title="Projects" buttonText="view all" buttonHref="/projects" />
+            <SectionHeader title="Projects" buttonText={config.features.pages ? 'view all' : undefined} buttonHref="/projects" />
 
             <div className={styles.projectGrid}>
                 <div className={styles.projectItem}>

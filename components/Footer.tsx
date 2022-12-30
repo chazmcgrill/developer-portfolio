@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Footer.module.sass';
+import config from '../utils/config';
 import Nav from './Nav';
 import SocialIcons from './SocialIcons';
 
@@ -15,7 +16,7 @@ const Footer = () => (
                 <SocialIcons />
             </div>
             <div className={styles.footerNav}>
-                <Nav />
+                {config.features.pages && <Nav />}
                 <p>{`© ${getYear()} Charlie Taylor, All rights reserved.`}</p>
             </div>
         </div>
