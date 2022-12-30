@@ -7,14 +7,17 @@ interface ProjectItemProps {
     title: string;
     description: string;
     height: number;
+    siteHref: string;
 }
 
-const ProjectItem = ({ title, description, height }: ProjectItemProps) => (
-    <div className={styles.projectItem}>
-        <div className={styles.projecItemImage} style={{ height }}></div>
-        <h3>{title}</h3>
-        <small>{description}</small>
-    </div>
+const ProjectItem = ({ title, description, height, siteHref }: ProjectItemProps) => (
+    <a href={siteHref} target="_blank" rel="noreferrer">
+        <div className={styles.projectItem}>
+            <div className={styles.projecItemImage} style={{ height }}></div>
+            <h3>{title}</h3>
+            <small>{description}</small>
+        </div>
+    </a>
 );
 
 const ProjectsSection = () => {
