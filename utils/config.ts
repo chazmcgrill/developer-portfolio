@@ -1,6 +1,8 @@
+const isTruthy = (envVariable?: string) => envVariable === 'true';
+
 const config = {
     features: {
-        pages: process.env.FEATURE_PAGES,
+        pages: isTruthy(process.env.NEXT_PUBLIC_FEATURE_PAGES),
     },
 };
 

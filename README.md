@@ -95,15 +95,17 @@ Run the linter
 npm run lint
 ```
 
-### Feature Flags
+## Feature Flags
 
 To aide continuous delivery this projects makes use of feature flags. These can be added to a `.env.local` in the route of the project, for example:
 
 ```
 # .env.local
 
-FEATURE_PAGES=true
+NEXT_PUBLIC_FEATURE_PAGES=true
 
 ```
 
 So we create new features in small PRs without having to expose to users.
+
+> **_NOTE:_** In Nextjs the variables must be preceeded with `NEXT_PUBLIC_` to work.
