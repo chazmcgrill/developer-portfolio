@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.sass';
+import config from '../utils/config';
 import Nav from './Nav';
 import SocialIcons from './SocialIcons';
 
@@ -12,7 +13,7 @@ const Navbar = () => (
             <h4 className={styles.jobDescription}>Full Stack Developer</h4>
         </div>
 
-        <Nav />
+        {config.features.pages && <Nav />}
         <SocialIcons />
     </div>
 );
