@@ -12,7 +12,7 @@ const Footer = () => (
         <div className={styles.footerContent}>
             <div className={styles.footerTitle}>
                 <h4>Charlie Taylor</h4>
-                <p>Lorem ipsum, dolor sit amet.</p>
+                <p>Creative full stack developer.</p>
                 <SocialIcons />
             </div>
             <div className={styles.footerNav}>
