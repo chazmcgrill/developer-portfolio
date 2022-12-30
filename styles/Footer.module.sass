@@ -7,7 +7,8 @@
 
 .footerContent
     display: flex
-    justify-content: space-between
+    justify-content: flex-start
+    flex-direction: column
 
 .footerTitle
     h4
@@ -17,7 +18,17 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    text-align: right
+    
+.footerNavCopyright
+    margin: 2rem 0 0
 
-    p
+@media (min-width: 768px)
+    .footerNav
+        text-align: right
+
+    .footerContent
+        justify-content: space-between
+        flex-direction: row
+
+    .footerNavCopyright
         margin: auto 0 0

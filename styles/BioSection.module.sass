@@ -1,17 +1,23 @@
 .bioSection
-    padding: 1rem 0
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr
     grid-template-rows: 1fr
     column-gap: 2rem
+    row-gap: 2rem
 
 .bioSectionText
-    padding-top: 2rem
+    padding-top: 0rem
     
 .bioImage
     height: 500px
     border-radius: 1rem
     background-color: #2D2F3A
 
-    
+@media (min-width: 900px)
+    .bioSection
+        padding: 1rem 0
+        grid-template-columns: 1fr 1fr
 
+    .bioSectionText
+        grid-row: 1
+        padding-top: 2rem

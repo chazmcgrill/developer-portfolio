@@ -1,15 +1,18 @@
 .projectsSection
     background-color: #2D2F3A
-    border-radius: 1rem
+    border-radius: 0
     padding: 2rem
     margin-right: -1rem
     margin-left: -1rem
 
 .projectGrid
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr
     column-gap: 2rem
+    row-gap: 2rem
     margin: 2rem 0 0
+
+
 
 .projectItem
     width: 100%
@@ -22,3 +25,10 @@
     height: 400px
     background-color: #B25A59
     cursor: pointer
+
+@media (min-width: 900px)
+    .projectsSection
+        border-radius: 1rem
+    
+    .projectGrid
+        grid-template-columns: 1fr 1fr
