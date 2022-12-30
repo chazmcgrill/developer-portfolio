@@ -7,9 +7,13 @@
 
 .projectGrid
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr
     column-gap: 2rem
+    row-gap: 2rem
     margin: 2rem 0 0
+
+    @media (min-width: 900px)
+        grid-template-columns: 1fr 1fr
 
 .projectItem
     width: 100%
