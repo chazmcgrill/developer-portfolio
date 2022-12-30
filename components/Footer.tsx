@@ -17,7 +17,7 @@ const Footer = () => (
             </div>
             <div className={styles.footerNav}>
                 {config.features.pages && <Nav />}
-                <p>{`© ${getYear()} Charlie Taylor, All rights reserved.`}</p>
+                <p className={styles.footerNavCopyright}>{`© ${getYear()} Charlie Taylor, All rights reserved.`}</p>
             </div>
         </div>
     </div>
