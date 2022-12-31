@@ -1,12 +1,25 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '../styles/BioSection.module.sass';
 import config from '../utils/config';
+import bioImage from '../public/bio-image.jpg';
 
 const BioSection = () => {
     return (
         <section className={styles.bioSection}>
-            <div>
-                <div className={styles.bioImage}></div>
+            <div className={styles.bioImage}>
+                <Image
+                    alt="Bio image"
+                    src={bioImage}
+                    placeholder="blur"
+                    quality={100}
+                    fill
+                    sizes="100vw"
+                    style={{
+                        borderRadius: 16,
+                        objectFit: 'cover',
+                    }}
+                />
             </div>
             <div className={styles.bioSectionText}>
                 <h1>Innovative full stack developer with a mix of technical and creative skills.</h1>

@@ -1,3 +1,4 @@
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import styles from '../styles/ProjectsSection.module.sass';
 import config from '../utils/config';
@@ -8,12 +9,25 @@ interface ProjectItemProps {
     description: string;
     height: number;
     siteHref: string;
+    imageSrc: string;
 }
 
-const ProjectItem = ({ title, description, height, siteHref }: ProjectItemProps) => (
+const ProjectItem = ({ title, description, height, siteHref, imageSrc }: ProjectItemProps) => (
     <a href={siteHref} target="_blank" rel="noreferrer">
         <div className={styles.projectItem}>
-            <div className={styles.projecItemImage} style={{ height }}></div>
+            <div className={styles.projecItemImage} style={{ height }}>
+                <Image
+                    alt={title}
+                    src={imageSrc}
+                    placeholder="blur"
+                    quality={100}
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: 'cover',
+                    }}
+                />
+            </div>
             <h3>{title}</h3>
             <small>{description}</small>
         </div>
