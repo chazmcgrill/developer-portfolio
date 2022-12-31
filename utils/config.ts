@@ -1,6 +1,12 @@
 const isTruthy = (envVariable?: string) => envVariable === 'true';
 
 const config = {
+    meta: {
+        url: 'https://charlietaylor.dev',
+        title: 'Charlie Taylor Dev Portfolio',
+        description: 'The dev portfolio for Charlie Taylor - Full stack software developer with creative skills.',
+        socialIconSrc: '/social-icon.png',
+    },
     twitterDirectMessageHref: 'https://twitter.com/messages/compose?recipient_id=828212805992067072',
     projects: [
         {
