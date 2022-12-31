@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/BioSection.module.sass';
 import config from '../utils/config';
-import bioImage from '../public/bio-image.jpg';
 
 const BioSection = () => {
     return (
@@ -10,7 +9,7 @@ const BioSection = () => {
             <div className={styles.bioImage}>
                 <Image
                     alt="Bio image"
-                    src={bioImage}
+                    src={require('../public/bio-image.jpg')}
                     placeholder="blur"
                     quality={100}
                     fill
