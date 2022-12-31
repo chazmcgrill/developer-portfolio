@@ -10,7 +10,7 @@
         "lint": "next lint",
         "postversion": "git push && git push --tags",
         "prettier": "prettier --ignore-path .gitignore --ignore-path .prettierignore \"**/*.+(js|json|ts|tsx)\"",
-        "preversion": "npm validate",
+        "preversion": "npm run validate",
         "start": "next start",
         "validate": "npm run check-types && npm run lint",
         "version": "git add .",
