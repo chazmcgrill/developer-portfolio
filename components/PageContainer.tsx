@@ -14,7 +14,7 @@ const PageContainer = ({ children }: PageContainerProps) => {
         <>
             <Head>
                 {/* TODO: pass actual meta info and icon */}
-                <title>Title goes here</title>
+                <title>Charlie Taylor - Dev Portfolio</title>
                 <meta name="description" content="Description goes here" />
                 <link rel="icon" href="/favicon.ico" />
                 {/* TODO: twitter meta info */}
