@@ -1,0 +1,46 @@
+$textColor: #FDFDFD
+$backgroundColor: #1F2028
+$standardPadding: 1rem 2rem
+    
+html,
+body
+    padding: 0
+    margin: 0
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+
+main
+    padding: 0 1rem
+    max-width: 1400px
+    margin: 0 auto
+
+section
+    margin: 3rem 0 4rem
+
+h1
+    font-size: 2.4rem
+    font-weight: 300
+
+a
+    color: inherit
+    text-decoration: none
+
+*
+    box-sizing: border-box
+
+button
+    background-color: $backgroundColor
+    color: $textColor
+    border: 2px solid $textColor
+    padding: 0.8rem 1.6rem
+    border-radius: 0.5rem
+    cursor: pointer
+    font-size: 1rem
+
+@media (prefers-color-scheme: dark)
+    html
+        color-scheme: dark
+
+    body
+        color: $textColor
+        background: $backgroundColor
+
