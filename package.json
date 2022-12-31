@@ -1,6 +1,6 @@
 {
     "name": "developer-portfolio",
-    "version": "1.5.2",
+    "version": "2.0.0",
     "private": true,
     "scripts": {
         "build": "next build",
