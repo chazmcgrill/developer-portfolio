@@ -33,7 +33,7 @@ const useGithubRepositories = () => {
 const CodeRepoItem = ({ repository }: { repository: GithubRepo }) => {
     return (
         <div>
-            <h4>{repository.name}</h4>
+            <h5>{repository.name}</h5>
             <p>{repository.description}</p>
             <Link href={repository.html_url}>view repo</Link>
         </div>

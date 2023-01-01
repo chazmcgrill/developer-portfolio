@@ -8,9 +8,9 @@ const Navbar = () => (
     <div className={styles.navbar}>
         <div className={styles.title}>
             <Link href="/">
-                <h3>Charlie Taylor</h3>
+                <h4>Charlie Taylor</h4>
             </Link>
-            <h4 className={styles.jobDescription}>Full Stack Developer</h4>
+            <h5 className={styles.jobDescription}>Full Stack Developer</h5>
         </div>
 
         {config.features.pages && <Nav />}
