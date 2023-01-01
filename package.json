@@ -8,12 +8,9 @@
         "dev": "next dev",
         "format": "npm run prettier -- --write",
         "lint": "next lint",
-        "postversion": "git push && git push --tags",
         "prettier": "prettier --ignore-path .gitignore --ignore-path .prettierignore \"**/*.+(js|json|ts|tsx)\"",
-        "preversion": "npm run validate",
         "start": "next start",
         "validate": "npm run check-types && npm run lint",
-        "version": "git add .",
         "prepare": "husky install"
     },
     "lint-staged": {
