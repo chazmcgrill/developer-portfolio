@@ -27,6 +27,5 @@
                 "message": "chore(release): ${nextRelease.version} [skip ci]"
             }
         ]
-    ],
-    "dryRun": true
+    ]
 }
