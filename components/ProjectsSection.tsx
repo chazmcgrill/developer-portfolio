@@ -28,7 +28,7 @@ const ProjectItem = ({ title, description, height, siteHref, imageSrc }: Project
                     }}
                 />
             </div>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <small>{description}</small>
         </div>
     </a>

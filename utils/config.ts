@@ -36,7 +36,7 @@ const config = {
         {
             id: 4,
             title: 'Illustration website',
-            description: 'Personal illustration portfolio includes the use of React, React-router, Node, Express and CSS grid.',
+            description: 'Personal illustration portfolio built using Gatsby.js, featuring a gallery, shop and contact form.',
             siteHref: 'https://www.hurricanecharlie.co.uk/',
             height: 500,
             imageSrc: require('public/project-images/hurricane-charlie.png'),

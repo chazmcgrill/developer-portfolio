@@ -11,7 +11,7 @@ const Footer = () => (
         <hr />
         <div className={styles.footerContent}>
             <div className={styles.footerTitle}>
-                <h4>Charlie Taylor</h4>
+                <h5>Charlie Taylor</h5>
                 <p>Creative full stack developer.</p>
                 <SocialIcons />
             </div>
