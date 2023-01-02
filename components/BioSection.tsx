@@ -21,7 +21,7 @@ const BioSection = () => {
                 />
             </div>
             <div className={styles.bioSectionText}>
-                <h1>Creative full stack developer specializing in web & mobile development</h1>
+                <h1>Creative full stack developer specialising in web & mobile development</h1>
                 <a href={config.twitterDirectMessageHref} target="_blank" rel="noreferrer">
                     <button>Talk to me</button>
                 </a>
