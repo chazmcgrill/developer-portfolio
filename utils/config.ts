@@ -21,7 +21,7 @@ const config = {
             id: 2,
             title: 'Bugsweeper Game',
             description: "Recreation of the classic Windows desktop game Minesweeper. Built using React featuring a 'flood fill' algorithm.",
-            siteHref: 'https://bugsweeper.charlietaylorcoder.com/',
+            siteHref: 'https://chazmcgrill.github.io/bugsweeper',
             height: 400,
             imageSrc: require('public/project-images/bugsweeper.png'),
         },
