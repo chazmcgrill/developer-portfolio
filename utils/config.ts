@@ -13,7 +13,7 @@ const config = {
             id: 1,
             title: 'Coinage web app',
             description: 'Simple cryptocurrency price tracking app built with React and Cryptocompare API.',
-            siteHref: 'https://coinage.charlietaylorcoder.com/',
+            siteHref: 'https://chazmcgrill.github.io/coinage/',
             height: 500,
             imageSrc: require('public/project-images/coinage.png'),
         },
