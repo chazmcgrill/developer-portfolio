@@ -36,8 +36,8 @@ const config = {
         {
             id: 4,
             title: 'Illustration website',
-            description: 'Personal illustration portfolio built using Gatsby.js, featuring a gallery, shop and contact form.',
-            siteHref: 'https://www.hurricanecharlie.co.uk/',
+            description: 'Personal illustration portfolio built using Nextjs, featuring a gallery, shop and contact form.',
+            siteHref: 'https://hurricanecharlie.co.uk/',
             height: 500,
             imageSrc: require('public/project-images/hurricane-charlie.png'),
         },

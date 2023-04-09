@@ -44,7 +44,7 @@ const PageContainer = ({ children, pageMeta }: PageContainerProps) => {
 
                 {/* twitter card meta data for social links */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@mannupaaji" />
+                <meta name="twitter:site" content="@charlietdev" />
                 <meta name="twitter:title" content={siteTitle} />
                 <meta name="twitter:description" content={siteDescription} />
                 <meta name="twitter:image" content={config.meta.socialIconSrc} />
