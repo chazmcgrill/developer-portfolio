@@ -29,7 +29,7 @@ const config = {
             id: 3,
             title: 'Cell automaton',
             description: "React project based on the cellular automaton 'Game of Life' devised by mathematician John Conway.",
-            siteHref: 'https://cell-automaton.charlietaylorcoder.com/',
+            siteHref: 'https://chazmcgrill.github.io/cell-automaton/',
             height: 400,
             imageSrc: require('public/project-images/cell-automaton.png'),
         },
