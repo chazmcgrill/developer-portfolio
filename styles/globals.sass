@@ -11,13 +11,15 @@ body
     margin: 0
 
 html
+    color-scheme: dark
     font-family: 'Inter', sans-serif
     font-size: 100%
 
 body
     font-weight: 400
     line-height: 1.75
-    color: #FFF
+    color: $textColor
+    background: $backgroundColor
 
 main
     padding: 0 1rem
@@ -69,6 +71,7 @@ button
     cursor: pointer
     font-size: 1rem
 
+// could enhance to allow light scheme here
 @media (prefers-color-scheme: dark)
     html
         color-scheme: dark
@@ -76,4 +79,3 @@ button
     body
         color: $textColor
         background: $backgroundColor
-
