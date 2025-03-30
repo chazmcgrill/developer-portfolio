@@ -1,7 +1,7 @@
-import CoinageImage from '/public/project-images/coinage.png';
-import BugsweeperImage from '/public/project-images/bugsweeper.png';
-import CellAutomatonImage from '/public/project-images/cell-automaton.png';
-import HurricaneCharlieImage from '/public/project-images/hurricane-charlie.png';
+import CoinageImage from '../public/project-images/coinage.png';
+import BugsweeperImage from '../public/project-images/bugsweeper.png';
+import CellAutomatonImage from '../public/project-images/cell-automaton.png';
+import HurricaneCharlieImage from '../public/project-images/hurricane-charlie.png';
 
 const isTruthy = (envVariable?: string) => envVariable === 'true';
 
