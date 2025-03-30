@@ -9,7 +9,7 @@ interface ProjectItemProps {
     description: string;
     height: number;
     siteHref: string;
-    imageSrc: string;
+    imageSrc: StaticImageData;
 }
 
 const ProjectItem = ({ title, description, height, siteHref, imageSrc }: ProjectItemProps) => (
