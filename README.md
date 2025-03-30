@@ -1,19 +1,19 @@
 # Developer Portfolio
 
-<!-- TODO: add vercel deploy badge -->
-
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/developer-portfolio-a5rwtx3gh-chazmcgrills-projects)
 [![GitHub Release](https://img.shields.io/github/v/release/chazmcgrill/developer-portfolio)](https://github.com/chazmcgrill/developer-portfolio/releases)
-[![Twitter Follow](https://img.shields.io/twitter/follow/charlietcoder.svg?style=social)](https://twitter.com/charlietcoder)
+
+[![Follow me on Bluesky](https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff&label=Follow%20me%20on&color=0285FF)](https://bsky.app/profile/ctdev.bsky.social)
+![GitHub Repo stars](https://img.shields.io/github/stars/chazmcgrill/developer-portfolio)
 
 Developer portfolio website built using Next.js. A single page website featuring bio, projects and recent repo updates. Visit the site here:
-
 [charlietaylor.dev](https://charlietaylor.dev)
 
 ## Tech Stack
 
--   [Next.js](https://nextjs.org/)
--   [Sass](https://sass-lang.com/)
--   [Typescript](https://www.typescriptlang.org/)
+![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white)
 
 ## To Run Locally
 
