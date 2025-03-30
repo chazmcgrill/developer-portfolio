@@ -15,7 +15,7 @@ const config = {
             description: 'Simple cryptocurrency price tracking app built with React and Cryptocompare API.',
             siteHref: 'https://chazmcgrill.github.io/coinage/',
             height: 500,
-            imageSrc: require('public/project-images/coinage.png'),
+            imageSrc: 'public/project-images/coinage.png',
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ const config = {
             description: "Recreation of the classic Windows desktop game Minesweeper. Built using React featuring a 'flood fill' algorithm.",
             siteHref: 'https://chazmcgrill.github.io/bugsweeper',
             height: 400,
-            imageSrc: require('public/project-images/bugsweeper.png'),
+            imageSrc: 'public/project-images/bugsweeper.png',
         },
         {
             id: 3,
@@ -31,7 +31,7 @@ const config = {
             description: "React project based on the cellular automaton 'Game of Life' devised by mathematician John Conway.",
             siteHref: 'https://chazmcgrill.github.io/cell-automaton/',
             height: 400,
-            imageSrc: require('public/project-images/cell-automaton.png'),
+            imageSrc: 'public/project-images/cell-automaton.png',
         },
         {
             id: 4,
@@ -39,7 +39,7 @@ const config = {
             description: 'Personal illustration portfolio built using Nextjs, featuring a gallery, shop and contact form.',
             siteHref: 'https://hurricanecharlie.co.uk/',
             height: 500,
-            imageSrc: require('public/project-images/hurricane-charlie.png'),
+            imageSrc: 'public/project-images/hurricane-charlie.png',
         },
     ],
     features: {
