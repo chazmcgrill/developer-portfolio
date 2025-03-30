@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import styles from '../styles/ProjectsSection.module.sass';
 import config from '../utils/config';
@@ -9,7 +9,7 @@ interface ProjectItemProps {
     description: string;
     height: number;
     siteHref: string;
-    imageSrc: string;
+    imageSrc: StaticImageData;
 }
 
 const ProjectItem = ({ title, description, height, siteHref, imageSrc }: ProjectItemProps) => (
