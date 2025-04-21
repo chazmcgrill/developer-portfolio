@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/ProjectsSection.module.sass';
 import config from '../utils/config';
@@ -16,17 +16,7 @@ const ProjectItem = ({ title, description, height, siteHref, imageSrc }: Project
     <a href={siteHref} target="_blank" rel="noreferrer">
         <div className={styles.projectItem}>
             <div className={styles.projecItemImage} style={{ height }}>
-                <Image
-                    alt={title}
-                    src={imageSrc}
-                    placeholder="blur"
-                    quality={100}
-                    fill
-                    sizes="100vw"
-                    style={{
-                        objectFit: 'cover',
-                    }}
-                />
+                <Image alt={title} src={imageSrc} quality={100} fill sizes="100vw" style={{ objectFit: 'cover' }} />
             </div>
             <h4>{title}</h4>
             <small>{description}</small>
@@ -41,7 +31,14 @@ const ProjectsSection = () => {
 
             <div className={styles.projectGrid}>
                 {config.projects.map((project) => (
-                    <ProjectItem key={project.id} {...project} />
+                    <ProjectItem
+                        description={project.description}
+                        height={project.height}
+                        imageSrc={project.imageSrc}
+                        key={project.id}
+                        siteHref={project.siteHref}
+                        title={project.title}
+                    />
                 ))}
             </div>
         </section>
