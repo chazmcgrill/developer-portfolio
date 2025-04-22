@@ -3,7 +3,7 @@
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/developer-portfolio-a5rwtx3gh-chazmcgrills-projects)
 [![GitHub Release](https://img.shields.io/github/v/release/chazmcgrill/developer-portfolio)](https://github.com/chazmcgrill/developer-portfolio/releases)
 
-[![Follow me on Bluesky](https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff&label=Follow%20me%20on&color=0285FF)](https://bsky.app/profile/ctdev.bsky.social)
+[![Follow me on Bluesky](https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=fff&label=Follow%20me%20on&color=0285FF)](https://bsky.app/profile/charlietaylor.dev)
 ![GitHub Repo stars](https://img.shields.io/github/stars/chazmcgrill/developer-portfolio)
 
 Developer portfolio website built using Next.js. A single page website featuring bio, projects and recent repo updates. Visit the site here:

@@ -7,7 +7,7 @@ const SocialIcons = () => (
         <a href="https://github.com/chazmcgrill" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://bsky.app/profile/ctdev.bsky.social" target="_blank" rel="noreferrer">
+        <a href="https://bsky.app/profile/charlietaylor.dev" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faBluesky} />
         </a>
         <a href="https://uk.linkedin.com/in/charliejbtaylor" target="_blank" rel="noreferrer">
