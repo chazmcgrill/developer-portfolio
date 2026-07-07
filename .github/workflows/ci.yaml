@@ -1,27 +1,26 @@
 name: CI
 
 on:
-    push:
-        branches: ['master']
-    pull_request:
-        branches: ['master']
+  push:
+    branches: ['master']
+  pull_request:
+    branches: ['master']
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
-        strategy:
-            matrix:
-                # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-                node-version: [22.x]
+      - name: Install Nodejs
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
 
-        steps:
-            - uses: actions/checkout@v4
-
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v4
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: 'npm'
-            - run: npm ci
-            - run: npm run validate
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Validate code
+        run: npm run validate
