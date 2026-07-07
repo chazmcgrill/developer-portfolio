@@ -9,6 +9,7 @@ const BioSection = () => {
             <div className={styles.bioImage}>
                 <Image
                     alt="Bio image"
+                    // eslint-disable-next-line @typescript-eslint/no-require-imports
                     src={require('../public/bio-image.jpg')}
                     placeholder="blur"
                     quality={100}
