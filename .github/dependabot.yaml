@@ -33,3 +33,6 @@ updates:
       separator: "-"
     cooldown:
       default-days: 7
+    ignore:
+      # newest eslint not compatible with next 16
+      - dependency-name: "eslint"
