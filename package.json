@@ -21,21 +21,21 @@
         "@fortawesome/fontawesome-svg-core": "^7.3.1",
         "@fortawesome/free-brands-svg-icons": "^7.3.1",
         "@fortawesome/react-fontawesome": "^3.5.0",
-        "next": "^16.3.3",
+        "next": "^16.3.4",
         "react": "19.2.8",
         "react-dom": "19.2.8",
         "sharp": "^0.35.4"
     },
     "devDependencies": {
-        "@types/node": "^26.4.0",
+        "@types/node": "^26.4.1",
         "@types/react": "19.2.18",
-        "@types/react-dom": "19.2.5",
+        "@types/react-dom": "19.2.7",
         "@typescript/native": "npm:typescript@^7.0.2",
         "eslint": "^9.39.5",
-        "eslint-config-next": "16.3.3",
+        "eslint-config-next": "16.3.4",
         "husky": "^9.1.7",
         "prettier": "^3.9.6",
-        "sass": "^1.103.1",
+        "sass": "^1.104.0",
         "typescript": "npm:@typescript/typescript6@^6.0.2"
     },
     "engines": {
@@ -44,6 +44,6 @@
     },
     "overrides": {
         "@types/react": "19.2.18",
-        "@types/react-dom": "19.2.5"
+        "@types/react-dom": "19.2.7"
     }
 }
